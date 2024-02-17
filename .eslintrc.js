@@ -12,6 +12,7 @@ module.exports = {
     jest: true,
   },
   globals: {
+    __PATH_PREFIX__: true,
     page: true,
     browser: true,
     context: true,
