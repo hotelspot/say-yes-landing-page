@@ -41,7 +41,6 @@ const linkStyle = {
 
 const docLinkStyle = {
   ...linkStyle,
-  listStyleType: 'none',
   display: 'inline-block',
   marginBottom: 24,
   marginRight: 12,
