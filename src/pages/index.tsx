@@ -42,7 +42,6 @@ const linkStyle = {
 const docLinkStyle = {
   ...linkStyle,
   display: 'inline-block',
-  marginBottom: 24,
   marginRight: 12,
 };
 
