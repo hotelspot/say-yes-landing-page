@@ -43,6 +43,7 @@ const docLinkStyle = {
   ...linkStyle,
   display: 'inline-block',
   marginRight: 12,
+
 };
 
 const descriptionStyle = {
