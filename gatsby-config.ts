@@ -1,12 +1,12 @@
-import type { GatsbyConfig } from "gatsby"
+import type { GatsbyConfig } from 'gatsby';
 
 const config: GatsbyConfig = {
   siteMetadata: {
-    title: `tofu-gatsby-boilerplate`,
-    siteUrl: `https://www.yourdomain.tld`,
+    title: 'tofu-gatsby-boilerplate',
+    siteUrl: 'https://www.yourdomain.tld',
   },
   graphqlTypegen: true,
   plugins: [],
-}
+};
 
-export default config
+export default config;
