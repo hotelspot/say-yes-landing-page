@@ -15,7 +15,9 @@
     "clean": "gatsby clean",
     "typecheck": "tsc --noEmit",
     "lint": "eslint --ext .ts,.tsx --cache src/",
-    "lint:fix": "eslint --ext .ts,.tsx --fix src/"
+    "lint:fix": "eslint --ext .ts,.tsx --fix src/",
+    "prepare:husky": "husky install",
+    "postinstall": "npm run prepare:husky"
   },
   "dependencies": {
     "eslint-plugin-simple-import-sort": "^12.0.0",
