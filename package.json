@@ -17,12 +17,12 @@
     "lint": "eslint --ext .ts,.tsx --cache src/",
     "lint:fix": "eslint --ext .ts,.tsx --fix src/",
     "prepare:husky": "husky install",
-    "postinstall": "npm run prepare:husky"
+    "postinstall": "npm run prepare:husky",
+    "prepare": "husky install"
   },
   "dependencies": {
     "eslint-plugin-simple-import-sort": "^12.0.0",
     "gatsby": "^5.13.2",
-    "husky": "^9.0.11",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
@@ -33,6 +33,7 @@
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-react-app": "^7.0.1",
     "lint-staged": "^15.2.2",
-    "typescript": "^5.3.3"
+    "typescript": "^5.3.3",
+    "husky": "^8.0.0"
   }
 }
