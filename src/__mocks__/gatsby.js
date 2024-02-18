@@ -27,7 +27,7 @@ module.exports = {
       ({
         alias,
         ...rest
-      }) => React.createElement('div', {
+      }) => createElement('div', {
         ...rest,
         'data-test-slice-alias': alias,
       }),

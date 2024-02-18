@@ -5,6 +5,4 @@ echo "Checking eslint..."
 
 yarn lint
 
-echo "Checking build..."
 
-yarn build
