@@ -1,5 +1,6 @@
 import type { HeadFC, PageProps } from 'gatsby';
-import * as React from 'react';
+import React from 'react';
+import { Hello } from '../components/Hello/Hello';
 
 const pageStyles = {
   color: '#232129',
@@ -79,7 +80,7 @@ const links = [
 
 ];
 
-const IndexPage: React.FC<PageProps> = () => (
+export const IndexPage: React.FC<PageProps> = () => (
   <main style={pageStyles}>
     <h1 style={headingStyles}>
       Congratulations
@@ -87,7 +88,11 @@ const IndexPage: React.FC<PageProps> = () => (
       <span style={headingAccentStyles}>— you just made a Gatsby site! 🎉🎉🎉</span>
     </h1>
     <p style={paragraphStyles}>
-      Edit <code style={codeStyles}>src/pages/index.tsx</code> to see this page
+      Edit
+      {' '}
+      <code style={codeStyles}>src/pages/index.tsx</code>
+      {' '}
+      to see this page
       update in real-time. 😎
     </p>
     <ul style={doclistStyles}>
@@ -117,6 +122,7 @@ const IndexPage: React.FC<PageProps> = () => (
         </li>
       ))}
     </ul>
+    <Hello />
   </main>
 );
 

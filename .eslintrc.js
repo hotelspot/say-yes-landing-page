@@ -1,98 +1,123 @@
 module.exports = {
-  extends: [
-    'eslint:recommended',
-    'airbnb',
-    'airbnb/hooks',
-    'plugin:@typescript-eslint/recommended',
+  ignorePatterns: [
+    '**/public/**',
+    '**/.cache/**',
+    '**/static/**',
+    '**/content/**',
   ],
-  parser: '@typescript-eslint/parser',
-  plugins: ['@typescript-eslint', 'import', 'react-hooks', 'simple-import-sort'],
-  env: {
-    browser: true,
-    jest: true,
+  extends: [
+    'plugin:import/recommended',
+    'plugin:import/typescript',
+    'plugin:testing-library/react',
+    'plugin:react-hooks/recommended',
+    'airbnb/hooks',
+    'airbnb',
+  ],
+  plugins: ['import'],
+  settings: {
+    'import/resolver': {
+      node: {
+        extensions: ['.js', '.jsx', '.ts', '.tsx'],
+      },
+    },
   },
-  globals: {
-    __PATH_PREFIX__: true,
-    page: true,
-    browser: true,
-    context: true,
-  },
-  settings: { 'import/parsers': { '@typescript-eslint/parser': ['.ts', '.tsx'] } },
   rules: {
-    'no-shadow': 0,
-    '@typescript-eslint/no-shadow': 2,
-    '@typescript-eslint/explicit-function-return-type': 1,
-    '@typescript-eslint/prefer-interface': 0,
-    '@typescript-eslint/indent': 0,
-    'no-use-before-define': 0,
-    '@typescript-eslint/no-use-before-define': 1,
-    '@typescript-eslint/no-unused-expressions': 2,
-    '@typescript-eslint/no-unused-vars': [
-      2,
-      {
-        argsIgnorePattern: '^_',
-        varsIgnorePattern: '^_',
-        caughtErrorsIgnorePattern: '^_',
-      },
-    ],
-    '@typescript-eslint/ban-ts-comment': 0,
-    '@typescript-eslint/member-delimiter-style': [
-      2,
-      {
-        multiline: {
-          delimiter: 'semi',
-          requireLast: true,
-        },
-        singleline: {
-          delimiter: 'semi',
-          requireLast: false,
-        },
-      },
-    ],
-    'react-hooks/exhaustive-deps': 1,
-    'react-hooks/rules-of-hooks': 2,
-    'react/destructuring-assignment': 1,
-    'react/jsx-props-no-spreading': 0,
-    'react/state-in-constructor': 0,
-    'react/jsx-key': 2,
-    'react/jsx-filename-extension': [2, { extensions: ['.jsx', '.tsx'] }],
-    'react/require-default-props': 0,
-    'react/jsx-one-expression-per-line': 0,
-    'react/function-component-definition': 0,
-    'react/jsx-uses-react': 0,
-    'react/react-in-jsx-scope': 0,
-    'react/no-unescaped-entities': 0,
-    'import/named': 2,
+    'no-use-before-define': 'off',
     'import/extensions': [
-      2,
+      'error',
       'ignorePackages',
       {
         js: 'never',
-        ts: 'never',
         jsx: 'never',
+        ts: 'never',
         tsx: 'never',
       },
     ],
-    'import/no-extraneous-dependencies': [2, { devDependencies: true }],
-    'import/prefer-default-export': 0,
-    'jsx-a11y/label-has-associated-control': 2,
-    'comma-dangle': [1, 'always-multiline'],
-    'max-len': [2, {
-      code: 120,
-      ignoreComments: true,
-      ignoreTrailingComments: true,
-      ignoreUrls: true,
-    }],
-    'object-curly-newline': [1, { multiline: true }],
-    'max-lines': [2, { max: 200 }],
-    'simple-import-sort/imports': 2,
-    'simple-import-sort/exports': 2,
+    'react/function-component-definition': [
+      'error',
+      {
+        namedComponents: 'arrow-function',
+        unnamedComponents: 'arrow-function',
+      },
+    ],
   },
   overrides: [
     {
-      files: ['*.ts', '*.mts', '*.cts', '*.tsx'],
-      excludedFiles: ['*.test.*'],
-      rules: { '@typescript-eslint/explicit-function-return-type': ['warn', { allowExpressions: true }] },
+      files: ['**/*.ts', '**/*.tsx'],
+      env: {
+        browser: true,
+        es6: true,
+      },
+      extends: [
+        'plugin:@typescript-eslint/eslint-recommended',
+        'plugin:@typescript-eslint/recommended',
+        'plugin:@typescript-eslint/recommended-requiring-type-checking',
+      ],
+      plugins: [
+        '@typescript-eslint',
+        'react',
+        'react-hooks',
+        'testing-library',
+        'graphql',
+      ],
+      rules: {
+        'react/require-default-props': 'off',
+        'react/prop-types': 'off',
+        'no-restricted-exports': 'off',
+      },
+
+      parser: '@typescript-eslint/parser',
+      parserOptions: {
+        tsconfigRootDir: __dirname,
+        project: ['./tsconfig.json', '**/tsconfig.json'],
+      },
+    },
+    {
+      files: ['**/*.js', '**/*.jsx'],
+      env: {
+        browser: true,
+        es6: true,
+      },
+      rules: {},
+      plugins: [
+        'testing-library',
+        'react',
+        'react-hooks',
+        'graphql',
+      ],
+    },
+    {
+      files: [
+        '**/test/**',
+        '**/__mocks__/**',
+        '*.spec.ts',
+        '*.spec.tsx',
+        '*.spec.js',
+        '*.spec.jsx',
+      ],
+      extends: ['plugin:jest/all', 'plugin:jest-dom/recommended'],
+      plugins: ['jest', 'jest-dom'],
+      env: {
+        browser: true,
+        es6: true,
+        'jest/globals': true,
+      },
+      rules: {
+        'jest/no-hooks': 'off',
+        '@typescript-eslint/unbound-method': 'off',
+        'jest/unbound-method': 'error',
+        'import/no-extraneous-dependencies': [
+          'error',
+          {
+            devDependencies: true,
+            optionalDependencies: false,
+            peerDependencies: false,
+          },
+        ],
+        'import/no-relative-packages': 'off',
+        'jest/no-conditional-in-test': 'off',
+        'jest/prefer-snapshot-hint': 'off',
+      },
     },
   ],
 };
