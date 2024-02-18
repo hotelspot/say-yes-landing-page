@@ -1,18 +1,9 @@
-import { HeadFC, Link, PageProps } from 'gatsby';
-import React from 'react';
+import React, { FC } from 'react';
+import { PageProps } from 'gatsby';
+import { Hello } from '../components';
 
-const pageStyles = {
-  color: '#232129',
-  padding: '96px',
-  fontFamily: '-apple-system, Roboto, sans-serif, serif',
-};
-
-const NotFoundPage: React.FC<PageProps> = () => (
-  <main style={pageStyles}>
-    <Link to="/">Go home</Link>
-  </main>
+const NotFoundPage: FC<PageProps> = () => (
+  <Hello label="404" />
 );
 
 export default NotFoundPage;
-
-export const Head: HeadFC = () => <title>Not found</title>;

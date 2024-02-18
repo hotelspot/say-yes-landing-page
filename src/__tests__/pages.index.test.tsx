@@ -1,14 +1,15 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 
-import { Hello } from '../components/Hello/Hello';
+import { Hello } from '../components';
 
-describe('Index', () => {
+describe('pages', () => {
   afterEach(() => {
     jest.restoreAllMocks();
   });
 
-  it('contains a greeting', () => {
-    render(<Hello />);
+  it('Should display hello', () => {
+    const { getByText } = render(<Hello label="hello" />);
+    getByText('hello');
   });
 });

@@ -19,7 +19,8 @@
     "prepare:husky": "husky install",
     "postinstall": "npm run prepare:husky",
     "prepare": "husky install",
-    "test": "jest"
+    "test": "jest",
+    "check": "jest && lint"
   },
   "dependencies": {
     "@babel/preset-typescript": "^7.23.3",

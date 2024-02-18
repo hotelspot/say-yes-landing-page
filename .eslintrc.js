@@ -22,6 +22,9 @@ module.exports = {
     },
   },
   rules: {
+    'testing-library/prefer-screen-queries': 'off',
+    'testing-library/render-result-naming-convention': 'off',
+    'import/prefer-default-export': 'off',
     'react/jsx-filename-extension': 'off',
     'no-use-before-define': 'off',
     'import/extensions': [
