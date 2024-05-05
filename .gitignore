@@ -5,3 +5,4 @@ src/gatsby-types.d.ts
 /.eslintcache
 /coverage/
 /yarn-error.log
+!/gatsby-config.ts
