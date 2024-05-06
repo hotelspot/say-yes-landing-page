@@ -29,6 +29,13 @@ export const Body1t500 = css`
     font-size: 18px;
     line-height: 24px;
     color:${colors.typography[900]}
+    
+`;
+
+export const Body1t400 = css`
+    font-size: 18px;
+    line-height: 24px;
+    color:${colors.typography[900]}
 `;
 
 export const Body2t600 = css`
@@ -64,6 +71,12 @@ export const Display01 = css`
 export const H3t500 = css`
     font-size: 32px;
     font-weight: 500;
+    line-height: 48px;
+`;
+
+export const H3t700 = css`
+    font-size: 32px;
+    font-weight: 700;
     line-height: 48px;
 `;
 

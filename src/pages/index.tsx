@@ -5,6 +5,7 @@ import { Header } from '../components/Header';
 import { GlobalStyled } from '../styles/globalStyled';
 import { AboutMe } from '../components/AboutMe/AboutMe';
 import { Agenda } from '../components/Agenda/Agenda';
+import { Gallery } from '../components/Gallery/Gallery';
 
 export const IndexPage: FC<PageProps> = () => (
   <>
@@ -12,6 +13,7 @@ export const IndexPage: FC<PageProps> = () => (
     <Header />
     <AboutMe />
     <Agenda />
+    <Gallery />
   </>
 );
 

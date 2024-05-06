@@ -10,7 +10,6 @@ export const Container = styled.div`
 export const Wrapper = styled.div`
   width: 100%;
   max-width: 1196px;
-  height: 200px;
 `;
 
 export const Header = styled.h1`
