@@ -7,6 +7,18 @@ export const Body2t500 = css`
   line-height: 24px;
 `;
 
+export const Body2t700 = css`
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+`;
+
+export const Body2t400 = css`
+  line-height: 24px;
+  font-size: 16px;
+  font-weight: 400;
+`;
+
 export const Body3t400 = css`
   font-weight: 400;
   font-size: 14px;
@@ -53,4 +65,16 @@ export const H3t500 = css`
     font-size: 32px;
     font-weight: 500;
     line-height: 48px;
+`;
+
+export const H2t700 = css`
+    font-weight: 700;
+    line-height: 64px;
+    font-size: 48px;
+`;
+
+export const H4t700 = css`
+    font-size: 24px;
+    line-height: 32px;
+    color:${colors.typography[900]}
 `;

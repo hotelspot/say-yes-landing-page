@@ -2,13 +2,17 @@ import React from 'react';
 import {
   Avatar,
   Contact, ContactContainer,
-  Container, Description, Information, InformationItem, InformationLabel, Paragraph, Username,
+  Container, Description, Information, InformationItem, InformationLabel, List, Paragraph, SocialsMedia, Username,
 } from './AboutMe.styled';
 import SvgCalendar from '../icons/Calendar';
 import SvgPin from '../icons/Pin';
 import SvgEmail from '../icons/Email';
 import SvgSmartphone from '../icons/Smartphone';
 import { AvatarJuliuszZglinski } from '../../assets';
+import Facebook from '../icons/Facebook';
+import Linkedin from '../icons/Linkedin';
+import Instagram from '../icons/Instagram';
+import Youtube from '../icons/Youtube';
 
 export const AboutMe = () => (
   <Container>
@@ -33,11 +37,22 @@ export const AboutMe = () => (
     <Contact>
       <Avatar src={AvatarJuliuszZglinski as string} />
       <ContactContainer>
-        <Username>Juliusz Zgliński</Username>
-        <Description>Organizator konferencji “Powiem TAK!”</Description>
+        <List>
+          <Username>Juliusz Zgliński</Username>
+          <Description>Organizator konferencji “Powiem TAK!”</Description>
+        </List>
         <Paragraph>
-          Dzień dobry, nazywam się Julek, mam 17 lat i obecnie chodzę do Liceum Ogólnokształcącego w Krakowie 🏫  Niby nie robię nic specjalnego; nie jestem żadnym menagerem ani coachem... ot kolejny zwykły licealista 🙃
+          Dzień dobry, nazywam się Julek, mam 17 lat i obecnie chodzę do
+          Liceum Ogólnokształcącego w Krakowie 🏫
+          Niby nie robię nic specjalnego; nie jestem żadnym menagerem ani coachem... ot
+          kolejny zwykły licealista 🙃
         </Paragraph>
+        <SocialsMedia>
+          <Facebook />
+          <Linkedin />
+          <Instagram />
+          <Youtube />
+        </SocialsMedia>
       </ContactContainer>
     </Contact>
   </Container>

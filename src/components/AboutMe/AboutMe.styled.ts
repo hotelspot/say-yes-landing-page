@@ -5,7 +5,6 @@ import {
 import { colors } from '../../styles/colors';
 
 export const Container = styled.div`
-  height: 536px;
   padding-top: 200px;
   padding-bottom: 80px;
   display: flex;
@@ -58,6 +57,7 @@ export const ContactContainer = styled.div`
   padding: 32px 112px;
   display: flex;
   flex-direction: column;
+  gap:24px;
 `;
 
 export const Avatar = styled.img`
@@ -81,4 +81,15 @@ ${Body2t500};
 export const Paragraph = styled.p`
   ${Body3t400};
   color:${colors.typography[700]}
+`;
+
+export const List = styled.div`
+  display: flex;
+  gap:8px;
+  flex-direction: column;
+`;
+
+export const SocialsMedia = styled.div`
+  display: flex;
+  gap:24px;
 `;
