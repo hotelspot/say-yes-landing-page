@@ -29,6 +29,7 @@ export const InformationItem = styled.section`
   justify-content: center;
   border-radius: 6px;
   flex:1;
+  background: white;
   padding:16px 14px;
   border: 2px solid ${colors.typography[400]};
 `;

@@ -5,7 +5,7 @@ import {
 } from '../../styles/typography';
 
 export const Container = styled.div`
-    padding:240px 80px;
+  padding:80px 80px 0 80px;
   margin-top: -200px;
   background: ${colors.typography[300]};
   display: flex;
@@ -14,6 +14,8 @@ export const Container = styled.div`
 `;
 
 export const Wrapper = styled.div`
+  position: relative;
+  top:200px;
     max-width: 1196px;
    width: 100%;
   overflow: hidden;

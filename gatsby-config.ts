@@ -7,6 +7,7 @@ const config: GatsbyConfig = {
   },
   plugins: [
     'gatsby-plugin-styled-components',
+    'gatsby-plugin-postcss',
 
   ],
 };

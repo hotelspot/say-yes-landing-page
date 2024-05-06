@@ -25,11 +25,22 @@ export const Body3t400 = css`
   line-height: 18px;
 `;
 
+export const Body4t400 = css`
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+`;
+
 export const Body1t500 = css`
     font-size: 18px;
     line-height: 24px;
     color:${colors.typography[900]}
-    
+`;
+
+export const Body1t700 = css`
+    font-size: 18px;
+    line-height: 24px;
+    color:${colors.typography[900]}
 `;
 
 export const Body1t400 = css`
@@ -51,9 +62,9 @@ export const H1t700 = css`
 `;
 
 export const H1t500 = css`
-    font-size: 20px;
-  line-height: 28px;
-  font-weight: 700;
+    font-size: 60px;
+  line-height: 80px;
+  font-weight: 500;
 `;
 
 export const H5t700 = css`
