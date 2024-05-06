@@ -49,6 +49,9 @@
     "start-server-and-test": "^2.0.3",
     "styled-components": "^6.1.9"
   },
+    "resolutions": {
+      "webpack": "^5.61.0"
+    },
   "devDependencies": {
     "@types/jest": "^29.5.12",
     "@types/node": "^20.11.5",

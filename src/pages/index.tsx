@@ -6,6 +6,7 @@ import { GlobalStyled } from '../styles/globalStyled';
 import { AboutMe } from '../components/AboutMe/AboutMe';
 import { Agenda } from '../components/Agenda/Agenda';
 import { Gallery } from '../components/Gallery/Gallery';
+import { Footer } from '../components/Footer/Footer';
 
 export const IndexPage: FC<PageProps> = () => (
   <>
@@ -14,6 +15,7 @@ export const IndexPage: FC<PageProps> = () => (
     <AboutMe />
     <Agenda />
     <Gallery />
+    <Footer />
   </>
 );
 
