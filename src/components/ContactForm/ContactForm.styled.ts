@@ -61,7 +61,7 @@ export const Banner = styled.section`
   align-items: center;
   justify-content: space-between;
   width: 384px;
-  padding: 48px;
+  padding: 36px 6px 36px 6px;
   border-radius: 25px;
   @media(max-width: 992px){
     padding: 24px 16px;

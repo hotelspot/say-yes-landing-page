@@ -15,10 +15,11 @@ export const Gallery = () => (
         <SectionBox>
           <img width={240} src={Logo as string} />
           <Typography>
-            Konferencja "PT!" to wydarzenie o charakterze charytatywnym,
-            skupiające się na wspieraniu osób z niepełnosprawnościami. Naszym
-            celem jest tworzenie społeczności, w której każdy czuje się
-            akceptowany, szanowany i ma równy dostęp do możliwości rozwoju
+            Powiedzmy wprost niepełnosprawni nadal nie mają równych szans!
+            W wielu przypadkach odpowiadają za to niedociągnięcia systemowe lub nieświadomość na temat niepełnosprawności.
+            Dlatego cieszę się, że to już druga edycja tego wydarzenia i tak jak ostatnim razem media okazały jej duże wsparcie.
+            Trzeba rozpocząć zmianę już teraz, a najlepiej zacząć ją od ludzkich serc.
+            Wierzę, że ludzie wokół nas, w końcu jednym głosem powiedzą TAK dla niepełnosprawności!
           </Typography>
         </SectionBox>
         <SectionBox img={Image4 as string} />
@@ -32,19 +33,15 @@ export const Gallery = () => (
             <Typography>Medweckiego 3,Balice</Typography>
           </div>
           <Typography>
-            Nasza konferencja odbędzie się w hotelu Hilton Garden Inn Krakow Airport, który znajduje się w dogodnej lokalizacji, z łatwym dostępem do lotniska i komunikacji miejskiej. Hotel oferuje nowoczesne udogodnienia, komfortowe sale konferencyjne i wysokiej jakości obsługę.
+            Hotel znajduje się przy samym lotnisku Kraków-Balice, dzięki czemu idealnie nadaje się dla zmęczonych długą podróżą gości lub pasażerów, których lot zaplanowany jest na wczesny poranek. Centrum miasta, zamek królewski na Wawelu oraz muzea przy Rynku Głównym znajdują się w odległości 13 km od hotelu. Śniadanie, lunch i kolacja podawane w naszej restauracji.
           </Typography>
         </SectionBox>
       </Section>
       <Section>
         <SectionBox>
-          <Title>Sala "Gdańsk"</Title>
+          <Title>Sala konferencyjna</Title>
           <Typography>
-            "Gdańsk" to przestronna i nowoczesna sala konferencyjna, która
-            została wyposażona we wszystkie niezbędne udogodnienia, takie jak
-            systemy audiowizualne, klimatyzacja i ergonomiczne meble. Dzięki
-            dużej przestrzeni i elastycznemu układowi, sala ta jest idealnym
-            miejscem do prowadzenia różnorodnych sesji, warsztatów i prelekcji.
+            [ do uzupełneinia... ]
           </Typography>
         </SectionBox>
         <SectionBox img={Image3 as string} />
@@ -56,7 +53,13 @@ export const Gallery = () => (
           <Typography>
             Dołącz do nas na konferencji "PT!" i bądź częścią społeczności, która wspiera osoby z niepełnosprawnościami. Zarejestruj się, aby otrzymać dostęp do inspirujących prelekcji, praktycznych warsztatów oraz możliwości nawiązywania kontaktów z innymi uczestnikami i prelegentami
           </Typography>
-          <Button label="Zapisz się" type="default" />
+          <Button
+            onClick={() => {
+              window.open('https://app.evenea.pl/event/887847-4/');
+            }}
+            label="Zapisz się"
+            type="default"
+          />
         </SectionBox>
       </Section>
     </Wrapper>

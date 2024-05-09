@@ -19,6 +19,7 @@ const isScroll = css`
 export const MobileMenu = styled.div<{isOpen:boolean;}>`
   position: fixed;
   top:80px;
+  z-index: 999;
   left: 0;
   right: 0;
   bottom: 0;

@@ -31,11 +31,11 @@ export const ContactForm = () => (
             </InformationItem>
             <InformationItem>
               <SvgEmail />
-              <InformationLabel>j.zglinski@gmail.com</InformationLabel>
+              <InformationLabel>konferencjapowiemtak@gmail.com</InformationLabel>
             </InformationItem>
             <InformationItem>
               <SvgSmartphone />
-              <InformationLabel>+48 503 199 102</InformationLabel>
+              <InformationLabel>+48 536 395 472</InformationLabel>
             </InformationItem>
           </Information>
         </Banner>

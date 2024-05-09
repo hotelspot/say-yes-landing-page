@@ -28,15 +28,15 @@ export const Information = styled.section`
   }
 `;
 
-export const InformationItem = styled.section`
+export const InformationItem = styled.a`
   display: flex;
-  gap:12px;
+  gap:6px;
   align-items: center;
   justify-content: center;
   border-radius: 6px;
   flex:1;
   background: white;
-  padding:16px 14px;
+  padding:16px 7px;
   border: 2px solid ${colors.typography[400]};
 `;
 

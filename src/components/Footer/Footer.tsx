@@ -24,7 +24,7 @@ export const Footer = () => (
         <Links>
           <LinkIcon href="#">
             <Calendar fill={colors.typography[300]} />
-            <span>10.05.2024</span>
+            <span>08.06.2024</span>
           </LinkIcon>
           <LinkIcon href="#">
             <Pin fill={colors.typography[300]} />
@@ -32,11 +32,11 @@ export const Footer = () => (
           </LinkIcon>
           <LinkIcon href="#">
             <Email fill={colors.typography[300]} />
-            <span>j.zglinski@gmail.com</span>
+            <span>konferencjapowiemtak@gmail.com</span>
           </LinkIcon>
           <LinkIcon href="#">
             <Smartphone fill={colors.typography[300]} />
-            <span>+42 241 124 124</span>
+            <span>+48 536 395 472</span>
           </LinkIcon>
         </Links>
       </Column>
@@ -73,18 +73,11 @@ export const Footer = () => (
     </Wrapper>
     <Bottom>
       <SocialContainer>
-        <a>
-          <Facebook />
-        </a>
-        <a>
+
+        <a href="http://www.linkedin.com/in/juliusz-zgli%C5%84ski-85a99223a">
           <Linkedin />
         </a>
-        <a>
-          <Instagram />
-        </a>
-        <a>
-          <Youtube />
-        </a>
+
       </SocialContainer>
       <Line />
       <PoweredBy>

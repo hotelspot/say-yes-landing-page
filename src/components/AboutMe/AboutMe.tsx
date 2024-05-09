@@ -27,11 +27,11 @@ export const AboutMe = () => (
       </InformationItem>
       <InformationItem>
         <SvgEmail />
-        <InformationLabel>j.zglinski@gmail.com</InformationLabel>
+        <InformationLabel>konferencjapowiemtak@gmail.com</InformationLabel>
       </InformationItem>
       <InformationItem>
         <SvgSmartphone />
-        <InformationLabel>+48 503 199 102</InformationLabel>
+        <InformationLabel>+48 536 395 472</InformationLabel>
       </InformationItem>
     </Information>
     <Contact>
@@ -42,16 +42,15 @@ export const AboutMe = () => (
           <Description>Organizator konferencji “Powiem TAK!”</Description>
         </List>
         <Paragraph>
-          Dzień dobry, nazywam się Julek, mam 17 lat i obecnie chodzę do
-          Liceum Ogólnokształcącego w Krakowie 🏫
-          Niby nie robię nic specjalnego; nie jestem żadnym menagerem ani coachem... ot
-          kolejny zwykły licealista 🙃
+          Działacz na rzecz ludzi z niepełnosprawnością oraz mówca motywacyjny.
+          Jest organizatorem, a także pomysłodawcą dużej ogólnopolskiej konferencji "Powiem Tak" (na temat niepełnosprawności) w Krakowie, a także współorganizatorem konferencji ,,Jak się masz?” (na temat odporności psychicznej). Julek jest także autorem wielu publikacji w mediach społecznościowych (przede wszystkim na LinkedIn), gdzie porusza te ważne tematy. Na co dzień jest jednak jak to sam o sobie pisze zwykłym chłopakiem i licealistą.
+          W wolnych chwilach uwielbia czytać dobre książki, interesuje się kinem a także hip hopem który od niedawna tworzy.
         </Paragraph>
+
         <SocialsMedia>
-          <Facebook />
-          <Linkedin />
-          <Instagram />
-          <Youtube />
+          <a href="http://www.linkedin.com/in/juliusz-zgli%C5%84ski-85a99223a">
+            <Linkedin />
+          </a>
         </SocialsMedia>
       </ContactContainer>
     </Contact>
