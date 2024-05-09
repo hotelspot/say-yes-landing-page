@@ -65,7 +65,7 @@ export const ContactContainer = styled.div`
   flex-direction: column;
   gap:24px;
   @media (max-width: 992px){
-    margin: 48px 36px;
+    margin:36px;
     padding: 80px 32px 32px 32px;
   }
 `;
@@ -77,6 +77,10 @@ export const Avatar = styled.img`
   left: 0;
   width: 160px;
   height: 160px;
+  @media(max-width: 992px){
+    height: 100px;
+    width: 100px;
+  }
 `;
 
 export const Username = styled.h5`

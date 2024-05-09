@@ -15,10 +15,10 @@ import { Form } from './components/Contact';
 export const ContactForm = () => (
   <Container>
     <Wrapper>
-      <Title>Zobacz kto u nas wystąpi!</Title>
+      <Title>Skontaktuj się!</Title>
       <Header>KONTAKT</Header>
       <FormWrapper>
-        <Banner>
+        <Banner id="contact">
           <img src={Logo as string} width={256} alt="logo" />
           <Information style={{ flexDirection: 'column' }}>
             <InformationItem>

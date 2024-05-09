@@ -2,6 +2,9 @@ import styled from 'styled-components';
 import { Input, Textarea } from '@nextui-org/react';
 
 export const InputWrapper = styled(Input)`
+  label{
+    top:-5px
+  }
   margin-bottom: 22px;
   height: 48px;
   display: flex;
@@ -20,6 +23,7 @@ export const TextareaWrapper = styled(Textarea)`
   div {
     position: relative;
     label {
+      top:-28px;
       margin-top: 5px;
     }
     textarea {

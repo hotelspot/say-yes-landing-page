@@ -4,7 +4,8 @@ import {
 } from '../../styles/typography';
 import { colors } from '../../styles/colors';
 
-export const HeaderStyled = styled.header<{img:string}>`
+export const HeaderStyled = styled.header<{ img: string }>`
+  
   height: 800px;
   background: lightgreen;
   background: url(${(props) => props.img}) center;
@@ -13,6 +14,7 @@ export const HeaderStyled = styled.header<{img:string}>`
 `;
 
 export const Title = styled.h1`
+  margin-top: 80px;
  ${H1t700};
  color:${colors.typography[100]};
  text-align: center;

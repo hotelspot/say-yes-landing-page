@@ -15,7 +15,7 @@ import Instagram from '../icons/Instagram';
 import Youtube from '../icons/Youtube';
 
 export const AboutMe = () => (
-  <Container>
+  <Container id="organizator">
     <Information>
       <InformationItem>
         <SvgCalendar />

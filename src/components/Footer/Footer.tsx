@@ -62,13 +62,13 @@ export const Footer = () => (
               Start
             </Link>
             <Link>
-              Organizator
+              Partnerzy & Sponsorzy
             </Link>
             <Link>
-              Agenda & Prelegenci
+              Kontakt
             </Link>
             <Link>
-              Lokalizacja
+              Polityka prywatności
             </Link>
           </Links>
         </Row>

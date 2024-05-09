@@ -5,7 +5,7 @@ import {
 } from '../../styles/typography';
 
 export const FooterStyled = styled.footer`
-  padding: 80px 0;
+  padding: 80px 16px;
   background: ${colors.typography[1100]};
   gap:80px;
   display: flex;

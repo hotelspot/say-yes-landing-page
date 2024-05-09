@@ -21,7 +21,7 @@ export const Gallery = () => (
             akceptowany, szanowany i ma równy dostęp do możliwości rozwoju
           </Typography>
         </SectionBox>
-        <SectionBox img={Image1 as string} />
+        <SectionBox img={Image4 as string} />
       </Section>
       <Section>
         <SectionBox img={Image2 as string} />
@@ -39,7 +39,6 @@ export const Gallery = () => (
       <Section>
         <SectionBox>
           <Title>Sala "Gdańsk"</Title>
-
           <Typography>
             "Gdańsk" to przestronna i nowoczesna sala konferencyjna, która
             została wyposażona we wszystkie niezbędne udogodnienia, takie jak

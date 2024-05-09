@@ -65,7 +65,7 @@ export const Form = () => {
           <InputWrapper
             {...register('firstName', { required: true })}
             isInvalid={checkField(!!errors.firstName)}
-            errorMessage="This field is required"
+            errorMessage="To pole jest wymagane"
             placeholder="Name"
             labelPlacement="inside"
             label="Imię"
@@ -80,7 +80,7 @@ export const Form = () => {
         <div className="flex flex-col md:flex-row  justify-around md:gap-3 gap-[30px]">
           <InputWrapper
             {...register('email', { required: true })}
-            errorMessage="This field is required"
+            errorMessage="To pole jest wymagane"
             isInvalid={checkField(!!errors.email)}
             type="email"
             labelPlacement="inside"
@@ -103,7 +103,7 @@ export const Form = () => {
           <TextareaWrapper
             placeholder="Message..."
             {...register('message', { required: true })}
-            errorMessage="This field is required"
+            errorMessage="To pole jest wymagane"
             isInvalid={checkField(!!errors.message)}
             labelPlacement="inside"
             label="Wiadomość"

@@ -249,7 +249,7 @@ export const _agenda_list: AgendaItemProps[] = [
 ];
 
 export const Agenda = () => (
-  <Container>
+  <Container id="agenda">
     <Wrapper>
       <Title>Zobacz kto u nas wystąpi!</Title>
       <Header>AGENDA</Header>

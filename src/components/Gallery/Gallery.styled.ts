@@ -11,7 +11,9 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  @media (max-width: 992px)
+  @media (max-width: 992px){
+    padding: 24px 24px 0 24px;
+  }
 `;
 
 export const Wrapper = styled.div`
@@ -28,24 +30,31 @@ export const Wrapper = styled.div`
 export const Section = styled.section`
   display: flex;
   height: 440px;
+  
   @media(max-width: 992px){
-    flex-direction: column;
+    height: auto;
+    flex-direction: column-reverse;
     &:nth-child(2n){
-      flex-direction: column-reverse;
+      flex-direction: column;
     }
   }
 `;
 
 export const SectionBox = styled.div<{img?:string}>`
   flex:1;
-  background: url(${(props) => props.img}) center;
-  background-size: cover;
+  background-image: url(${(props) => props.img}); 
+  background-position: center;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
   padding: 40px;
   gap:24px;
+  
+  @media(max-width: 992px){
+    padding: 32px;
+    height: 264px;
+  }
 
 `;
 
