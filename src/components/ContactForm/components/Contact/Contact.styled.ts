@@ -18,7 +18,14 @@ export const InputWrapper = styled(Input)`
     padding-bottom: 12px;
   }
 `;
-
+export const BtnContainer = styled.div`
+  button{
+  max-width: 250px;
+  @media (max-width: 992px) {
+    width: 100%;
+  }
+  }
+`;
 export const TextareaWrapper = styled(Textarea)`
   div {
     position: relative;

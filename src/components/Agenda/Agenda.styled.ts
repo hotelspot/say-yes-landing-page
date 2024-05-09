@@ -34,7 +34,8 @@ export const Title = styled.h1`
 `;
 
 export const AgendaList = styled.div`
-  padding: 40px;
+  padding: 80px;
+  margin:40px;
   position: relative;
   display: flex;
   flex-direction: column;

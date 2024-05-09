@@ -49,6 +49,7 @@ export const FormWrapper = styled.div`
   @media(max-width: 992px){
     flex-direction: column;
     top:-10px;
+     padding: 12px;
   }
 `;
 
@@ -63,6 +64,7 @@ export const Banner = styled.section`
   padding: 48px;
   border-radius: 25px;
   @media(max-width: 992px){
+    padding: 24px 16px;
     width: 100%;
   }
 `;

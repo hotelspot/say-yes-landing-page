@@ -3,7 +3,8 @@ import { nextui } from '@nextui-org/react';
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    './src/*',
+    './src/**.{js,ts,jsx,tsx}',
+    './src/components/**.{js,ts,jsx,tsx}',
     './node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
@@ -17,9 +18,10 @@ module.exports = {
         '612px': { max: '612px' },
       },
       backgroundColor: {
+        third: '#00662B',
         primary: '#000',
         'primary-hover': '#825526',
-        secondary: '#F5EEE8',
+        secondary: '#00662B',
         black: '#000',
       },
       textColor: {

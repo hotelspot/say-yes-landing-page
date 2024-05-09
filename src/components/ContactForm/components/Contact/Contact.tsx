@@ -4,7 +4,7 @@ import { SubmitHandler, useForm } from 'react-hook-form';
 import { toast } from 'react-toastify';
 import { RotatingLines } from 'react-loader-spinner';
 import styled from 'styled-components';
-import { InputWrapper, TextareaWrapper } from './Contact.styled';
+import { BtnContainer, InputWrapper, TextareaWrapper } from './Contact.styled';
 import { actionSendEmailContactForm } from '../../../../actions/action.sendEmail';
 
 type Inputs = {
@@ -60,8 +60,8 @@ export const Form = () => {
 
   return (
     <StyledContactForm onSubmit={handleSubmit(onSubmit)}>
-      <div className="flex flex-col gap-[30px]">
-        <div className="flex flex-col md:flex-row  justify-around md:gap-3 gap-[30px]">
+      <div className="flex flex-col gap-[30px]" style={{ gap: 15 }}>
+        <div style={{ gap: 15 }} className="flex flex-col md:flex-row  justify-around md:gap-3 gap-[30px]">
           <InputWrapper
             {...register('firstName', { required: true })}
             isInvalid={checkField(!!errors.firstName)}
@@ -77,7 +77,7 @@ export const Form = () => {
             label="Nazwisko"
           />
         </div>
-        <div className="flex flex-col md:flex-row  justify-around md:gap-3 gap-[30px]">
+        <div className="flex flex-col md:flex-row  justify-around md:gap-3 gap-[30px]" style={{ gap: 15 }}>
           <InputWrapper
             {...register('email', { required: true })}
             errorMessage="To pole jest wymagane"
@@ -109,19 +109,20 @@ export const Form = () => {
             label="Wiadomość"
           />
         </div>
-        <div className="flex flex-row gap-[24px] items-center 612px:flex-col-reverse">
-          <Button
-            type="submit"
-            radius="sm"
-            className={cn(
-              'text-white !borer-none bg-primary rounded-full px-[88.5px] py-[12px] 612px:w-full',
-              formState === 'error' && 'bg-red-500',
-              formState === 'success' && 'bg-green-500',
-            )}
-          >
-            {
+        <div className="flex flex-row gap-[24px] items-center 612px:flex-col-reverse" style={{ flex: 1, justifyContent: 'space-between', gap: 15 }}>
+          <BtnContainer>
+            <Button
+              type="submit"
+              radius="sm"
+              className={cn(
+                'text-white !borer-none bg-secondary rounded-full px-[88.5px] py-[12px] w-full',
+                formState === 'error' && 'bg-red-500',
+                formState === 'success' && 'bg-green-500',
+              )}
+            >
               {
-                ready: <>Send</>,
+              {
+                ready: <>Wyślij wiadomość</>,
                 loading: (
                   <RotatingLines
                     visible
@@ -136,7 +137,8 @@ export const Form = () => {
                 error: <>:( Please again</>,
               }[formState]
             }
-          </Button>
+            </Button>
+          </BtnContainer>
           <p className="text-[12px] leading-[18px]">
             Polityka prywatności
           </p>

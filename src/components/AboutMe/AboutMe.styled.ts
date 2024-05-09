@@ -21,6 +21,7 @@ export const Information = styled.section`
   justify-content: space-between;
   padding: 0 24px;
   width: 100%;
+ 
   @media (max-width: 992px){
     flex-direction: column;
     

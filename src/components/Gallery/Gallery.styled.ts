@@ -52,7 +52,7 @@ export const SectionBox = styled.div<{img?:string}>`
   gap:24px;
   
   @media(max-width: 992px){
-    padding: 32px;
+    padding: ${(props) => (props.img ? '132px' : '40')};
     height: 264px;
   }
 

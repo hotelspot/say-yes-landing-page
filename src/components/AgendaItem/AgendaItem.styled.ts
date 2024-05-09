@@ -30,6 +30,9 @@ export const Avatars = styled.div`
   flex:1;
   flex-direction: column;
   max-width: 35%;
+  @media(max-width: 992px){
+    max-width: unset;
+  }
   gap:24px;
 `;
 
@@ -37,6 +40,10 @@ export const AvatarImage = styled.img`
   width: 160px;
   height: 160px;
   border-radius: 160px;
+  @media(max-width: 992px){
+    width: 100px;
+    height: 100px;
+  }
 `;
 
 export const Avatar = styled.div`

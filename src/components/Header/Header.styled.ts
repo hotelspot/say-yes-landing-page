@@ -5,16 +5,20 @@ import {
 import { colors } from '../../styles/colors';
 
 export const HeaderStyled = styled.header<{ img: string }>`
-  
+
   height: 800px;
   background: lightgreen;
   background: url(${(props) => props.img}) center;
   padding-bottom: 40px;
   position: relative;
+  
 `;
 
 export const Title = styled.h1`
   margin-top: 80px;
+  @media(max-width: 992px){
+    margin-top: 120px;
+  }
  ${H1t700};
  color:${colors.typography[100]};
  text-align: center;
@@ -33,6 +37,9 @@ export const Hero = styled.div`
   gap:16px;
   height: 380px;
   justify-content: center;
+  @media(max-width: 992px){
+    height: unset;
+  }
 `;
 
 export const SayYes = styled.h3`
@@ -48,6 +55,9 @@ export const SayYes = styled.h3`
 export const Time = styled.div`
   box-sizing: border-box;
   width: 1196px;
+  @media (max-width: 1300px){
+    max-width: 900px;
+  }
   position: relative;
   background: ${colors.typography[100]};
   border-radius: 35px;
@@ -59,7 +69,10 @@ export const Time = styled.div`
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  bottom: -50px;
   @media (max-width: 992px){
+    bottom: -250px;
+    padding: 24px;
     flex-wrap: wrap;
     width: 80%;
     div{
