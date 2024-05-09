@@ -44,13 +44,13 @@ export const Footer = () => (
         <Title>Nawigacja</Title>
         <Row>
           <Links>
-            <Link>
+            <Link href="#___gatsby">
               Start
             </Link>
-            <Link>
+            <Link href="#organizator">
               Organizator
             </Link>
-            <Link>
+            <Link href="#agenda">
               Agenda & Prelegenci
             </Link>
             <Link>
@@ -59,12 +59,9 @@ export const Footer = () => (
           </Links>
           <Links>
             <Link>
-              Start
-            </Link>
-            <Link>
               Partnerzy & Sponsorzy
             </Link>
-            <Link>
+            <Link href="#contact">
               Kontakt
             </Link>
             <Link>

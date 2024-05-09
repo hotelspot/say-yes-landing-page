@@ -6,7 +6,7 @@ import { AgendaItem, AgendaItemProps } from '../AgendaItem/AgendaItem';
 import { AvatarJuliuszZglinski, EmptyImagePNG } from '../../assets';
 import {
   AnnaJ,
-  ArrekW,
+  ArrekW, BartoszM,
   DawidD, GrazynaZ, JuliaMałecki,
   JuliuszZ,
   JustynaRomanowska,
@@ -51,13 +51,20 @@ export const _agenda_list: AgendaItemProps[] = [
   {
     title: 'PANEL I: Nierówności wokół nas',
     description: <>
-      Prelegenci opowiadają o swoich doświadczeniach i nierównościach, jakie napotkali na swojej drodze z powodu niepełnosprawności :wheelchair:
+      Prelegenci opowiadają o swoich doświadczeniach i nierównościach, jakie napotkali
+      {' '}
+      <br />
+      na swojej drodze z powodu niepełnosprawności
 
       W tym roku swoimi historiami podzielą się z Uczestnikami następujące osoby:
       <br />
       <br />
-      Justyna Romanowska - jedna z najbardziej pozytywnych twórców na LinkedIn .
-      Od ponad sześciu lat jest Ona negocjatorką i liderką zespołu, w jednej z najważniejszych Kancelarii Prawnych w Polsce
+      Justyna Romanowska - jedna z najbardziej pozytywnych twórców na LinkedIn.
+      <br />
+      Od ponad sześciu lat jest Ona negocjatorką i liderką zespołu, w jednej
+      {' '}
+      <br />
+      z najważniejszych Kancelarii Prawnych w Polsce
       <br />
       <br />
       Garcioszka (Weronika Garsztka) - Jak sama o sobie pisze: dziewczyna po udarze.
@@ -65,27 +72,28 @@ export const _agenda_list: AgendaItemProps[] = [
       <br />
       <br />
       Arkadiusz Warchał - to absolwent Dziennikarstwa i Komunikacji Społecznej.
+      <br />
       Pracuje w Krakowskim Kuratorium Oświaty
       Arek to człowiek bardzo pozytywnie nastawiony do życia i ludzi.
       Na co dzień porusza się On na wózku, jednak nie powstrzymuje Go to przed życiem na 100%.
 
     </>,
-    time: '11:00 - 11:30',
+    time: '11:00 - 11:45',
     avatars: [
       {
         name: 'Justyna Romanowska',
         img: JustynaRomanowska,
-        desc: '11:00',
+        desc: '11:00 - 11:15',
       },
       {
         name: 'Garcioszka (Weronika Garsztka)',
         img: Weronika,
-        desc: '11:15',
+        desc: '11:15 - 11:30',
       },
       {
         name: 'Arkadiusz Warchał',
         img: ArrekW,
-        desc: '11:30',
+        desc: '11:30 - 11:45',
       },
     ],
   },
@@ -102,46 +110,50 @@ export const _agenda_list: AgendaItemProps[] = [
       <br />
       <br />
       Dawid Doliński, to bardzo pozytywny człowiek z pasją do logistyki.
-      Obecnie jako lider buduje własną rodzinną firmę zajmująca się transportem osób w kraju i za granica... I to właśnie z tego powodu pojawi się na konferencji
+      Obecnie jako lider buduje własną rodzinną firmę zajmująca się transportem osób w kraju i za granicą...
+      <br />
+      {' '}
+      I to właśnie z tego powodu pojawi się na konferencji
       Jak stworzyć firmę bardziej otwartą na OzN❓
       <br />
       <br />
       Pani Zuzanna Maciaszek to osoba, która postanowiła kontynuować misję pomocy ludziom z niepełnosprawnością, którą rozpoczął jej Ojciec Piotr Janaszek 💙
       Jak sama mówi - chciałaby zbudować świat, w którym osoby z niepełnosprawnością nie czują się ciężarem, pracują, mają swoje pasje, decydują o sobie i są szczęśliwe 😃
     </>,
-    time: '11:45 | 12:00',
+    time: '11:45 - 12:15',
     avatars: [
       {
         name: 'Dawid Doliński',
         img: DawidD,
+        desc: '11:45 - 12:00',
       },
       {
         name: 'Zuzanna Janaszek',
         img: Zuzanna,
+        desc: '12:00 - 12:15',
       },
     ],
   },
   {
     title: 'Wystąpienie artystyczne',
-
-    time: '12:15',
+    time: '12:15 - 12:35',
   },
   {
     title: 'Przerwa kawowa',
-    time: '12:35',
+    time: '12:35 - 12:50',
   },
   {
     title: 'Dyskusja I (Samorządowcy)',
-    time: '12:50',
+    time: '12:50 - 13:20',
     avatars: [
       {
         name: 'Natalia Prokaziuk',
-        img: AvatarJuliuszZglinski,
+        img: EmptyImagePNG,
         desc: 'Prowadząca',
       },
       {
         name: 'Małgorzata Niewodowska',
-        img: AvatarJuliuszZglinski,
+        img: EmptyImagePNG,
       },
       {
         name: 'Anna Jung',
@@ -155,58 +167,53 @@ export const _agenda_list: AgendaItemProps[] = [
     ],
   },
   {
-    title: 'Panel Jak spełniać marzenia?',
-    time: '13:20 | 13:35 | 13:50',
+    title: 'Panel |||: Jak spełniać marzenia?',
+    time: '13:20 - 14:05',
     avatars: [
       {
         name: 'Monika Zadłużna',
         img: Monika,
-        desc: 'Prowadząca',
+        desc: 'Prowadząca 13:20 - 13:35',
       },
       {
         name: 'Grażyna Zgliński-Brzózy',
-        img: AvatarJuliuszZglinski,
+        img: GrazynaZ,
+        desc: '13:35 - 13:50',
       },
       {
         name: 'Bartosz Mrozek',
-        img: AvatarJuliuszZglinski,
+        img: BartoszM,
+        desc: '13:50 - 14:05',
       },
     ],
   },
   {
     title: 'Przerwa obiadowa',
-    time: '14:05',
+    time: '14:05 - 14:45',
   },
   {
     title: 'Występ artystyczny',
-    time: '14:45',
+    time: '14:45 - 15:05',
   },
+
   {
-    title: 'Występ artystyczny',
-    time: '15:05',
+    title: 'Panel |V: Innowacje wokół nas',
+    time: '15:05 - 15:20',
     avatars: [
       {
         name: 'Wiesław Nowiński',
         img: Wieslaw,
+        desc: '15:05 - 15:20',
       },
     ],
   },
   {
-    title: 'Panel Innowacje wokół nas',
-    time: '15:05',
+    title: 'Dyskusja || Jak nowe technologie pomagają OzN?',
+    time: '15:20 - 15:50',
     avatars: [
       {
-        name: 'Wiesław Nowiński',
-        img: Wieslaw,
-      },
-    ],
-  },
-  {
-    title: 'Dyskusja Jak nowe technologie pomagają OzN?',
-    time: '15:20',
-    avatars: [
-      {
-        name: 'Juliusz Zgliński Prowadzący',
+        name: 'Juliusz Zgliński',
+        desc: 'Prowadzący',
         img: JuliuszZ,
       },
       {
@@ -224,46 +231,37 @@ export const _agenda_list: AgendaItemProps[] = [
     ],
   },
   {
-    title: 'Dyskusja Jak nowe technologie pomagają OzN?',
-    time: '15:50',
+    title: 'Panel ||| ',
+    time: '15:50 - 16:35',
     avatars: [
+
       {
         name: 'Kacper Kupczak',
         img: KacperK,
       },
-    ],
-  },
-  {
-    title: 'Dyskusja Jak nowe technologie pomagają OzN?',
-    time: '16:05',
-    avatars: [
       {
         name: 'Miłosz Stanisławski',
         img: Milosz,
       },
-    ],
-  },
-  {
-    title: 'Dyskusja Jak nowe technologie pomagają OzN?',
-    time: '16:20',
-    avatars: [
       {
         name: 'Maciej Kawecki',
         img: MaciejK,
       },
     ],
   },
+
   {
-    title: 'Dyskusja II (Rodzicielstwo a niepełnosprawność',
-    time: '16:35',
+    title: 'Dyskusja III  Rodzicielstwo, a niepełnosprawność',
+    time: '16:35 - 17:05',
     avatars: [
       {
-        name: 'Prowadzący: Tomasz Bill',
+        name: 'Tomasz Bill',
+        desc: 'Prowadzący',
         img: TomaszB,
       },
       {
         name: 'Karolina i Michał Jach',
-        img: AvatarJuliuszZglinski,
+        img: EmptyImagePNG,
       },
       {
         name: 'Grażyna Zgliński-Brzózy',
@@ -276,16 +274,22 @@ export const _agenda_list: AgendaItemProps[] = [
     ],
   },
   {
-    title: 'Przyznanie nagrody (tajemnica)',
-    time: '17:05',
+    title: 'Przyznanie nagrody',
+    time: '17:05 - 17:15',
   },
   {
     title: 'Przemowa końcowa - Juliusz Zgliński',
-    time: '17:15',
+    time: '17:15 - 17:25',
+    avatars: [
+      {
+        name: 'Juliusz Zgliński',
+        img: JuliuszZ,
+      },
+    ],
   },
   {
     title: 'Przyznanie dyplomów',
-    time: '17:25',
+    time: '17:25 - 17:35',
   },
   {
     title: 'Zakończenie konferencji',
