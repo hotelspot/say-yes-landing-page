@@ -11,6 +11,9 @@ export const FooterStyled = styled.footer`
   display: flex;
   flex-direction: column;
   align-items: center;
+  @media (max-width: 992px){
+    padding:48px 36px;
+  }
 `;
 
 export const PoweredBy = styled.p`
@@ -41,6 +44,10 @@ export const Bottom = styled.div`
   gap:32px;
   max-width: 1196px;
   width: 100%;
+  @media (max-width: 992px){
+    flex-direction: column;
+    align-items: flex-start;
+  }
 `;
 
 export const Wrapper = styled.div`
@@ -48,6 +55,9 @@ export const Wrapper = styled.div`
   width: 100%;
   display: flex;
   gap: 80px;
+  @media(max-width: 992px){
+    flex-direction: column;
+  }
 `;
 
 export const Column = styled.aside`
@@ -88,5 +98,8 @@ export const Link = styled.a`
 
 export const Row = styled.div`
   display: flex;
+  @media (max-width: 992px){
+    flex-direction: column;
+  }
   gap:48px;
 `;

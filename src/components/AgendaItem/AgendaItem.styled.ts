@@ -10,6 +10,11 @@ export const Container = styled.div`
   border-radius: 15px;
   display: flex;
   background: ${colors.typography[300]};
+  @media(max-width: 992px){
+    padding: 12px;
+    flex-direction: column;
+    gap:24px;
+  }
 `;
 
 export const Wrapper = styled.div`

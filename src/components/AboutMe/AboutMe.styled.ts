@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import {
-  Body1t500, Body2t500, Body3t400, H1t500,
+  Body1t500, Body1t700, Body2t500, Body3t400, Body3t500, Body4t400, H1t500,
 } from '../../styles/typography';
 import { colors } from '../../styles/colors';
 
@@ -19,7 +19,12 @@ export const Information = styled.section`
   gap:12px;
   max-width: 1196px;
   justify-content: space-between;
+  padding: 0 24px;
   width: 100%;
+  @media (max-width: 992px){
+    flex-direction: column;
+    
+  }
 `;
 
 export const InformationItem = styled.section`
@@ -59,6 +64,10 @@ export const ContactContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap:24px;
+  @media (max-width: 992px){
+    margin: 48px 36px;
+    padding: 80px 32px 32px 32px;
+  }
 `;
 
 export const Avatar = styled.img`
@@ -72,16 +81,25 @@ export const Avatar = styled.img`
 
 export const Username = styled.h5`
   ${H1t500};
-  color:${colors.typography[1100]}
+  color:${colors.typography[1100]};
+  @media (max-width:992px){
+  ${Body1t700};
+  }
 `;
 export const Description = styled.div`
-${Body2t500};
-  color:${colors.typography[800]}
+  ${Body2t500};
+  color:${colors.typography[800]};
+  @media (max-width:992px){
+    ${Body3t500};
+  }
 `;
 
 export const Paragraph = styled.p`
   ${Body3t400};
-  color:${colors.typography[700]}
+  color:${colors.typography[700]};
+  @media (max-width:992px){
+    ${Body4t400};
+  }
 `;
 
 export const List = styled.div`
@@ -93,4 +111,11 @@ export const List = styled.div`
 export const SocialsMedia = styled.div`
   display: flex;
   gap:24px;
+  @media (max-width: 992px){
+    justify-content: space-between;
+    svg{
+      width: 48px;
+      height: 48px;
+    }
+  }
 `;

@@ -1,5 +1,7 @@
 import styled from 'styled-components';
-import { Display01, H2t700 } from '../../styles/typography';
+import {
+  Display01, Display03, H2t700, H4t700,
+} from '../../styles/typography';
 import { colors } from '../../styles/colors';
 
 export const Container = styled.div`
@@ -16,13 +18,19 @@ export const Header = styled.h1`
   ${Display01};
   opacity: .25;
   text-align: center;
-  color:#0C5;}
+  @media (max-width: 992px){
+    ${Display03};
+  }
+  color:#0C5;
 `;
 
 export const Title = styled.h1`
   ${H2t700};
   color:${colors.typography[900]};
   text-align: center;
+  @media (max-width: 992px){
+    ${H4t700};
+  }
 `;
 
 export const AgendaList = styled.div`
@@ -35,4 +43,9 @@ export const AgendaList = styled.div`
   border-radius: 35px;
   background: var(--Typography-100, #FFF);
   box-shadow: 0px 5px 75px 0px rgba(0, 0, 0, 0.10), 0px 25px 100px 0px rgba(0, 0, 0, 0.10);
+  @media (max-width: 992px){
+    top:0;
+    margin:24px;
+    padding: 12px;
+  }
 `;
