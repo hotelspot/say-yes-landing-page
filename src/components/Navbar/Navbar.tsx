@@ -22,7 +22,9 @@ export const Navbar = () => {
           <Button label="Agenda" type="ghost" />
           <Button label="Zapisz się" type="secondary" />
         </Buttons>
-        <HamburgerStyled color="white" toggled={isOpen} toggle={setOpen} />
+        <HamburgerStyled>
+          <Hamburger color="white" toggled={isOpen} toggle={setOpen} />
+        </HamburgerStyled>
       </Wrapper>
     </NavbarStyled>
   );

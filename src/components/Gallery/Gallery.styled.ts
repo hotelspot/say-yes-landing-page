@@ -28,6 +28,12 @@ export const Wrapper = styled.div`
 export const Section = styled.section`
   display: flex;
   height: 440px;
+  @media(max-width: 992px){
+    flex-direction: column;
+    &:nth-child(2n){
+      flex-direction: column-reverse;
+    }
+  }
 `;
 
 export const SectionBox = styled.div<{img?:string}>`
@@ -40,6 +46,7 @@ export const SectionBox = styled.div<{img?:string}>`
   justify-content: center;
   padding: 40px;
   gap:24px;
+
 `;
 
 export const Typography = styled.p`

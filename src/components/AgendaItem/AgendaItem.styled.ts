@@ -63,6 +63,7 @@ export const ADescription = styled.div`
 
 export const Title = styled.div`
     ${H4t700}
+    
 `;
 
 export const Description = styled.p`
@@ -70,7 +71,15 @@ export const Description = styled.p`
 `;
 
 export const Time = styled.div`
+  flex:1;
    ${H4t700};
    color:#00662B;
-  
+  font-weight: 700;
+`;
+
+export const TimeWrapper = styled.div`
+  display: flex;
+  flex:1;
+  justify-content: flex-end;
+  align-items: flex-end;
 `;

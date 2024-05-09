@@ -32,10 +32,7 @@ export const Gallery = () => (
             <Typography>Medweckiego 3,Balice</Typography>
           </div>
           <Typography>
-            Konferencja "PT!" to wydarzenie o charakterze charytatywnym,
-            skupiające się na wspieraniu osób z niepełnosprawnościami. Naszym
-            celem jest tworzenie społeczności, w której każdy czuje się
-            akceptowany, szanowany i ma równy dostęp do możliwości rozwoju
+            Nasza konferencja odbędzie się w hotelu Hilton Garden Inn Krakow Airport, który znajduje się w dogodnej lokalizacji, z łatwym dostępem do lotniska i komunikacji miejskiej. Hotel oferuje nowoczesne udogodnienia, komfortowe sale konferencyjne i wysokiej jakości obsługę.
           </Typography>
         </SectionBox>
       </Section>

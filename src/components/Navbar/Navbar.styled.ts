@@ -45,7 +45,7 @@ export const Buttons = styled.div`
   
 `;
 
-export const HamburgerStyled = styled(Hamburger)`
+export const HamburgerStyled = styled.div`
   display: none;
   @media (max-width: 992px){
     display: block;

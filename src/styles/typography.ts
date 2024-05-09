@@ -118,5 +118,6 @@ export const H2t700 = css`
 export const H4t700 = css`
     font-size: 24px;
     line-height: 32px;
+   font-weight: 700;
     color:${colors.typography[900]}
 `;
