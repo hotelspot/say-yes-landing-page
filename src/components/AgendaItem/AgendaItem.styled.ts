@@ -29,6 +29,7 @@ export const Avatars = styled.div`
   display: flex;
   flex:1;
   flex-direction: column;
+  max-width: 35%;
   gap:24px;
 `;
 
@@ -56,8 +57,11 @@ export const ATitle = styled.div`
 `;
 
 export const ADescription = styled.div`
-  ${Body3t400}
-  color:${colors.typography[700]}
+  // ${Body3t400}
+  // color:${colors.typography[700]}
+  ${H4t700};
+  color:#00662B;
+  font-weight: 700;
     
 `;
 

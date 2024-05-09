@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React, { FC, ReactNode } from 'react';
 import {
   ADescription,
   ATitle,
@@ -12,7 +12,7 @@ import { TimeContainer } from '../Header/Header.styled';
 export type AgendaItemProps = {
   time:string;
   title:string
-  description?:string
+  description?:string|ReactNode
   avatars?: {
     img:string;
     name:string;

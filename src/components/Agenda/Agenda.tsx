@@ -3,7 +3,7 @@ import {
   AgendaList, Container, Header, Title, Wrapper,
 } from './Agenda.styled';
 import { AgendaItem, AgendaItemProps } from '../AgendaItem/AgendaItem';
-import { AvatarJuliuszZglinski } from '../../assets';
+import { AvatarJuliuszZglinski, EmptyImagePNG } from '../../assets';
 import {
   AnnaJ,
   ArrekW,
@@ -28,10 +28,11 @@ export const _agenda_list: AgendaItemProps[] = [
     avatars: [
       {
         name: 'Borys Szyc',
-        img: AvatarJuliuszZglinski,
+        img: EmptyImagePNG,
       },
     ],
   },
+
   {
     title: 'Powitanie',
     time: '10:10',
@@ -44,26 +45,70 @@ export const _agenda_list: AgendaItemProps[] = [
   },
   {
     title: 'Wystąpienia Sponsorów i Partnerów',
-    description: 'Panel Nierówności wokół nas',
-    time: '11:00 | 11:15 | 11:30',
+    description: '',
+    time: '',
+  },
+  {
+    title: 'PANEL I: Nierówności wokół nas',
+    description: <>
+      Prelegenci opowiadają o swoich doświadczeniach i nierównościach, jakie napotkali na swojej drodze z powodu niepełnosprawności :wheelchair:
+
+      W tym roku swoimi historiami podzielą się z Uczestnikami następujące osoby:
+      <br />
+      <br />
+      Justyna Romanowska - jedna z najbardziej pozytywnych twórców na LinkedIn .
+      Od ponad sześciu lat jest Ona negocjatorką i liderką zespołu, w jednej z najważniejszych Kancelarii Prawnych w Polsce
+      <br />
+      <br />
+      Garcioszka (Weronika Garsztka) - Jak sama o sobie pisze: dziewczyna po udarze.
+      Weronika dała jednak radę przełamać wiele barier i obecnie poprzez swoje social media udowadnia, że można prowadzić szczęśliwe życie po udarze, którego skutki nadal odczuwa.
+      <br />
+      <br />
+      Arkadiusz Warchał - to absolwent Dziennikarstwa i Komunikacji Społecznej.
+      Pracuje w Krakowskim Kuratorium Oświaty
+      Arek to człowiek bardzo pozytywnie nastawiony do życia i ludzi.
+      Na co dzień porusza się On na wózku, jednak nie powstrzymuje Go to przed życiem na 100%.
+
+    </>,
+    time: '11:00 - 11:30',
     avatars: [
       {
         name: 'Justyna Romanowska',
         img: JustynaRomanowska,
+        desc: '11:00',
       },
       {
         name: 'Garcioszka (Weronika Garsztka)',
         img: Weronika,
+        desc: '11:15',
       },
       {
         name: 'Arkadiusz Warchał',
         img: ArrekW,
+        desc: '11:30',
       },
     ],
   },
   {
-    title: 'Jak radzić sobie z dyskryminacją',
-    description: 'Panel  Nierówności wokół nas',
+    title: 'PANEL II: Nierówności wokół nas',
+    description: <>
+      W tej części Prelegenci odpowiadają na pytanie postawione w tytule panelu:
+      <br />
+      <br />
+      🔴 Jak walczyć z uprzedzeniami❓
+      <br />
+      <br />
+      🔴 W jaki sposób tworzyć środowisko inkluzywne dla wszystkich ❓
+      <br />
+      <br />
+      Dawid Doliński, to bardzo pozytywny człowiek z pasją do logistyki.
+      Obecnie jako lider buduje własną rodzinną firmę zajmująca się transportem osób w kraju i za granica... I to właśnie z tego powodu pojawi się na konferencji
+      Jak stworzyć firmę bardziej otwartą na OzN❓
+      <br />
+      <br />
+      Pani Zuzanna Maciaszek to osoba, która postanowiła kontynuować misję pomocy ludziom z niepełnosprawnością, którą rozpoczął jej Ojciec Piotr Janaszek 💙
+      Jak sama mówi - chciałaby zbudować świat, w którym osoby z niepełnosprawnością nie czują się ciężarem, pracują, mają swoje pasje, decydują o sobie i są szczęśliwe 😃
+    </>,
     time: '11:45 | 12:00',
     avatars: [
       {
@@ -78,7 +123,7 @@ export const _agenda_list: AgendaItemProps[] = [
   },
   {
     title: 'Wystąpienie artystyczne',
-    description: 'Panel  Nierówności wokół nas',
+
     time: '12:15',
   },
   {

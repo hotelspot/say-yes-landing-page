@@ -9,6 +9,7 @@
   "scripts": {
     "build-icons": "npx @svgr/cli --typescript --out-dir src/components/icons/social -- src/assets/icons/social",
     "develop": "gatsby develop",
+    "develop-network": " gatsby develop -H 0.0.0.0",
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
