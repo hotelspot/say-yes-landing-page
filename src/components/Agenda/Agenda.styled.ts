@@ -1,8 +1,9 @@
 import styled from 'styled-components';
 import {
-  Display01, Display03, H2t700, H4t700,
+  Display01, Display02, Display03, H2t700, H3t700, H4t700,
 } from '../../styles/typography';
 import { colors } from '../../styles/colors';
+import { rwd } from '../../styles/rwd';
 
 export const Container = styled.div`
   display: flex;
@@ -18,7 +19,10 @@ export const Header = styled.h1`
   ${Display01};
   opacity: .25;
   text-align: center;
-  @media (max-width: 992px){
+  @media (${rwd.maxSmallDesktop}){
+    ${Display02};
+  }
+  @media (${rwd.maxPhone}){
     ${Display03};
   }
   color:#0C5;
@@ -28,23 +32,32 @@ export const Title = styled.h1`
   ${H2t700};
   color:${colors.typography[900]};
   text-align: center;
-  @media (max-width: 992px){
+  @media (${rwd.maxSmallDesktop}){
     ${H4t700};
+  }
+  @media (${rwd.maxPhone}){
+    ${Display03};
   }
 `;
 
 export const AgendaList = styled.div`
-  padding: 80px;
-  margin:40px;
   position: relative;
   display: flex;
   flex-direction: column;
-  top:-100px;
   gap:24px;
+  padding:40px;
+  top:-80px;
   border-radius: 35px;
   background: var(--Typography-100, #FFF);
   box-shadow: 0px 5px 75px 0px rgba(0, 0, 0, 0.10), 0px 25px 100px 0px rgba(0, 0, 0, 0.10);
-  @media (max-width: 992px){
+  @media (${rwd.maxSmallDesktop}){
+    gap:16px;
+    top:0;
+    margin:24px;
+    padding: 32px;
+  }
+  @media (${rwd.maxPhone}){
+    gap:12px;
     top:0;
     margin:24px;
     padding: 12px;

@@ -81,7 +81,7 @@ export const Navbar = () => {
           <Buttons>
             <Button
               onClick={() => {
-                window.location.href = 'agenda';
+                window.location.href = '#agenda';
               }}
               label="Agenda"
               type="ghost"
@@ -95,7 +95,7 @@ export const Navbar = () => {
             />
           </Buttons>
           <HamburgerStyled>
-            <Hamburger color={isOpen ? 'black' : 'white'} toggled={isOpen} toggle={setOpen} />
+            <Hamburger color={scrollPosition ? 'black' : isOpen ? 'black' : 'white'} toggled={isOpen} toggle={setOpen} />
           </HamburgerStyled>
         </Wrapper>
       </NavbarStyled>

@@ -1,8 +1,10 @@
 import styled from 'styled-components';
 import {
-  Body2t400, Body2t500, Body2t700, Body3t400, H4t700,
+  Body1t700,
+  Body2t400, Body2t500, Body2t700, Body3t400, Body4t400, H4t700, H5t700,
 } from '../../styles/typography';
 import { colors } from '../../styles/colors';
+import { rwd } from '../../styles/rwd';
 
 export const Container = styled.div`
   padding:24px;
@@ -10,10 +12,13 @@ export const Container = styled.div`
   border-radius: 15px;
   display: flex;
   background: ${colors.typography[300]};
-  @media(max-width: 992px){
-    padding: 12px;
+  @media(${rwd.maxSmallDesktop}){
+    padding: 24px;
     flex-direction: column;
     gap:24px;
+  }
+  @media(${rwd.maxPhone}){
+    padding: 12px;
   }
 `;
 
@@ -73,19 +78,32 @@ export const ADescription = styled.div`
 `;
 
 export const Title = styled.div`
-    ${H4t700}
-    
+    ${H4t700};
+    @media (${rwd.maxSmallDesktop}){
+     ${H5t700};
+    }
+      @media (${rwd.maxPhone}){
+        ${Body1t700};
+      }
 `;
 
 export const Description = styled.p`
-  ${Body2t400}
+  ${Body2t400};
+  @media (${rwd.maxSmallDesktop}){
+  ${Body3t400};
+  }
+  @media (${rwd.maxPhone}){
+    ${Body4t400};
+  }
 `;
 
 export const Time = styled.div`
   flex:1;
    ${H4t700};
    color:#00662B;
-  font-weight: 700;
+  @media (${rwd.maxSmallDesktop}){
+    ${H5t700};
+  }
 `;
 
 export const TimeWrapper = styled.div`

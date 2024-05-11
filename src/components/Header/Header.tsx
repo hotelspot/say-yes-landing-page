@@ -20,7 +20,6 @@ export const Header = () => {
     const interval = setInterval(() => {
       const now = moment();
       const diff = targetDate.diff(now, 'seconds'); // Oblicz różnicę w sekundach.
-
       const days = Math.floor(diff / 86400); // Oblicz liczbę dni.
       const hours = Math.floor((diff % 86400) / 3600); // Oblicz liczbę godzin.
       const minutes = Math.floor((diff % 3600) / 60); // Oblicz liczbę minut.
@@ -65,7 +64,6 @@ export const Header = () => {
         <TimeContainer>
           <Count>
             {count.minutes}
-
           </Count>
           <TimeLabel>
             Min.

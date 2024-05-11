@@ -136,6 +136,7 @@ export const Wrapper = styled.div`
   display: flex;
   flex:1;
   max-width: 1440px;
+  align-items: center;
   justify-content: space-between;
 `;
 
