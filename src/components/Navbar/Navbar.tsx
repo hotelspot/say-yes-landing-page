@@ -3,20 +3,23 @@ import Hamburger from 'hamburger-react';
 import styled from 'styled-components';
 import { Link as GatsbyLink } from 'gatsby-link';
 import {
-  Link, Links, NavbarStyled, Buttons, Wrapper, HamburgerStyled, MobileMenu, MobileButtons,
+  Link,
+  Links,
+  NavbarStyled,
+  Buttons,
+  Wrapper,
+  HamburgerStyled,
+  MobileMenu,
+  MobileButtons,
+  Shadow,
+  MobileLogo,
+  BlackLink, BlackLinkContainer,
 } from './Navbar.styled';
 import { Logo } from '../../assets';
 import { Button } from '../Button/Button';
 import { Body2t500 } from '../../styles/typography';
 import { colors } from '../../styles/colors';
 
-export const BlackLink = styled(GatsbyLink)`
-  transition: .3s;
-  ${Body2t500};
-  text-decoration: none;
-  color:${colors.typography[1000]};
-  padding: 12px;
-`;
 export const Navbar = () => {
   const [isOpen, setOpen] = useState(false);
 
@@ -35,16 +38,21 @@ export const Navbar = () => {
   }, []);
   return (
     <>
+      <Shadow onClick={() => setOpen(false)} isOpen={isOpen} />
       <MobileMenu isOpen={isOpen}>
-        <img
-          style={{ width: 176, height: 80 }}
-          src={Logo as string}
-          alt="logo"
-        />
-        <BlackLink onClick={() => setOpen(false)} to="#organizator">Organizator</BlackLink>
-        <BlackLink onClick={() => setOpen(false)} to="#agenda">Agenda & Prelegenci</BlackLink>
-        <BlackLink onClick={() => setOpen(false)} to="#">Partnerzy & Sponsorzy</BlackLink>
-        <BlackLink onClick={() => setOpen(false)} to="#contact">Kontakt</BlackLink>
+        <MobileLogo>
+          <img
+            style={{ width: 88, height: 40 }}
+            src={Logo as string}
+            alt="logo"
+          />
+        </MobileLogo>
+        <BlackLinkContainer>
+          <BlackLink onClick={() => setOpen(false)} to="#organizator">Organizator</BlackLink>
+          <BlackLink onClick={() => setOpen(false)} to="#agenda">Agenda & Prelegenci</BlackLink>
+          <BlackLink onClick={() => setOpen(false)} to="#">Partnerzy & Sponsorzy</BlackLink>
+          <BlackLink onClick={() => setOpen(false)} to="#contact">Kontakt</BlackLink>
+        </BlackLinkContainer>
         <MobileButtons>
           <Button
             onClick={() => setOpen(false)}
@@ -58,7 +66,6 @@ export const Navbar = () => {
         </MobileButtons>
       </MobileMenu>
       <NavbarStyled scrollPosition={scrollPosition}>
-
         <Wrapper>
           <Links>
             <img
@@ -88,7 +95,7 @@ export const Navbar = () => {
             />
           </Buttons>
           <HamburgerStyled>
-            <Hamburger color={scrollPosition ? 'black' : 'white'} toggled={isOpen} toggle={setOpen} />
+            <Hamburger color={isOpen ? 'black' : 'white'} toggled={isOpen} toggle={setOpen} />
           </HamburgerStyled>
         </Wrapper>
       </NavbarStyled>
