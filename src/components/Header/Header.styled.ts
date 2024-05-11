@@ -1,51 +1,74 @@
 import styled from 'styled-components';
 import {
-  Display01, Display03, H1t500, H1t700, H3t500, H3t700, H5t500, H5t700,
+  Display01, Display02, Display03, H1t500, H1t700, H2t500, H2t700, H3t500, H3t700, H4t500, H5t500, H5t700,
 } from '../../styles/typography';
 import { colors } from '../../styles/colors';
+import { rwd } from '../../styles/rwd';
 
 export const HeaderStyled = styled.header<{ img: string }>`
-
   height: 800px;
   background: lightgreen;
   background: url(${(props) => props.img}) center;
-  padding-bottom: 40px;
   position: relative;
+  @media (${rwd.maxSmallDesktop}) {
+    height: 600px;
+  }
+  @media (${rwd.maxPhone}){
+    height: 556px;
+  }
   
 `;
 
 export const Title = styled.h1`
-  margin-top: 80px;
-  @media(max-width: 992px){
-    margin-top: 120px;
-  }
  ${H1t700};
  color:${colors.typography[100]};
  text-align: center;
+  @media (${rwd.maxSmallDesktop}){
+    ${H2t700};
+  }
+  @media (${rwd.maxPhone}){
+    ${H3t700};
+  }
 `;
 
 export const Subtitle = styled.h1`
  ${H1t500};
  text-align: center;
  color:${colors.typography[100]};
+  @media (${rwd.maxSmallDesktop}){
+    ${H2t500};
+  }
+  @media (${rwd.maxPhone}){
+    ${H3t500};
+  }
 `;
 
 export const Hero = styled.div`
   padding:0 24px;
+  margin-bottom: 80px;
   display: flex;
   flex-direction: column;
-  gap:16px;
   height: 380px;
   justify-content: center;
-  @media(max-width: 992px){
-    height: unset;
+  @media (${rwd.maxSmallDesktop}){
+    height: 280px;
+    padding-top: 48px;
   }
+  @media (${rwd.maxPhone}){
+    height: 260px;
+    padding-top: 40px;
+    
+  }
+
 `;
 
 export const SayYes = styled.h3`
   ${Display01};
-  @media(max-width: 992px){
-  ${Display03};
+  @media(${rwd.maxSmallDesktop}){
+    ${Display02};
+  }
+  @media(${rwd.maxTablet}){
+    ${Display03};
   }
   text-align: center;
   opacity: 0.25;
@@ -55,14 +78,11 @@ export const SayYes = styled.h3`
 export const Time = styled.div`
   box-sizing: border-box;
   width: 1196px;
-  @media (max-width: 1300px){
-    max-width: 900px;
-  }
   position: relative;
   background: ${colors.typography[100]};
   border-radius: 35px;
   left: 50%;
-  transform: translate(-50%);
+  transform: translate(-50%,-30%);
   box-shadow: 0px 5px 75px 0px rgba(0, 0, 0, 0.10), 0px 25px 100px 0px rgba(0, 0, 0, 0.10);
   padding: 48px 80px;
   display: flex;
@@ -70,15 +90,29 @@ export const Time = styled.div`
   align-items: center;
   flex-wrap: wrap;
   bottom: -50px;
-  @media (max-width: 992px){
-    bottom: -250px;
-    padding: 24px;
-    flex-wrap: wrap;
-    width: 80%;
-    div{
-      flex-basis: 50%;
-    }
+  max-width: 1196px;
+  
+  @media (${rwd.maxSmallDesktop}){
+    width: Calc(100vw - 48px);
   }
+  @media (${rwd.maxTablet}){
+    padding:24px 0;
+    transform: translate(-50%,-10%);
+    width: Calc(100vw - 112px);
+      div{
+        flex-basis: 50%;
+      }
+    
+  }
+  //@media (max-width: 992px){
+  //  bottom: -250px;
+  //  padding: 24px;
+  //  flex-wrap: wrap;
+  //  width: 80%;
+  //  div{
+  //    flex-basis: 50%;
+  //  }
+  //}
 `;
 
 export const TimeContainer = styled.div`
@@ -89,17 +123,23 @@ export const TimeContainer = styled.div`
 
 export const Count = styled.h3`
   ${H1t700};
-  @media (max-width: 992px){
-    ${H3t700};
-  }
   color:#00662B;
+  @media (${rwd.maxSmallDesktop}){
+    ${H2t700}
+  }
+  @media (${rwd.maxTablet}){
+    ${H3t700}
+  }
 `;
 export const TimeLabel = styled.div`
   ${H3t500};
-  @media (max-width: 992px){
-    ${H5t500};
+  @media (${rwd.maxSmallDesktop}){
+   ${H4t500}
   }
-  color:${colors.typography[1000]}
+  color:${colors.typography[1000]};
+  @media (${rwd.maxTablet}){
+    ${H5t500}
+  }
 `;
 
 export const LogoFloat = styled.img`

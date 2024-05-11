@@ -97,6 +97,12 @@ export const Display03 = css`
   line-height: 54px;
 `;
 
+export const Display02 = css`
+  font-size: 96px;
+  font-weight: 700;
+  line-height: 110px;
+`;
+
 export const H3t500 = css`
     font-size: 32px;
     font-weight: 500;
@@ -115,9 +121,21 @@ export const H2t700 = css`
     font-size: 48px;
 `;
 
+export const H2t500 = css`
+    font-weight: 500;
+    line-height: 64px;
+    font-size: 48px;
+`;
+
 export const H4t700 = css`
     font-size: 24px;
     line-height: 32px;
    font-weight: 700;
+    color:${colors.typography[900]}
+`;
+export const H4t500 = css`
+    font-size: 24px;
+    line-height: 32px;
+   font-weight: 500;
     color:${colors.typography[900]}
 `;
