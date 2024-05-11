@@ -83,7 +83,7 @@ export const Time = styled.div`
   border-radius: 35px;
   left: 50%;
   transform: translate(-50%,-30%);
-  box-shadow: 0px 5px 75px 0px rgba(0, 0, 0, 0.10), 0px 25px 100px 0px rgba(0, 0, 0, 0.10);
+  box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.15), 0px 25px 40px 0px rgba(0, 0, 0, 0.15);
   padding: 48px 80px;
   display: flex;
   justify-content: space-between;
