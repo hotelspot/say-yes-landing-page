@@ -1,8 +1,9 @@
 import styled from 'styled-components';
 import { colors } from '../../styles/colors';
 import {
-  Body1t400, Body1t500, H3t500, H3t700,
+  Body1t400, Body1t500, Body2t400, Body3t400, H3t500, H3t700, H4t700, H5t700,
 } from '../../styles/typography';
+import { rwd } from '../../styles/rwd';
 
 export const Container = styled.div`
   padding:80px 80px 0 80px;
@@ -11,7 +12,7 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  @media (max-width: 992px){
+  @media (${rwd.maxSmallDesktop}){
     padding: 24px 24px 0 24px;
   }
 `;
@@ -31,7 +32,7 @@ export const Section = styled.section`
   display: flex;
   height: 440px;
   
-  @media(max-width: 992px){
+  @media(${rwd.maxSmallDesktop}){
     height: auto;
     flex-direction: column-reverse;
     &:nth-child(2n){
@@ -51,8 +52,12 @@ export const SectionBox = styled.div<{img?:string}>`
   padding: 40px;
   gap:24px;
   
-  @media(max-width: 992px){
-    padding: ${(props) => (props.img ? '132px' : '40')};
+  @media(${rwd.maxSmallDesktop}){
+    padding: ${(props) => (props.img ? '132px' : '32px')};
+    height: 264px;
+  }
+  @media(${rwd.maxPhone}){
+    padding: ${(props) => (props.img ? '132px' : '24px')};
     height: 264px;
   }
 
@@ -60,10 +65,22 @@ export const SectionBox = styled.div<{img?:string}>`
 
 export const Typography = styled.p`
   ${Body1t400};
+  @media(${rwd.maxSmallDesktop}) {
+    ${Body2t400}
+  }
+  @media(${rwd.maxPhone}) {
+    ${Body3t400}
+  }
   color:${colors.typography[900]}
 `;
 
 export const Title = styled.h1`
   ${H3t700};
+  @media(${rwd.maxSmallDesktop}) {
+    ${H4t700}
+  }
+  @media(${rwd.maxSmallDesktop}) {
+    ${H5t700}
+  }
   color:${colors.additionals[2]}
 `;

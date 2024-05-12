@@ -1,8 +1,10 @@
 import styled from 'styled-components';
 import { colors } from '../../styles/colors';
 import {
+  Body1t400,
   Body1t500, Body1t700, Body3t400, Body4t400,
 } from '../../styles/typography';
+import { rwd } from '../../styles/rwd';
 
 export const FooterStyled = styled.footer`
   padding: 80px 16px;
@@ -11,8 +13,13 @@ export const FooterStyled = styled.footer`
   display: flex;
   flex-direction: column;
   align-items: center;
-  @media (max-width: 992px){
-    padding:48px 36px;
+  @media (${rwd.maxTablet}){
+    padding: 64px 24px;
+    gap:64px;
+  }
+  @media (${rwd.maxPhone}){
+    padding: 48px 36px;
+    gap:64px;
   }
 `;
 
@@ -29,6 +36,10 @@ export const Line = styled.div`
     height: 1px;
     background: ${colors.typography[700]};
     flex:1;
+  @media(${rwd.maxPhone}){
+    width: 100%;
+    flex: unset;
+  }
 `;
 
 export const SocialContainer = styled.div`
@@ -44,9 +55,10 @@ export const Bottom = styled.div`
   gap:32px;
   max-width: 1196px;
   width: 100%;
-  @media (max-width: 992px){
+  @media(${rwd.maxPhone}){
     flex-direction: column;
     align-items: flex-start;
+    gap:32px;
   }
 `;
 
@@ -55,9 +67,11 @@ export const Wrapper = styled.div`
   width: 100%;
   display: flex;
   gap: 80px;
-  @media(max-width: 992px){
+  @media (${rwd.maxTablet}){
     flex-direction: column;
+    gap:64px;
   }
+
 `;
 
 export const Column = styled.aside`
@@ -71,6 +85,29 @@ export const Links = styled.div`
   display: flex;
   flex-direction: column;
   gap:24px;
+  @media(${rwd.maxPhone}){
+    flex-direction: column;
+    gap:32px;
+  }
+`;
+
+export const LinksContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap:24px;
+  @media(${rwd.maxTablet}){
+    flex-direction: row;
+    justify-content: space-between;
+    column-gap: 24px;
+    row-gap: 32px;
+    flex-wrap: wrap;
+    a {
+      flex-basis: 45%;
+    }
+  }
+  @media(${rwd.maxPhone}){
+    flex-direction: column;
+  }
 `;
 
 export const LinkIcon = styled.a`
@@ -92,14 +129,19 @@ export const Title = styled.h3`
 `;
 
 export const Link = styled.a`
-  ${Body1t700};
+  ${Body1t400};
   color: ${colors.typography[500]};
 `;
 
 export const Row = styled.div`
   display: flex;
-  @media (max-width: 992px){
-    flex-direction: column;
-  }
   gap:48px;
+  @media(${rwd.maxTablet}){
+    gap:80px;
+  }
+  @media(${rwd.maxPhone}){
+    flex-direction: column;
+    gap:32px;
+  }
+  
 `;

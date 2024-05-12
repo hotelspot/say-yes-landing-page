@@ -2,7 +2,7 @@ import React from 'react';
 import {
   Bottom,
   Column, FooterStyled,
-  Line, Link, LinkIcon, Links,
+  Line, Link, LinkIcon, Links, LinksContainer,
   PoweredBy, Row, SocialContainer, Title, Wrapper,
 } from './Footer.styled';
 import { Logo } from '../../assets';
@@ -21,7 +21,7 @@ export const Footer = () => (
     <Wrapper>
       <Column>
         <img width={220} src={Logo as string} />
-        <Links>
+        <LinksContainer>
           <LinkIcon href="#">
             <Calendar fill={colors.typography[300]} />
             <span>08.06.2024</span>
@@ -38,7 +38,7 @@ export const Footer = () => (
             <Smartphone fill={colors.typography[300]} />
             <span>+48 536 395 472</span>
           </LinkIcon>
-        </Links>
+        </LinksContainer>
       </Column>
       <Column>
         <Title>Nawigacja</Title>
@@ -73,11 +73,9 @@ export const Footer = () => (
     </Wrapper>
     <Bottom>
       <SocialContainer>
-
         <a href="http://www.linkedin.com/in/juliusz-zgli%C5%84ski-85a99223a">
           <Linkedin />
         </a>
-
       </SocialContainer>
       <Line />
       <PoweredBy>

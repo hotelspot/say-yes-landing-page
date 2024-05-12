@@ -99,8 +99,8 @@ export const Description = styled.p`
 
 export const Time = styled.div`
   flex:1;
-   ${H4t700};
-   color:#00662B;
+  ${H4t700};
+  color:#00662B;
   @media (${rwd.maxSmallDesktop}){
     ${H5t700};
   }
