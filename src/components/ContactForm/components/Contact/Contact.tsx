@@ -4,7 +4,9 @@ import { SubmitHandler, useForm } from 'react-hook-form';
 import { toast } from 'react-toastify';
 import { RotatingLines } from 'react-loader-spinner';
 import styled from 'styled-components';
-import { BtnContainer, InputWrapper, TextareaWrapper } from './Contact.styled';
+import {
+  BtnContainer, Column, InputWrapper, RowButtons, TextareaWrapper,
+} from './Contact.styled';
 import { actionSendEmailContactForm } from '../../../../actions/action.sendEmail';
 
 type Inputs = {
@@ -39,7 +41,7 @@ export const Form = () => {
       setFormState('loading');
       const { status } = await actionSendEmailContactForm(data);
       if (status === 200) {
-        toast.success(intl.formatMessage({ id: 'messages.success' }), {
+        toast.success('Wysłano poprawnie', {
           theme: 'light',
           hideProgressBar: true,
           position: 'bottom-center',
@@ -47,7 +49,7 @@ export const Form = () => {
         setFormState('success');
       }
     } catch (err) {
-      toast.error(intl.formatMessage({ id: 'messages.error' }), {
+      toast.error('Wystąpił błąd', {
         theme: 'light',
         hideProgressBar: true,
         position: 'bottom-center',
@@ -60,56 +62,58 @@ export const Form = () => {
 
   return (
     <StyledContactForm onSubmit={handleSubmit(onSubmit)}>
-      <div className="flex flex-col gap-[30px]" style={{ gap: 15 }}>
-        <div style={{ gap: 15 }} className="flex flex-col md:flex-row  justify-around md:gap-3 gap-[30px]">
+      <Column>
+        <RowButtons>
           <InputWrapper
             {...register('firstName', { required: true })}
             isInvalid={checkField(!!errors.firstName)}
-            errorMessage="To pole jest wymagane"
-            placeholder="Name"
+            placeholder="Przykład: Jan"
             labelPlacement="inside"
             label="Imię"
+            variant="bordered"
           />
           <InputWrapper
+            variant="bordered"
             {...register('lastName')}
-            placeholder="Surname"
+            placeholder="Przykład: Kowalski"
             labelPlacement="inside"
             label="Nazwisko"
           />
-        </div>
-        <div className="flex flex-col md:flex-row  justify-around md:gap-3 gap-[30px]" style={{ gap: 15 }}>
+        </RowButtons>
+        <RowButtons>
           <InputWrapper
+            variant="bordered"
             {...register('email', { required: true })}
-            errorMessage="To pole jest wymagane"
             isInvalid={checkField(!!errors.email)}
             type="email"
             labelPlacement="inside"
             label="Email"
-            placeholder="j.kowalski@examplemail.com"
+            placeholder="Przykład: j.kowalski@gmail.com"
           />
           <InputWrapper
+            variant="bordered"
             {...register('phoneNumber')}
             labelPlacement="inside"
-            placeholder="+48 123 456 789"
+            placeholder="+Przykład: +48 999 999 999"
             label="Numer telefonu"
           />
-        </div>
+        </RowButtons>
         <InputWrapper
-          placeholder="Subject..."
+          variant="bordered"
+          placeholder="Przykład: Pytanie odnośnie szczegółów wydarzenia"
           {...register('subject')}
           label="Temat"
         />
-        <div>
-          <TextareaWrapper
-            placeholder="Message..."
-            {...register('message', { required: true })}
-            errorMessage="To pole jest wymagane"
-            isInvalid={checkField(!!errors.message)}
-            labelPlacement="inside"
-            label="Wiadomość"
-          />
-        </div>
-        <div className="flex flex-row gap-[24px] items-center 612px:flex-col-reverse" style={{ flex: 1, justifyContent: 'space-between', gap: 15 }}>
+        <TextareaWrapper
+          variant="bordered"
+          placeholder="Przykład: Witam, nazywam się Jan Kowlaski oraz pisze w sprawie..."
+          {...register('message', { required: true })}
+          errorMessage="To pole jest wymagane"
+          isInvalid={checkField(!!errors.message)}
+          labelPlacement="inside"
+          label="Wiadomość"
+        />
+        <RowButtons>
           <BtnContainer>
             <Button
               type="submit"
@@ -142,8 +146,9 @@ export const Form = () => {
           <p className="text-[12px] leading-[18px]">
             Polityka prywatności
           </p>
-        </div>
-      </div>
+        </RowButtons>
+      </Column>
+
     </StyledContactForm>
   );
 };
