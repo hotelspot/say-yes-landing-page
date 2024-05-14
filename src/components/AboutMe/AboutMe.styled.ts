@@ -29,7 +29,7 @@ export const Information = styled.section`
     a{
       padding:14px 16px;
       justify-content: flex-start;
-     flex-basis: 45%;
+      flex-basis: 45%;
     }
   }
   @media (${rwd.maxPhone}){

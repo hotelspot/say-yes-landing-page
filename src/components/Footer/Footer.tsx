@@ -10,10 +10,7 @@ import Calendar from '../icons/Calendar';
 import { colors } from '../../styles/colors';
 import Pin from '../icons/Pin';
 import Email from '../icons/Email';
-import Smartphone from '../icons/Smartphone';
-import Facebook from '../icons/social/Facebook';
 import Linkedin from '../icons/social/Linkedin';
-import Instagram from '../icons/social/Instagram';
 import Youtube from '../icons/social/Youtube';
 
 export const Footer = () => (
@@ -32,9 +29,10 @@ export const Footer = () => (
           </LinkIcon>
           <LinkIcon href="#">
             <Email fill={colors.typography[300]} />
-            <span>konferencjapowiemtak@gmail.com</span>
+            <a href="mailto:konferencjapowiemtak@gmail.com">
+              <span>konferencjapowiemtak@gmail.com</span>
+            </a>
           </LinkIcon>
-
         </LinksContainer>
       </Column>
       <Column>

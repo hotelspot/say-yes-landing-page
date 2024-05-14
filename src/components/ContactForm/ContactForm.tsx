@@ -2,10 +2,10 @@ import React from 'react';
 import { Button } from '@nextui-org/react';
 import {
   Banner,
-  Container, FormWrapper, Header, Title, Wrapper,
+  Container, FormWrapper, Header, Information, Title, Wrapper,
 } from './ContactForm.styled';
 import { Logo } from '../../assets';
-import { Information, InformationItem, InformationLabel } from '../AboutMe/AboutMe.styled';
+import { InformationItem, InformationLabel } from '../AboutMe/AboutMe.styled';
 import SvgCalendar from '../icons/Calendar';
 import SvgPin from '../icons/Pin';
 import SvgEmail from '../icons/Email';
@@ -15,17 +15,15 @@ import { Form } from './components/Contact';
 export const ContactForm = () => (
   <Container>
     <Wrapper>
-      <Title>Skontaktuj się!</Title>
+      <Title>Masz pytania? Napisz do nas!</Title>
       <Header>KONTAKT</Header>
       <FormWrapper>
         <Banner id="contact">
           <img src={Logo as string} width={256} alt="logo" />
-          <Information style={{ flexDirection: 'column' }}>
+          <Information>
             <InformationItem>
               <SvgCalendar />
               <InformationLabel>08.06.2024</InformationLabel>
-              Powiem TAK
-
             </InformationItem>
             <InformationItem>
               <SvgPin />
@@ -33,7 +31,11 @@ export const ContactForm = () => (
             </InformationItem>
             <InformationItem>
               <SvgEmail />
-              <InformationLabel>konferencjapowiemtak@gmail.com</InformationLabel>
+              <InformationLabel>
+                <a href="mailto:konferencjapowiemtak@gmail.com">
+                  konferencjapowiemtak@gmail.com
+                </a>
+              </InformationLabel>
             </InformationItem>
           </Information>
         </Banner>
