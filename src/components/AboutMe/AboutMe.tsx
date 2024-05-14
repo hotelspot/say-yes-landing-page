@@ -29,10 +29,7 @@ export const AboutMe = () => (
         <SvgEmail />
         <InformationLabel>konferencjapowiemtak@gmail.com</InformationLabel>
       </InformationItem>
-      <InformationItem>
-        <SvgSmartphone />
-        <InformationLabel>+48 536 395 472</InformationLabel>
-      </InformationItem>
+
     </Information>
     <Contact>
       <Avatar src={AvatarJuliuszZglinski as string} />
