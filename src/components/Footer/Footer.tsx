@@ -34,10 +34,7 @@ export const Footer = () => (
             <Email fill={colors.typography[300]} />
             <span>konferencjapowiemtak@gmail.com</span>
           </LinkIcon>
-          <LinkIcon href="#">
-            <Smartphone fill={colors.typography[300]} />
-            <span>+48 536 395 472</span>
-          </LinkIcon>
+
         </LinksContainer>
       </Column>
       <Column>

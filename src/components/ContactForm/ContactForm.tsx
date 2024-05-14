@@ -33,10 +33,7 @@ export const ContactForm = () => (
               <SvgEmail />
               <InformationLabel>konferencjapowiemtak@gmail.com</InformationLabel>
             </InformationItem>
-            <InformationItem>
-              <SvgSmartphone />
-              <InformationLabel>+48 536 395 472</InformationLabel>
-            </InformationItem>
+
           </Information>
         </Banner>
 
