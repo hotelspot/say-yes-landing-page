@@ -6,13 +6,13 @@ import { colors } from '../../styles/colors';
 import { rwd } from '../../styles/rwd';
 
 export const Container = styled.div`
-  margin-top: 192px;
-  margin-bottom: 80px;
+  margin-top: 150px;
+  margin-bottom: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap:80px;
+  gap:50px;
 `;
 
 export const Information = styled.section`
@@ -134,6 +134,7 @@ export const Description = styled.div`
 
 export const Paragraph = styled.p`
   ${Body3t400};
+    text-align: justify;
   color:${colors.typography[700]};
   @media (${rwd.maxSmallDesktop}){
     ${Body3t400};
@@ -151,12 +152,8 @@ export const List = styled.div`
 
 export const SocialsMedia = styled.div`
   display: flex;
-  gap:24px;
+  gap:5px;
   @media (max-width: 992px){
-    justify-content: space-between;
-    svg{
-      width: 48px;
-      height: 48px;
-    }
+    justify-content: flex-start; 
   }
 `;

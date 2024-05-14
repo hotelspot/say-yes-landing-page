@@ -163,7 +163,7 @@ export const Buttons = styled.div`
     display: none;
   }
   button{
-    min-width: 150px;
+    min-width: 120px;
   }
   
 `;
