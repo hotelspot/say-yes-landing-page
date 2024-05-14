@@ -107,7 +107,7 @@ export const MobileButtons = styled.div`
 `;
 export const NavbarStyled = styled.nav<{scrollPosition:number}>`
   position: fixed;
-  box-shadow: 0   5px 25px 0 rgba(0, 0, 0, 0.10), 0 25px 50px 0 rgba(0, 0, 0, 0.10);
+  box-shadow: ${(props) => (props.scrollPosition ? '0 5px 25px 0 rgba(0, 0, 0, 0.10), 0 25px 50px 0 rgba(0, 0, 0, 0.10);' : 'none')};
   right: 0;
   z-index: 9999;
   left: 0;
@@ -119,9 +119,8 @@ export const NavbarStyled = styled.nav<{scrollPosition:number}>`
   height: 80px;
   transition: .3s;
   @media (${rwd.maxSmallDesktop}){
-    box-shadow: none;
-    background:transparent;
-    a{
+    background: ${(props) => (!props.scrollPosition ? 'transparent' : 'white')};
+    a {
       color:white;
     }
   }
