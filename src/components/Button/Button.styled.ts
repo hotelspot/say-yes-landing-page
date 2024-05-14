@@ -4,7 +4,7 @@ import { colors } from '../../styles/colors';
 
 export const ButtonStyled = styled.button<{type:'ghost'|'secondary'|'default'}>`
   ${Body2t600};
-  padding:8px 15px;
+  padding:8px 25px;
   outline: 0;
   border-radius: 100px;
   border: 2px solid ${(props) => props.type !== 'default' && colors.typography[100]};

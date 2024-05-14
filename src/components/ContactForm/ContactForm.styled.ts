@@ -22,6 +22,7 @@ export const Header = styled.h1`
   ${Display01};
   opacity: .25;
   text-align: center;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
   @media (max-width: 992px){
     ${Display03};
   }
@@ -53,7 +54,7 @@ export const FormWrapper = styled.div`
   display: flex;
   top:-80px;
   gap:64px;
-  border-radius: 35px;
+  border-radius: 25px;
   background: var(--Typography-100, #FFF);
   box-shadow: 0px 5px 75px 0px rgba(0, 0, 0, 0.10), 0px 25px 100px 0px rgba(0, 0, 0, 0.10);
   @media(${rwd.maxTablet}){

@@ -4,6 +4,7 @@ import {
 } from '../../styles/typography';
 import { colors } from '../../styles/colors';
 import { rwd } from '../../styles/rwd';
+import {Link} from "gatsby";
 
 export const HeaderStyled = styled.header<{ img: string }>`
   height: 800px;
@@ -19,9 +20,10 @@ export const HeaderStyled = styled.header<{ img: string }>`
 `;
 
 export const Title = styled.h1`
- ${H1t700};
+ ${H1t700}; 
  color:${colors.typography[100]};
  text-align: center;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
   @media (${rwd.maxSmallDesktop}){
     ${H2t700};
   }
@@ -32,6 +34,7 @@ export const Title = styled.h1`
 
 export const Subtitle = styled.h1`
  ${H1t500};
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
  text-align: center;
  color:${colors.typography[100]};
   @media (${rwd.maxSmallDesktop}){
@@ -61,6 +64,7 @@ export const SayYes = styled.h3`
     left: 0;
     right: 0;
     bottom: 7%;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
   ${Display01};
   @media(${rwd.maxSmallDesktop}){
     ${Display02};
@@ -73,12 +77,16 @@ export const SayYes = styled.h3`
   color: ${colors.typography[100]};
 `;
 
-export const Arrow = styled.div` 
+export const Arrow = styled(Link)` 
     background: #fff;
     border-radius: 100%;
     margin: 50px auto;
     width: 100px;
     height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
     @media (${rwd.maxSmallDesktop}){
         width: 80px;
         height: 80px;

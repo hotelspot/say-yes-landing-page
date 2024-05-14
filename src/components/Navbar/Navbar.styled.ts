@@ -112,19 +112,26 @@ export const NavbarStyled = styled.nav<{scrollPosition:number}>`
   z-index: 9999;
   left: 0;
   display: flex;
-  padding: 0 32px;
+  padding: 0px 32px;
   justify-content: center;
   align-items: center;
   flex:1;
-  height: 80px;
-  transition: .3s;
+  //height: 50px;
+  height: ${(props) => (!props.scrollPosition ? '90px' : '60px')};
+  transition:   1.3s ease; 
   @media (${rwd.maxSmallDesktop}){
-    background: ${(props) => (!props.scrollPosition ? 'transparent' : 'white')};
+    background: ${(props) => (!props.scrollPosition ? 'transparent' : 'rgba(255, 255, 255, 0.8)')};
+    backdrop-filter: ${(props) => (!props.scrollPosition ? 'none' : 'blur(10px)')};
+    -webkit-backdrop-filter: ${(props) => (!props.scrollPosition ? 'none' : 'blur(10px)')};
+    transition: background 0.3s ease, backdrop-filter 0.3s ease;
     a {
       color:white;
     }
   }
-  background: ${(props) => (!props.scrollPosition ? 'transparent' : 'white')};
+  background: ${(props) => (!props.scrollPosition ? 'transparent' : 'rgba(255, 255, 255, 0.8)')};
+  backdrop-filter: ${(props) => (!props.scrollPosition ? 'none' : 'blur(10px)')};
+  -webkit-backdrop-filter: ${(props) => (!props.scrollPosition ? 'none' : 'blur(10px)')};
+  transition: background 0.3s ease, backdrop-filter 0.3s ease;
   a{
     color:${(props) => (props.scrollPosition ? '#5A5A5A' : 'white')};
   }

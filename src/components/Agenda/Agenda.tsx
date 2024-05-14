@@ -139,7 +139,7 @@ export const _agenda_list: AgendaItemProps[] = [
       {
         name: 'Natalia Prokaziuk',
         img: EmptyImagePNG,
-        desc: 'Prowadząca',
+        owner: 'Prowadząca',
       },
       {
         name: 'Małgorzata Niewodowska',
@@ -163,7 +163,8 @@ export const _agenda_list: AgendaItemProps[] = [
       {
         name: 'Monika Zadłużna',
         img: Monika,
-        desc: 'Prowadząca 13:20 - 13:35',
+        desc: '13:20 - 13:35',
+        owner: 'Prowadząca'
       },
       {
         name: 'Grażyna Zgliński-Brzózy',
@@ -203,7 +204,7 @@ export const _agenda_list: AgendaItemProps[] = [
     avatars: [
       {
         name: 'Juliusz Zgliński',
-        desc: 'Prowadzący',
+        owner: 'Prowadzący',
         img: JuliuszZ,
       },
       {

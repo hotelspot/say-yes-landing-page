@@ -6,6 +6,7 @@ import {
 } from './Header.styled';
 import { HeroImg, Logo } from '../../assets';
 import { Navbar } from '../Navbar/Navbar';
+import {ArrowDown} from 'feather-icons-react'
 
 export const Header = () => {
   const [count, setCount] = useState<{
@@ -42,7 +43,7 @@ export const Header = () => {
         <div>
           <Title>Powiem TAK</Title>
           <Subtitle>Hilton Garden Inn Krakow Airport</Subtitle>
-          <Arrow/>
+          <Arrow to="#organizator"><ArrowDown size={24} color={'#00662B'}/></Arrow>
         </div>
       </Hero>
       <SayYes>POWIEM TAK!</SayYes>

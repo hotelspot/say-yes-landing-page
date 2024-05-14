@@ -24,7 +24,7 @@ export const Wrapper = styled.div`
    width: 100%;
   overflow: hidden;
   background: white;
-  border-radius: 35px;
+  border-radius: 25px;
   box-shadow: 0px 5px 75px 0px rgba(0, 0, 0, 0.10), 0px 25px 100px 0px rgba(0, 0, 0, 0.10);
 `;
 
@@ -64,12 +64,15 @@ export const SectionBox = styled.div<{img?:string}>`
 `;
 
 export const Typography = styled.p`
-  ${Body1t400};
-  @media(${rwd.maxSmallDesktop}) {
-    ${Body2t400}
+  ${Body2t400};
+  text-align: justify;
+  @media (${rwd.maxSmallDesktop}){
+    ${Body3t400};
+    text-align: left;
   }
-  @media(${rwd.maxPhone}) {
-    ${Body3t400}
+  @media (${rwd.maxPhone}){
+    ${Body2t400};
+    text-align: left;
   }
   color:${colors.typography[900]}
 `;
