@@ -45,8 +45,11 @@ export const AboutMe = () => (
         </Paragraph>
 
         <SocialsMedia>
-          <a href="http://www.linkedin.com/in/juliusz-zgli%C5%84ski-85a99223a">
+          <a target="_blank" href="http://www.linkedin.com/in/juliusz-zgli%C5%84ski-85a99223a" rel="noreferrer">
             <Linkedin />
+          </a>
+          <a target="_blank" href="https://youtube.com/@juliusz_zglinski?si=BFYt2yL3s4sbyWF9" rel="noreferrer">
+            <Youtube />
           </a>
         </SocialsMedia>
       </ContactContainer>

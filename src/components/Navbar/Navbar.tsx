@@ -1,7 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
 import Hamburger from 'hamburger-react';
-import styled from 'styled-components';
-import { Link as GatsbyLink } from 'gatsby-link';
 import {
   Link,
   Links,
@@ -17,13 +15,12 @@ import {
 } from './Navbar.styled';
 import { Logo } from '../../assets';
 import { Button } from '../Button/Button';
-import { Body2t500 } from '../../styles/typography';
-import { colors } from '../../styles/colors';
 
 export const Navbar = () => {
   const [isOpen, setOpen] = useState(false);
 
   const [scrollPosition, setScrollPosition] = useState(0);
+
   const handleScroll = () => {
     const position = window.pageYOffset;
     setScrollPosition(position);
@@ -36,6 +33,20 @@ export const Navbar = () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
+
+  const handleResize = () => {
+    if (window.innerWidth > 1200) {
+      setOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  });
+
   return (
     <>
       <Shadow onClick={() => setOpen(false)} isOpen={isOpen} />
@@ -65,7 +76,7 @@ export const Navbar = () => {
           <Button onClick={() => setOpen(false)} style={{ width: '100%' }} label="Zapisz się" type="secondary" />
         </MobileButtons>
       </MobileMenu>
-      <NavbarStyled scrollPosition={scrollPosition}>
+      <NavbarStyled scrollPosition={scrollPosition && !isOpen}>
         <Wrapper>
           <Links>
             <img
