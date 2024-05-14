@@ -15,8 +15,7 @@ export const HeaderStyled = styled.header<{ img: string }>`
   }
   @media (${rwd.maxPhone}){
     height: 556px;
-  }
-  
+  } 
 `;
 
 export const Title = styled.h1`
@@ -44,25 +43,24 @@ export const Subtitle = styled.h1`
 `;
 
 export const Hero = styled.div`
-  padding:0 24px;
-  margin-bottom: 80px;
+  padding:0 24px; 
   display: flex;
   flex-direction: column;
-  height: 380px;
+  height: 100%;
   justify-content: center;
   @media (${rwd.maxSmallDesktop}){
-    height: 280px;
-    padding-top: 48px;
+      height: 100%;
   }
   @media (${rwd.maxPhone}){
-    height: 260px;
-    padding-top: 40px;
-    
-  }
-
+      height: 100%;   
+  } 
 `;
 
 export const SayYes = styled.h3`
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 7%;
   ${Display01};
   @media(${rwd.maxSmallDesktop}){
     ${Display02};
@@ -75,9 +73,25 @@ export const SayYes = styled.h3`
   color: ${colors.typography[100]};
 `;
 
+export const Arrow = styled.div` 
+    background: #fff;
+    border-radius: 100%;
+    margin: 50px auto;
+    width: 100px;
+    height: 100px;
+    @media (${rwd.maxSmallDesktop}){
+        width: 80px;
+        height: 80px;
+        margin: 50px auto;
+    }
+    @media (${rwd.maxTablet}){
+        width: 50px;
+        height: 50px;
+        margin: 50px auto;
+    }
+`;
 export const Time = styled.div`
-  box-sizing: border-box;
-  width: 1196px;
+  box-sizing: border-box; 
   position: relative;
   background: ${colors.typography[100]};
   border-radius: 35px;
@@ -89,36 +103,31 @@ export const Time = styled.div`
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  bottom: -50px;
-  max-width: 1196px;
-  
+  bottom: 50px;
+  width: 100%;
+  max-width: 1196px; 
   @media (${rwd.maxSmallDesktop}){
-    width: Calc(100vw - 48px);
+      padding: 24px 40px;
+      width: 90%;
+      border-radius: 25px;
   }
   @media (${rwd.maxTablet}){
-    padding:24px 0;
-    transform: translate(-50%,-10%);
-    width: Calc(100vw - 112px);
-      div{
-        flex-basis: 50%;
-      }
-    
-  }
-  //@media (max-width: 992px){
-  //  bottom: -250px;
-  //  padding: 24px;
-  //  flex-wrap: wrap;
-  //  width: 80%;
-  //  div{
-  //    flex-basis: 50%;
-  //  }
-  //}
-`;
+      padding: 24px 15px;
+      width: 80%;
+      border-radius: 15px;
+  } 
+`
 
 export const TimeContainer = styled.div`
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  align-items: baseline;
+    @media (${rwd.maxTablet}){
+        width: 50%;
+        padding: 20px 0;
+        flex-direction: column;
+        align-items: center;
+    }
 `;
 
 export const Count = styled.h3`
@@ -145,8 +154,17 @@ export const TimeLabel = styled.div`
 export const LogoFloat = styled.img`
   left: 50%;
   top: 20%;
-  transform: translate(-50%,-100%);
-  width: 234.667px;
   position: absolute;
-  height: 106.667px;
+  transform: translate(-50%,-80%);
+  width: 234px; 
+  height: 106px;
+    @media (${rwd.maxSmallDesktop}){
+        width: 192px;
+        height: 96px;
+    }
+    @media (${rwd.maxTablet}){
+        width: 117px;
+        height: 53px;
+        transform: translate(-50%,-160%);
+    }
 `;

@@ -2,8 +2,8 @@ import { css } from 'styled-components';
 import { colors } from './colors';
 
 export const Body2t500 = css`
-  font-weight: 500;
-  font-size: 16px;
+  font-weight: 400;
+  font-size: 14px;
   line-height: 24px;
 `;
 
@@ -22,22 +22,22 @@ export const Body2t400 = css`
 export const Body3t400 = css`
   font-weight: 400;
   font-size: 14px;
-  line-height: 18px;
+  line-height: 1.7;
 `;
 export const Body3t500 = css`
-  font-weight: 500;
+  font-weight: 400;
   font-size: 14px;
-  line-height: 18px;
+    line-height: 1.7;
 `;
 
 export const Body4t400 = css`
   font-size: 12px;
   font-weight: 400;
-  line-height: 16px;
+    line-height: 1.7;
 `;
 
 export const Body1t500 = css`
-    font-size: 18px;
+    font-size: 16px;
     line-height: 24px;
     color:${colors.typography[900]}
 `;
@@ -56,7 +56,7 @@ export const Body1t400 = css`
 `;
 
 export const Body2t600 = css`
-    font-size: 16px;
+    font-size: 14px;
   line-height: 20px;
   font-weight: 600;
 `;
@@ -105,7 +105,7 @@ export const Display02 = css`
 
 export const H3t500 = css`
     font-size: 32px;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 48px;
 `;
 

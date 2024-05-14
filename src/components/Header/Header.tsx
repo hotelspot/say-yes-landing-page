@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import moment from 'moment';
 import {
   Count,
-  HeaderStyled, Hero, LogoFloat, SayYes, Subtitle, Time, TimeContainer, TimeLabel, Title,
+  HeaderStyled, Hero, LogoFloat, SayYes, Subtitle, Time, TimeContainer, TimeLabel, Title, Arrow
 } from './Header.styled';
 import { HeroImg, Logo } from '../../assets';
 import { Navbar } from '../Navbar/Navbar';
@@ -39,8 +39,11 @@ export const Header = () => {
     <HeaderStyled img={HeroImg as string}>
       <Navbar />
       <Hero>
-        <Title>Powiem TAK</Title>
-        <Subtitle>Hilton Garden Inn Krakow Airport</Subtitle>
+        <div>
+          <Title>Powiem TAK</Title>
+          <Subtitle>Hilton Garden Inn Krakow Airport</Subtitle>
+          <Arrow/>
+        </div>
       </Hero>
       <SayYes>POWIEM TAK!</SayYes>
       <Time>
