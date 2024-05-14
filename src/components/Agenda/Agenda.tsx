@@ -22,20 +22,10 @@ import {
 } from '../../assets/avatars';
 
 export const _agenda_list: AgendaItemProps[] = [
-  {
-    title: 'Początek',
-    time: '10:00',
-    avatars: [
-      {
-        name: 'Borys Szyc',
-        img: EmptyImagePNG,
-      },
-    ],
-  },
 
   {
     title: 'Powitanie',
-    time: '10:10',
+    time: '10:00 - 10:15',
     avatars: [
       {
         name: 'Juliusz Zgliński',
@@ -46,7 +36,7 @@ export const _agenda_list: AgendaItemProps[] = [
   {
     title: 'Wystąpienia Sponsorów i Partnerów',
     description: '',
-    time: '',
+    time: '10:15 - 11:00',
   },
   {
     title: 'PANEL I: Nierówności wokół nas',
@@ -117,7 +107,7 @@ export const _agenda_list: AgendaItemProps[] = [
       Jak stworzyć firmę bardziej otwartą na OzN❓
       <br />
       <br />
-      Pani Zuzanna Maciaszek to osoba, która postanowiła kontynuować misję pomocy ludziom z niepełnosprawnością, którą rozpoczął jej Ojciec Piotr Janaszek 💙
+      Pani Zuzanna-Maciaszek to osoba, która postanowiła kontynuować misję pomocy ludziom z niepełnosprawnością, którą rozpoczął jej Ojciec Piotr Janaszek 💙
       Jak sama mówi - chciałaby zbudować świat, w którym osoby z niepełnosprawnością nie czują się ciężarem, pracują, mają swoje pasje, decydują o sobie i są szczęśliwe 😃
     </>,
     time: '11:45 - 12:15',
@@ -128,7 +118,7 @@ export const _agenda_list: AgendaItemProps[] = [
         desc: '11:45 - 12:00',
       },
       {
-        name: 'Zuzanna Janaszek',
+        name: 'Zuzanna Janaszek-Maciaszek',
         img: Zuzanna,
         desc: '12:00 - 12:15',
       },
