@@ -64,6 +64,7 @@ export const SectionBox = styled.div<{img?:string}>`
 `;
 
 export const Typography = styled.p`
+  color:${colors.typography[900]};
   ${Body1t400};
   @media(${rwd.maxSmallDesktop}) {
     ${Body2t400}
@@ -71,11 +72,11 @@ export const Typography = styled.p`
   @media(${rwd.maxPhone}) {
     ${Body3t400}
   }
-  color:${colors.typography[900]}
 `;
 
 export const Title = styled.h1`
   ${H3t700};
+  ${colors.additionals[2]};
   @media(${rwd.maxSmallDesktop}) {
     ${H4t700}
   }
