@@ -26,25 +26,28 @@ export const Wrapper = styled.div`
   display: flex;
   flex:1;
   flex-direction: column;
-  gap:40px;
-
+  gap:40px;    
 `;
 
 export const Avatars = styled.div`
-  display: flex;
-  flex:1;
+  display: flex; 
   flex-direction: column;
-  max-width: 35%;
+  max-width: 30%; 
+    width: 300px;
+    padding: 25px 0;
   @media(max-width: 992px){
-    max-width: unset;
+    width: 100%; 
+      display: flex;
+      flex-direction: column;
+      max-width: 100%;
   }
   gap:24px;
 `;
 
 export const AvatarImage = styled.img`
-  width: 160px;
-  height: 160px;
-  border-radius: 160px;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
   @media(max-width: 992px){
     width: 100px;
     height: 100px;
@@ -54,27 +57,30 @@ export const AvatarImage = styled.img`
 export const Avatar = styled.div`
   display: flex;
   gap:16px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 `;
 
 export const AvatarContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   gap:4px;
 `;
 
 export const ATitle = styled.div`
     ${Body2t700};
-    color:${colors.typography[700]}
+    color:${colors.typography[700]}  
 `;
 
 export const ADescription = styled.div`
-  // ${Body3t400}
-  // color:${colors.typography[700]}
-  ${H4t700};
-  color:#00662B;
-  font-weight: 700;
     
+  color:#00662B;
+  font-weight: 500;
+    font-size: 14px;
 `;
 
 export const Title = styled.div`
@@ -87,13 +93,31 @@ export const Title = styled.div`
       }
 `;
 
+
+export const Owner = styled.div`
+  position: absolute;
+    bottom: 73px;
+    right: 54px;
+    border-radius: 5px;
+    padding: 4px 5px;
+    background: #00662B;
+    color: white;
+    font-size: 11px;
+    font-weight: 500;
+  @media (${rwd.maxSmallDesktop}){
+      right: 74px;
+  }
+`;
 export const Description = styled.p`
   ${Body2t400};
+    text-align: justify;
   @media (${rwd.maxSmallDesktop}){
   ${Body3t400};
+      text-align: left;
   }
   @media (${rwd.maxPhone}){
     ${Body4t400};
+      text-align: left;
   }
 `;
 

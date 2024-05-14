@@ -8,15 +8,16 @@ export const Body2t500 = css`
 `;
 
 export const Body2t700 = css`
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 24px;
+  font-weight: 500;
+  font-size: 14px; 
 `;
 
 export const Body2t400 = css`
-  line-height: 24px;
-  font-size: 16px;
-  font-weight: 400;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    text-align: justify;
+    color: #5A5A5A;
 `;
 
 export const Body3t400 = css`
@@ -44,13 +45,13 @@ export const Body1t500 = css`
 
 export const Body1t700 = css`
     font-size: 18px;
-    line-height: 24px;
+    line-height: 1.7;
     font-weight: 700;
     color:${colors.typography[900]}
 `;
 
 export const Body1t400 = css`
-    font-size: 18px;
+    font-size: 14px;
     line-height: 24px;
     color:${colors.typography[900]}
 `;
@@ -110,27 +111,26 @@ export const H3t500 = css`
 `;
 
 export const H3t700 = css`
-    font-size: 32px;
-    font-weight: 700;
-    line-height: 48px;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.7;
 `;
 
 export const H2t700 = css`
-    font-weight: 700;
-    line-height: 64px;
-    font-size: 48px;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.7;
 `;
 
 export const H2t500 = css`
+    font-size: 18px;
     font-weight: 500;
-    line-height: 64px;
-    font-size: 48px;
+    line-height: 1.7;
 `;
 
 export const H4t700 = css`
-    font-size: 24px;
-    line-height: 32px;
-   font-weight: 700;
+    font-size: 18px; 
+    font-weight:  500;
     color:${colors.typography[900]}
 `;
 export const H4t500 = css`
