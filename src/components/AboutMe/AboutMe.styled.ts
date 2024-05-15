@@ -103,7 +103,7 @@ export const Avatar = styled.img`
   @media (${rwd.maxSmallDesktop}){
     left: 24px;
   }
-  top: 0;
+  top: 65px;
   left: 0;
   width: 160px;
   height: 160px;
