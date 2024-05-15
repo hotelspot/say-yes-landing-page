@@ -380,7 +380,7 @@ export const _agenda_list: AgendaItemProps[] = [
     isSmall: true,
   },
   {
-    title: 'Przemowa końcowa - Juliusz Zgliński',
+    title: 'Przemowa końcowa',
     time: '17:15 - 17:25',
     alone:true,
     avatars: [

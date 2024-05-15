@@ -51,6 +51,7 @@ export const AvatarImage = styled.img`
   width: 130px;
   height: 130px;
   border-radius: 50%;
+    z-index: 1;
   @media(max-width: 992px){
     width: 100px;
     height: 100px;
@@ -66,12 +67,12 @@ export const AvatarAlone = styled.div `
 `;
 export const Avatar = styled.div<{full:boolean}>`
   display: flex;
-    ${(props) => props.full && 'border:solid red' };
-    gap:16px;
+    
+    gap:8px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    position: relative;
+    position: relative; 
 `;
 
 export const AvatarContainer = styled.div`
@@ -93,6 +94,33 @@ export const ADescription = styled.div`
   font-weight: 500;
     font-size: 14px;
 `;
+export const AvatarLabel = styled.div`
+    text-align: center;
+    color:#000; 
+    position: absolute;
+    background: #fff;
+    left: 108px;
+    top: 40px;
+    padding: 10px 40px;
+    width: 220px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 75px 0px rgba(0, 0, 0, 0.10), 0px 25px 100px 0px rgba(0, 0, 0, 0.10);
+`;
+export const AvatarLabel2 = styled.div`
+    ${H4t700};
+    text-align: center;
+    color: #00662B;
+    font-weight: 500;
+    position: absolute;
+    background: #fff;
+    right: 108px;
+    top: 40px;
+    padding: 10px 40px;
+    width: 220px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 75px 0px rgba(0, 0, 0, 0.10), 0px 25px 100px 0px rgba(0, 0, 0, 0.10);
+`;
+
 
 export const Title = styled.div`
     ${H4t700};
