@@ -61,7 +61,7 @@ export const Navbar = () => {
         <BlackLinkContainer>
           <BlackLink onClick={() => setOpen(false)} to="#organizator">Organizator</BlackLink>
           <BlackLink onClick={() => setOpen(false)} to="#agenda">Agenda & Prelegenci</BlackLink>
-          <BlackLink onClick={() => setOpen(false)} to="#">Partnerzy & Sponsorzy</BlackLink>
+          <BlackLink onClick={() => setOpen(false)} to="#partners">Partnerzy & Sponsorzy</BlackLink>
           <BlackLink onClick={() => setOpen(false)} to="#contact">Kontakt</BlackLink>
         </BlackLinkContainer>
         <MobileButtons>
@@ -86,7 +86,7 @@ export const Navbar = () => {
             />
             <Link to="#organizator">Organizator</Link>
             <Link to="#agenda">Agenda & Prelegenci</Link>
-            <Link to="#">Partnerzy & Sponsorzy</Link>
+            <Link to="#partners">Partnerzy & Sponsorzy</Link>
             <Link to="#contact">Kontakt</Link>
           </Links>
           <Buttons>

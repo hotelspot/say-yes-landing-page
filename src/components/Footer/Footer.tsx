@@ -53,7 +53,7 @@ export const Footer = () => (
             </Link>
           </Links>
           <Links>
-            <Link>
+            <Link href="#partners">
               Partnerzy & Sponsorzy
             </Link>
             <Link href="#contact">

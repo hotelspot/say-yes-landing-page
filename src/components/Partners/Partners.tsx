@@ -1,4 +1,3 @@
-import React from "react";
 import {
     Center,
     CommonPartners,
@@ -17,17 +16,23 @@ import {
     Kancelaria, Ngo,
     PrimeTime
 } from "../../assets/partners";
+import React from "react";
 
 const commonPartners = [
-    Hotelspot,BoCerba,PrimeTime,CentrumUbezpieczenPolskich,
-    Kancelaria,
+    {src:Hotelspot,link:"https://www.hotelspot.pl/"},
+    {src: BoCerba,link:"#"},
+    {src:  PrimeTime,link:"#"},
+    {src:  CentrumUbezpieczenPolskich,link:"#"},
+    {src: Kancelaria,link:"#"},
 ]
 
 const commonMediaPartners = [
-    Integracja,BusinessWoman,Ngo
+    {src: Integracja,link:"#"},
+    {src: BusinessWoman,link:"#"},
+    {src: Ngo,link:"#"},
 ];
 export const Partners = () =>{
-    return <Container>
+    return <Container id="partners">
         <Wrapper>
             <Strategy>
                 <StrategyTitle>Partner Strategiczny</StrategyTitle>
@@ -36,15 +41,15 @@ export const Partners = () =>{
             <CommonPartners>
                 <PartnersTitle>Partnerzy</PartnersTitle>
                 <PartnersImages>
-                    {commonPartners.map(e => <Center key={e}>
-                        <img alt="" src={e}/></Center> )}
+                    {commonPartners.map(e => <Center target="_blank" href={e.link} key={e.src}>
+                        <img alt="" src={e.src}/></Center> )}
                 </PartnersImages>
             </CommonPartners>
             <CommonPartners>
                 <PartnersTitle>Patronat medialny nad konferencją sprawują</PartnersTitle>
                 <PartnersImages>
-                    {commonMediaPartners.map(e => <Center key={e}>
-                        <img src={e} alt=""/></Center> )}
+                    {commonMediaPartners.map(e => <Center target="_blank" href={e.link} key={e.src}>
+                        <img src={e.src} alt=""/></Center> )}
                 </PartnersImages>
             </CommonPartners>
         </Wrapper>
