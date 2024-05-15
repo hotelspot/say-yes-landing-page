@@ -5,7 +5,7 @@ import {
   Avatar, AvatarContainer, AvatarImage,
   Avatars,
   Container, Description, Time, TimeWrapper, Title, Wrapper,
-  Owner,
+  Owner, AvatarAlone,
 } from './AgendaItem.styled';
 import { AvatarJuliuszZglinski } from '../../assets';
 import { TimeContainer } from '../Header/Header.styled';
@@ -14,6 +14,9 @@ export type AgendaItemProps = {
   time:string;
   title:string
   description?:string|ReactNode
+  isDiscus?: boolean,
+  isSmall?: boolean,
+  alone?: boolean,
   avatars?: {
     img:string;
     name:string;
@@ -28,28 +31,53 @@ export const AgendaItem: FC<AgendaItemProps> = ({
   title,
   description,
   avatars,
+  isDiscus,
+  isSmall,
+    alone
 }) => (
-  <Container>
-    <Wrapper>
-      <Title>{title}<Time>{time}</Time></Title>
-      <Description>{description}</Description>
-    </Wrapper>
-    {(avatars && avatars?.length > 0) &&(
-        <Avatars>
+  <Container isDiscus={isDiscus} isSmall={isSmall}>
+    {!alone ? (
+        <>
+          <Wrapper isDiscus={isDiscus} isSmall={isSmall}>
+            <Title>{title}<Time>{time}</Time></Title>
+            <Description>{description}</Description>
+          </Wrapper>
+          {( avatars && avatars?.length > 0) &&(
+              <Avatars isDiscus={isDiscus}>
+                {avatars?.map(({ img, desc, name, owner }) => (
+                    <Avatar>
+                      {owner && (<Owner>{owner}</Owner>)}
+                      <AvatarImage src={img} />
+                      <AvatarContainer>
+                        <ATitle>{name}</ATitle>
+                        <ADescription>
+                          {desc}
+                        </ADescription>
+                      </AvatarContainer>
+                    </Avatar>
+                ))}
+              </Avatars>
+          ) }
+        </>
+    ): (
+
+        <AvatarAlone>
           {avatars?.map(({ img, desc, name, owner }) => (
-              <Avatar>
+              <Avatar full={true}>
                 {owner && (<Owner>{owner}</Owner>)}
                 <AvatarImage src={img} />
                 <AvatarContainer>
                   <ATitle>{name}</ATitle>
                   <ADescription>
-                    {desc}
+                    {desc}{time}{title}
                   </ADescription>
                 </AvatarContainer>
               </Avatar>
           ))}
-        </Avatars>
+        </AvatarAlone >
+
     ) }
+
 
   </Container>
 );

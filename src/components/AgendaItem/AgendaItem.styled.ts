@@ -6,12 +6,14 @@ import {
 import { colors } from '../../styles/colors';
 import { rwd } from '../../styles/rwd';
 
-export const Container = styled.div`
-  padding:24px;
-  gap:80px;
+export const Container = styled.div<{isDiscus:boolean, isSmall:boolean }>`
+  padding:24px; 
   border-radius: 15px;
   display: flex;
-  background: ${colors.typography[300]};
+    background: ${(props) => props.isSmall ? '#fcf5d8':  colors.typography[300]} ;
+   flex-direction: ${(props) => props.isDiscus ? 'column': 'row'}; 
+   background:   ${colors.typography[300]} ;
+   
   @media(${rwd.maxSmallDesktop}){
     padding: 24px;
     flex-direction: column;
@@ -22,19 +24,20 @@ export const Container = styled.div`
   }
 `;
 
-export const Wrapper = styled.div`
+export const Wrapper = styled.div<{isDiscus:boolean, isSmall:boolean }>`
   display: flex;
+ flex-direction: ${(props) => props.isDiscus ? 'row': 'column'}; 
   flex:1;
-  flex-direction: column;
-  gap:40px;    
+    gap: ${(props) => props.isSmall ? '0':  '40px' };
+   
 `;
 
-export const Avatars = styled.div`
-  display: flex; 
-  flex-direction: column;
-  max-width: 30%; 
-    width: 300px;
+export const Avatars = styled.div<{isDiscus:boolean }>`
+  display: flex;    
     padding: 25px 0;
+    flex-direction: ${(props) => props.isDiscus ? 'row': 'column'};
+    width: ${(props) => props.isDiscus ? '100%': '300px'};
+    max-width: ${(props) => props.isDiscus ? '100%': '30%'};
   @media(max-width: 992px){
     width: 100%; 
       display: flex;
@@ -54,9 +57,17 @@ export const AvatarImage = styled.img`
   }
 `;
 
-export const Avatar = styled.div`
+
+export const AvatarAlone = styled.div `
+  width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+`;
+export const Avatar = styled.div<{full:boolean}>`
   display: flex;
-  gap:16px;
+    ${(props) => props.full && 'border:solid red' };
+    gap:16px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
