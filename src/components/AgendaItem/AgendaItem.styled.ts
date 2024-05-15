@@ -101,7 +101,7 @@ export const AvatarLabel = styled.div`
     background: #fff;
     left: 108px;
     top: 40px;
-    padding: 10px 40px;
+    padding: 10px 30px;
     width: 220px;
     border-radius: 15px;
     box-shadow: 0px 5px 75px 0px rgba(0, 0, 0, 0.10), 0px 25px 100px 0px rgba(0, 0, 0, 0.10);
@@ -115,7 +115,7 @@ export const AvatarLabel2 = styled.div`
     background: #fff;
     right: 108px;
     top: 40px;
-    padding: 10px 40px;
+    padding: 10px 30px;
     width: 220px;
     border-radius: 15px;
     box-shadow: 0px 5px 75px 0px rgba(0, 0, 0, 0.10), 0px 25px 100px 0px rgba(0, 0, 0, 0.10);

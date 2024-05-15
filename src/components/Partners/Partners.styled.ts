@@ -11,6 +11,7 @@ export const Container = styled.section`
 `
 
 export const Wrapper = styled.section`
+    padding-top: 300px;
   width: 1196px;
   margin:0 24px;
 `
@@ -22,9 +23,9 @@ export const Strategy = styled.div`
   margin-bottom: 64px;
 `
 export const StrategyTitle = styled.h1`
- font-size: 48px;
+ font-size: 24px;
  font-style: normal;
- font-weight: 700;
+ font-weight: 500;
   text-align: center;
   color:${colors.typography[900]};
   
