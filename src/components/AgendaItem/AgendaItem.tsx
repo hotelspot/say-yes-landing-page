@@ -5,7 +5,7 @@ import {
   Avatar, AvatarContainer, AvatarImage,
   Avatars,
   Container, Description, Time, TimeWrapper, Title, Wrapper,
-  Owner, AvatarAlone,
+  Owner, AvatarAlone, AvatarLabel, AvatarLabel2,
 } from './AgendaItem.styled';
 import { AvatarJuliuszZglinski } from '../../assets';
 import { TimeContainer } from '../Header/Header.styled';
@@ -38,7 +38,10 @@ export const AgendaItem: FC<AgendaItemProps> = ({
   <Container isDiscus={isDiscus} isSmall={isSmall}>
     {!alone ? (
         <>
-          <Wrapper isDiscus={isDiscus} isSmall={isSmall}>
+          <Wrapper
+              isDiscus={isDiscus}
+              isSmall={isSmall}
+          >
             <Title>{title}<Time>{time}</Time></Title>
             <Description>{description}</Description>
           </Wrapper>
@@ -60,7 +63,6 @@ export const AgendaItem: FC<AgendaItemProps> = ({
           ) }
         </>
     ): (
-
         <AvatarAlone>
           {avatars?.map(({ img, desc, name, owner }) => (
               <Avatar full={true}>
@@ -68,14 +70,19 @@ export const AgendaItem: FC<AgendaItemProps> = ({
                 <AvatarImage src={img} />
                 <AvatarContainer>
                   <ATitle>{name}</ATitle>
+                  <AvatarLabel>
+                    {time}
+                  </AvatarLabel>
                   <ADescription>
-                    {desc}{time}{title}
+                    {desc}
                   </ADescription>
+                  <AvatarLabel2>
+                    {title}
+                  </AvatarLabel2>
                 </AvatarContainer>
               </Avatar>
           ))}
-        </AvatarAlone >
-
+        </AvatarAlone>
     ) }
 
 

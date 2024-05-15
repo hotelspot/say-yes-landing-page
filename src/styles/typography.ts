@@ -129,7 +129,7 @@ export const H2t500 = css`
 `;
 
 export const H4t700 = css`
-    font-size: 18px; 
+    font-size: 16px; 
     font-weight:  500;
     color:${colors.typography[900]}
 `;
