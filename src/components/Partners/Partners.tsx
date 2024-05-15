@@ -39,7 +39,7 @@ export const Partners = () =>{
                 <StrategyImage alt="strategy" src={HiltonGarden}/>
             </Strategy>
             <CommonPartners>
-                <PartnersTitle>Partnerzy</PartnersTitle>
+                <PartnersTitle>Partnerzy & Sponsorzy</PartnersTitle>
                 <PartnersImages>
                     {commonPartners.map(e => <Center target="_blank" href={e.link} key={e.src}>
                         <img alt="" src={e.src}/></Center> )}

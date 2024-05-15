@@ -13,8 +13,7 @@ export const Container = styled.div`
 `;
 
 export const Wrapper = styled.div`
-  width: 100%;
-  margin-top: 320px;
+  width: 100%; 
   max-width: 1196px;
 `;
 

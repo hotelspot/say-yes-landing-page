@@ -4,12 +4,10 @@ import {colors} from "../../styles/colors";
 import {rwd} from "../../styles/rwd";
 
 export const Container = styled.section`
-    margin:250px 0;
+ 
   display: flex;
   justify-content: center;
-  @media (${rwd.maxTablet}){
-    margin:250px 0 100px 0;
-  }
+ 
 `
 
 export const Wrapper = styled.section`
@@ -52,11 +50,12 @@ export const CommonPartners = styled.div`
 `
 
 export const PartnersTitle = styled.div`
-  font-size: 32px;
+  font-size: 24px;
   font-style: normal;
-  font-weight: 700;
-  line-height: 48px;
+  font-weight: 500;
+  line-height: 36px;
   text-align: center;
+    padding: 25px 0;
   color:${colors.typography[700]};
   @media (${rwd.maxTablet}){
     font-size: 24px;

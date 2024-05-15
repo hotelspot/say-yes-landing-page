@@ -247,6 +247,19 @@ export const _agenda_list: AgendaItemProps[] = [
         desc: '15:05 - 15:20',
       },
     ],
+    description: <>
+
+      Wiesław Nowiński - Pan Wiesław, to polski naukowiec pracujący w Singapurze w Agency for Science, Technology and
+      Research, jest profesorem w dziedzinie nauk technicznych. A także autorem komputerowych map mózgu i laureatem
+      wielu prestiżowych światowych nagród, w tym III edycji konkursu „Wybitny Polak” i jest autorem wielu patentów.
+      <br/>
+      Kawaler Orderu Zasługi Rzeczypospolitej Polskiej, za „zasługi w rozwijaniu polsko-singapurskiej współpracy.
+      <br/>
+      <br/>
+      Jako ciekawostkę przytoczę też fakt, iż w 2018 roku został uhonorowany znaczkiem pocztowym, wydanym przez Pocztę
+      Polską z okazji 100 lecia Urzędu Patentowego RP ✉️😮
+      <br/> <br/>
+    </>
   },
   {
     title: 'Dyskusja || Jak nowe technologie pomagają OzN?',
@@ -273,24 +286,24 @@ export const _agenda_list: AgendaItemProps[] = [
     ],
   },
   {
-    title: 'Panel ||| ',
+    title: 'Panel |V: Innowacje wokół nas, cz. 2 ',
     time: '15:50 - 16:35',
     avatars: [
       {
-        name: 'Wiesław Nowiński',
-        img: Wieslaw,
+        name: 'Kacper Kupczak',
+        img: KacperK,
+        desc: '15:50 - 16:05',
       },
       {
         name: 'Miłosz Stanisławski',
         img: Milosz,
+        desc: '16:05 - 16:20',
       },
-      {
-        name: 'Kacper Kupczak',
-        img: KacperK,
-      },
+
       {
         name: 'Maciej Kawecki',
         img: MaciejK,
+        desc: '16:20 - 16:35',
       },
     ],
     description: <>
@@ -300,19 +313,9 @@ export const _agenda_list: AgendaItemProps[] = [
       - w tej części Prelegenci odpowiedzą na pytania ♿
       <br/>
       <br/>
-      🔴 Jak nowe technologie pomagają ludziom z niepełnosprawnością❓
+      🔴 Jak nowe technologie pomagają ludziom z niepełnosprawnością❓<br/>
       🔴 Czy nauka może przyczynić się do polepszenia ich sytuacji❓
       <br/>
-      <br/>
-      Wiesław Nowiński - Pan Wiesław, to polski naukowiec pracujący w Singapurze w Agency for Science, Technology and
-      Research, jest profesorem w dziedzinie nauk technicznych. A także autorem komputerowych map mózgu i laureatem
-      wielu prestiżowych światowych nagród, w tym III edycji konkursu „Wybitny Polak” i jest autorem wielu patentów.
-      <br/>
-      Kawaler Orderu Zasługi Rzeczypospolitej Polskiej, za „zasługi w rozwijaniu polsko-singapurskiej współpracy.
-      <br/>
-      <br/>
-      Jako ciekawostkę przytoczę też fakt, iż w 2018 roku został uhonorowany znaczkiem pocztowym, wydanym przez Pocztę
-      Polską z okazji 100 lecia Urzędu Patentowego RP ✉️😮
       <br/>
       Kacper Kupczak - Kacper choć ma zaledwie kilkanaście lat, zmienił już trochę w swoim otoczeniu. Przeprowadził
       wiele wykładów i warsztatów, a co ważniejsze wraz z gronem dużo bardziej doświadczonych osób stworzył aplikację,
