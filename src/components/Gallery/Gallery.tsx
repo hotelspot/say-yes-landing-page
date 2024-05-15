@@ -3,7 +3,7 @@ import {
   Container, Section, SectionBox, Title, Typography, Wrapper,
 } from './Gallery.styled';
 import {
-  Image1, Image2, Image3, Image4, Logo,
+  Image1, Image1a, Image2, Image3, Image4, Img1JPG, Logo,
 } from '../../assets';
 import SvgPin from '../icons/Pin';
 import { Button } from '../Button/Button';
@@ -22,32 +22,28 @@ export const Gallery = () => (
             Wierzę, że ludzie wokół nas, w końcu jednym głosem powiedzą TAK dla niepełnosprawności!
           </Typography>
         </SectionBox>
-        <SectionBox img={Image4 as string} />
+        <SectionBox img={Image1a as string} />
       </Section>
       <Section>
         <SectionBox img={Image2 as string} />
         <SectionBox>
           <Title>Hilton Garden Inn Krakow Airport</Title>
-          <div style={{ gap: 12, display: 'flex' }}>
-            <SvgPin />
-            <Typography>Medweckiego 3,Balice</Typography>
-          </div>
           <Typography>
             Hotel znajduje się przy samym lotnisku Kraków-Balice, dzięki czemu idealnie nadaje się dla zmęczonych długą podróżą gości lub pasażerów, których lot zaplanowany jest na wczesny poranek. Centrum miasta, zamek królewski na Wawelu oraz muzea przy Rynku Głównym znajdują się w odległości 13 km od hotelu. Śniadanie, lunch i kolacja podawane w naszej restauracji.
           </Typography>
         </SectionBox>
       </Section>
+      {/*<Section>*/}
+      {/*  <SectionBox>*/}
+      {/*    <Title>Sala konferencyjna</Title>*/}
+      {/*    <Typography>*/}
+      {/*      [ do uzupełneinia... ]*/}
+      {/*    </Typography>*/}
+      {/*  </SectionBox>*/}
+      {/*  <SectionBox img={Image3 as string} />*/}
+      {/*</Section>*/}
       <Section>
-        <SectionBox>
-          <Title>Sala konferencyjna</Title>
-          <Typography>
-            [ do uzupełneinia... ]
-          </Typography>
-        </SectionBox>
-        <SectionBox img={Image3 as string} />
-      </Section>
-      <Section>
-        <SectionBox img={Image4 as string} />
+
         <SectionBox>
           <Title>Zapisz się na Konferencję PowiemTAK</Title>
           <Typography>
@@ -61,6 +57,7 @@ export const Gallery = () => (
             type="default"
           />
         </SectionBox>
+        <SectionBox img={Img1JPG as string} />
       </Section>
     </Wrapper>
   </Container>

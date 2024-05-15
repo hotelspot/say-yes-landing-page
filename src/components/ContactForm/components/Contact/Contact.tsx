@@ -67,7 +67,7 @@ export const Form = () => {
           <InputWrapper
             {...register('firstName', { required: true })}
             isInvalid={checkField(!!errors.firstName)}
-            placeholder="Przykład: Jan"
+            placeholder="Twoje Imię"
             labelPlacement="inside"
             label="Imię"
             variant="bordered"
@@ -75,7 +75,7 @@ export const Form = () => {
           <InputWrapper
             variant="bordered"
             {...register('lastName')}
-            placeholder="Przykład: Kowalski"
+            placeholder="Twoje nazwisko"
             labelPlacement="inside"
             label="Nazwisko"
           />
@@ -88,25 +88,25 @@ export const Form = () => {
             type="email"
             labelPlacement="inside"
             label="Email"
-            placeholder="Przykład: j.kowalski@gmail.com"
+            placeholder="E-mail"
           />
           <InputWrapper
             variant="bordered"
             {...register('phoneNumber')}
             labelPlacement="inside"
-            placeholder="+Przykład: +48 999 999 999"
+            placeholder="+48 123 456 789"
             label="Numer telefonu"
           />
         </RowButtons>
         <InputWrapper
           variant="bordered"
-          placeholder="Przykład: Pytanie odnośnie szczegółów wydarzenia"
+          placeholder="Temat"
           {...register('subject')}
           label="Temat"
         />
         <TextareaWrapper
           variant="bordered"
-          placeholder="Przykład: Witam, nazywam się Jan Kowlaski oraz pisze w sprawie..."
+          placeholder="Wiadomość..."
           {...register('message', { required: true })}
           errorMessage="To pole jest wymagane"
           isInvalid={checkField(!!errors.message)}
@@ -119,7 +119,7 @@ export const Form = () => {
               type="submit"
               radius="sm"
               className={cn(
-                'text-white !borer-none bg-secondary rounded-full px-[88.5px] py-[12px] w-full',
+                'text-white !borer-none bg-secondary rounded-full  w-full',
                 formState === 'error' && 'bg-red-500',
                 formState === 'success' && 'bg-green-500',
               )}
@@ -138,14 +138,12 @@ export const Form = () => {
                   />
                 ),
                 success: <>Send</>,
-                error: <>:( Please again</>,
+                error: <>:( Please try again</>,
               }[formState]
             }
             </Button>
           </BtnContainer>
-          <p className="text-[12px] leading-[18px]">
-            Polityka prywatności
-          </p>
+
         </RowButtons>
       </Column>
 

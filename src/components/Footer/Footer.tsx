@@ -17,15 +17,17 @@ export const Footer = () => (
   <FooterStyled>
     <Wrapper>
       <Column>
-        <img width={220} src={Logo as string} />
+        <img width={220} src={Logo as string}/>
+      </Column>
+      <Column>
         <LinksContainer>
-          <LinkIcon href="#">
+        <LinkIcon href="#">
             <Calendar fill={colors.typography[300]} />
             <span>08.06.2024</span>
           </LinkIcon>
           <LinkIcon href="#">
             <Pin fill={colors.typography[300]} />
-            <span>Medewckiego 3,Balice</span>
+            <span>Medweckiego 3, Balice</span>
           </LinkIcon>
           <LinkIcon href="#">
             <Email fill={colors.typography[300]} />
@@ -36,31 +38,20 @@ export const Footer = () => (
         </LinksContainer>
       </Column>
       <Column>
-        <Title>Nawigacja</Title>
         <Row>
           <Links>
-            <Link href="#___gatsby">
-              Start
-            </Link>
+
             <Link href="#organizator">
               Organizator
             </Link>
             <Link href="#agenda">
               Agenda & Prelegenci
             </Link>
-            <Link>
-              Lokalizacja
-            </Link>
-          </Links>
-          <Links>
             <Link href="#partners">
               Partnerzy & Sponsorzy
             </Link>
             <Link href="#contact">
               Kontakt
-            </Link>
-            <Link>
-              Polityka prywatności
             </Link>
           </Links>
         </Row>
@@ -77,9 +68,7 @@ export const Footer = () => (
       </SocialContainer>
       <Line />
       <PoweredBy>
-        © 2024 PowiemTAK!, powered by
-        {' '}
-        <a href="https://www.hotelspot.pl/">Hotelspot.pl</a>
+        © Powiem Tak 2024
       </PoweredBy>
     </Bottom>
   </FooterStyled>

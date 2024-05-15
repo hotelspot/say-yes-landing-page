@@ -32,14 +32,14 @@ export const Body3t500 = css`
 `;
 
 export const Body4t400 = css`
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 400;
     line-height: 1.7;
 `;
 
 export const Body1t500 = css`
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 14px;
+    line-height: 1.7;
     color:${colors.typography[900]}
 `;
 
@@ -75,7 +75,7 @@ export const H1t500 = css`
 `;
 
 export const H5t700 = css`
-  font-weight: 700;
+  font-weight: 400;
   font-size: 20px;
   line-height: 28px;
 `;

@@ -7,9 +7,9 @@ import {
 import { rwd } from '../../styles/rwd';
 
 export const FooterStyled = styled.footer`
-  padding: 80px 16px;
+  padding: 40px 16px;
   background: ${colors.typography[1100]};
-  gap:80px;
+  gap:40px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,7 +24,8 @@ export const FooterStyled = styled.footer`
 `;
 
 export const PoweredBy = styled.p`
-  ${Body4t400};
+  font-size: 12px;
+    letter-spacing: 1px;
   color:${colors.typography[100]};
   a{
     font-weight: 600;
@@ -84,22 +85,22 @@ export const Column = styled.aside`
 export const Links = styled.div`
   display: flex;
   flex-direction: column;
-  gap:24px;
+  gap:12px;
   @media(${rwd.maxPhone}){
     flex-direction: column;
-    gap:32px;
+    gap:12px;
   }
 `;
 
 export const LinksContainer = styled.div`
   display: flex;
   flex-direction: column;
-  gap:24px;
+  gap:10px;
   @media(${rwd.maxTablet}){
     flex-direction: row;
     justify-content: space-between;
     column-gap: 24px;
-    row-gap: 32px;
+ 
     flex-wrap: wrap;
     a {
       flex-basis: 45%;
@@ -111,15 +112,15 @@ export const LinksContainer = styled.div`
 `;
 
 export const LinkIcon = styled.a`
-    ${Body1t500};
+  
     color:${colors.typography[300]};
     display: flex;
-    gap:12px;
+    gap:5px;
     align-items: center;
     text-decoration: none;
-    
    span{
      text-decoration: none;
+       font-size: 14px;
    }
 `;
 
@@ -129,8 +130,11 @@ export const Title = styled.h3`
 `;
 
 export const Link = styled.a`
-  ${Body1t400};
+ font-size: 12px;
   color: ${colors.typography[500]};
+    &:hover{
+        text-decoration: underline;
+    }
 `;
 
 export const Row = styled.div`

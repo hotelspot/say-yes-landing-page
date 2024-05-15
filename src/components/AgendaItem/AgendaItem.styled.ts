@@ -96,6 +96,7 @@ export const ADescription = styled.div`
 `;
 export const AvatarLabel = styled.div`
     text-align: center;
+    font-size: 14px;
     color:#000; 
     position: absolute;
     background: #fff;
@@ -105,9 +106,16 @@ export const AvatarLabel = styled.div`
     width: 220px;
     border-radius: 15px;
     box-shadow: 0px 5px 75px 0px rgba(0, 0, 0, 0.10), 0px 25px 100px 0px rgba(0, 0, 0, 0.10);
+    @media (${rwd.maxPhone}){
+        width: 178px;
+        left: 31px;
+        padding: 10px 20px;
+        text-align: right;
+       
+    }
 `;
 export const AvatarLabel2 = styled.div`
-    ${H4t700};
+    font-size: 14px;
     text-align: center;
     color: #00662B;
     font-weight: 500;
@@ -119,6 +127,11 @@ export const AvatarLabel2 = styled.div`
     width: 220px;
     border-radius: 15px;
     box-shadow: 0px 5px 75px 0px rgba(0, 0, 0, 0.10), 0px 25px 100px 0px rgba(0, 0, 0, 0.10);
+    @media (${rwd.maxPhone}){
+        width: 126px;
+        right: 74px;
+        top: 20px;
+    }
 `;
 
 

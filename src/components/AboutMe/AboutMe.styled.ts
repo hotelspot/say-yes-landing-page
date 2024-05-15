@@ -41,12 +41,13 @@ export const Information = styled.section`
 export const InformationItem = styled.a`
   display: flex;
   gap:6px;
+    margin-bottom: 20px;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   border-radius: 6px;
   flex:1;
   background: white;
-  padding:16px 7px;
+  padding:10px 15px;
   border: 2px solid ${colors.typography[400]};
 `;
 
@@ -62,18 +63,15 @@ export const InformationLabel = styled.div`
 `;
 
 export const Contact = styled.div`
-  display: flex;
-  max-width: 1196px;
+  display: flex; 
   height: 20px;
   flex:1;
-  width: 100%;
+  width: 90%;
   position: relative;
   @media (${rwd.maxSmallDesktop}){
     padding:0 24px
   }
-  @media (${rwd.maxPhone}){
-    padding:0 36px
-  }
+ 
 `;
 
 export const ContactContainer = styled.div`
@@ -101,7 +99,8 @@ export const Avatar = styled.img`
   border-radius: 160px;
   position: absolute;
   @media (${rwd.maxSmallDesktop}){
-    left: 24px;
+    left: 35px;
+      top: -15px;
   }
   top: 65px;
   left: 0;

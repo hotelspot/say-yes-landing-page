@@ -29,7 +29,7 @@ export const Header = styled.h1`
     ${Display02}
   }
   @media (${rwd.maxPhone}){
-    ${H4t700}
+   font-size: 60px;
   }
   color:#0C5;
 `;
@@ -80,13 +80,7 @@ export const Banner = styled.section`
 `;
 
 export const Information = styled.section`
-  display: flex;
-  gap:12px;
-  max-width: 1186px;
-  justify-content: space-between;
-  margin: 0 24px;
-  width: 100%;
-  flex-wrap: wrap;
+  
  
   @media (${rwd.maxTablet}){
     padding:0 24px;

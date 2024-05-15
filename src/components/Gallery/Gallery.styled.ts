@@ -45,6 +45,7 @@ export const SectionBox = styled.div<{img?:string}>`
   flex:1;
   background-image: url(${(props) => props.img}); 
   background-position: center;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
