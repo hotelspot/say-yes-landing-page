@@ -16,11 +16,12 @@ import personTomaszBill from './person-Tomasz-Bill.png';
 import personWeronika from './person-Weronika-Grasztka.png';
 import personWieslaw from './person-Wiesław-Nowiński.png';
 import personZuzanna from './person-Zuzanna-Janaszek.png';
-
+import  personNatalia from './natalia-prokaziuk.png';
 export const AnnaJ = personAnnaJung;
 export const ArrekW = personArekWarchał;
 export const BartoszM = personBartoszMrozek;
 
+export const NataliaP = personNatalia;
 export const DawidD = personDawidDoliński;
 export const GrazynaZ = personGrażynaZglinski;
 export const JuliaMałecki = personJuliaMałecki;

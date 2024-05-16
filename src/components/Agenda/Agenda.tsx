@@ -19,6 +19,7 @@ import {
   Weronika,
   Wieslaw,
   Zuzanna,
+  NataliaP,
 } from '../../assets/avatars';
 
 export const _agenda_list: AgendaItemProps[] = [
@@ -141,7 +142,7 @@ export const _agenda_list: AgendaItemProps[] = [
     avatars: [
       {
         name: 'Natalia Prokaziuk',
-        img: EmptyImagePNG,
+        img: NataliaP,
         owner: 'Prowadząca',
       },
       {
@@ -167,7 +168,6 @@ export const _agenda_list: AgendaItemProps[] = [
         name: 'Monika Zadłużna',
         img: Monika,
         desc: '13:20 - 13:35',
-        owner: 'Prowadząca'
       },
       {
         name: 'Grażyna Zgliński-Brzózy',

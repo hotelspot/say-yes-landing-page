@@ -133,7 +133,7 @@ export const Description = styled.div`
 
 export const Paragraph = styled.p`
   ${Body3t400};
-    text-align: justify;
+    text-align: left;
   color:${colors.typography[700]};
   @media (${rwd.maxSmallDesktop}){
     ${Body3t400};

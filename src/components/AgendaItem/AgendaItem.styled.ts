@@ -158,7 +158,7 @@ export const Owner = styled.div`
     font-weight: 500;
     z-index: 2;
   @media (${rwd.maxSmallDesktop}){
-      right: 74px;
+      right: 58px;
   }
 `;
 export const Description = styled.p`
