@@ -20,6 +20,7 @@ import {
   Wieslaw,
   Zuzanna,
   NataliaP,
+  KatarzynaMichaelis,
 } from '../../assets/avatars';
 
 export const _agenda_list: AgendaItemProps[] = [
@@ -374,6 +375,10 @@ export const _agenda_list: AgendaItemProps[] = [
       {
         name: 'Julia Małecka',
         img: JuliaMałecki,
+      },
+      {
+        name: 'Katarzyna Michaelis',
+        img: KatarzynaMichaelis,
       },
     ],
   },
