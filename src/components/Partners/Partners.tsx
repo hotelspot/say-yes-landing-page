@@ -14,12 +14,12 @@ import {
     HiltonGarden,
     Hotelspot, Integracja,
     Kancelaria, Ngo,
-    PrimeTime
+    PrimeTime, RMF
 } from "../../assets/partners";
 import React from "react";
 
 const commonPartners = [
-    {src:Hotelspot,link:"https://www.hotelspot.pl/"},
+    {src:Hotelspot, link:"https://www.hotelspot.pl/"},
     {src: BoCerba,link:"#"},
     {src:  PrimeTime,link:"#"},
     {src:  CentrumUbezpieczenPolskich,link:"#"},
@@ -30,6 +30,7 @@ const commonMediaPartners = [
     {src: Integracja,link:"#"},
     {src: BusinessWoman,link:"#"},
     {src: Ngo,link:"#"},
+    {src: RMF,link:"https://www.rmf24.pl/"},
 ];
 export const Partners = () =>{
     return <Container id="partners">

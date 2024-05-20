@@ -92,7 +92,7 @@ export const _agenda_list: AgendaItemProps[] = [
     ],
   },
   {
-    title: 'PANEL II: Nierówności wokół nas',
+    title: 'PANEL II: Jak radzić sobie z dyskryminacją?',
     description: <>
       W tej części Prelegenci odpowiadają na pytanie postawione w tytule panelu:
       <br />
