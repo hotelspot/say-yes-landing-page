@@ -8,7 +8,7 @@ import { Gallery } from '../components/Gallery/Gallery';
 import { Footer } from '../components/Footer/Footer';
 import { ContactForm } from '../components/ContactForm/ContactForm';
 import { Layout } from '../components/Layout';
-import {Partners} from "../components/Partners";
+import { Partners } from '../components/Partners';
 
 export const IndexPage: FC<PageProps> = () => (
   <Layout>
@@ -17,7 +17,7 @@ export const IndexPage: FC<PageProps> = () => (
     <AboutMe />
     <Agenda />
     <Gallery />
-      <Partners/>
+    <Partners />
     <ContactForm />
     <Footer />
   </Layout>

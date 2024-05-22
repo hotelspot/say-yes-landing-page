@@ -1,10 +1,10 @@
 import styled from 'styled-components';
+import { Link } from 'gatsby';
 import {
   Display01, Display02, Display03, H1t500, H1t700, H2t500, H2t700, H3t500, H3t700, H4t500, H5t500, H5t700,
 } from '../../styles/typography';
 import { colors } from '../../styles/colors';
 import { rwd } from '../../styles/rwd';
-import {Link} from "gatsby";
 
 export const HeaderStyled = styled.header<{ img: string }>`
   height: 800px;
@@ -124,7 +124,7 @@ export const Time = styled.div`
       width: 80%;
       border-radius: 15px;
   } 
-`
+`;
 
 export const TimeContainer = styled.div`
   display: flex;

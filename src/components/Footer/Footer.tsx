@@ -17,11 +17,11 @@ export const Footer = () => (
   <FooterStyled>
     <Wrapper>
       <Column>
-        <img width={220} src={Logo as string}/>
+        <img width={220} src={Logo as string} />
       </Column>
       <Column>
         <LinksContainer>
-        <LinkIcon href="#">
+          <LinkIcon href="#">
             <Calendar fill={colors.typography[300]} />
             <span>08.06.2024</span>
           </LinkIcon>

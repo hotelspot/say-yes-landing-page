@@ -33,58 +33,64 @@ export const AgendaItem: FC<AgendaItemProps> = ({
   avatars,
   isDiscus,
   isSmall,
-    alone
+  alone,
 }) => (
   <Container isDiscus={isDiscus} isSmall={isSmall}>
     {!alone ? (
-        <>
-          <Wrapper
-              isDiscus={isDiscus}
-              isSmall={isSmall}
-          >
-            <Title>{title}<Time>{time}</Time></Title>
-            <Description>{description}</Description>
-          </Wrapper>
-          {( avatars && avatars?.length > 0) &&(
-              <Avatars isDiscus={isDiscus}>
-                {avatars?.map(({ img, desc, name, owner }) => (
-                    <Avatar>
-                      {owner && (<Owner>{owner}</Owner>)}
-                      <AvatarImage src={img} />
-                      <AvatarContainer>
-                        <ATitle>{name}</ATitle>
-                        <ADescription>
-                          {desc}
-                        </ADescription>
-                      </AvatarContainer>
-                    </Avatar>
-                ))}
-              </Avatars>
-          ) }
-        </>
-    ): (
-        <AvatarAlone>
-          {avatars?.map(({ img, desc, name, owner }) => (
-              <Avatar full={true}>
+      <>
+        <Wrapper
+          isDiscus={isDiscus}
+          isSmall={isSmall}
+        >
+          <Title>
+            {title}
+            <Time>{time}</Time>
+          </Title>
+          <Description>{description}</Description>
+        </Wrapper>
+        {(avatars && avatars?.length > 0) && (
+          <Avatars isDiscus={isDiscus}>
+            {avatars?.map(({
+              img, desc, name, owner,
+            }) => (
+              <Avatar>
                 {owner && (<Owner>{owner}</Owner>)}
                 <AvatarImage src={img} />
                 <AvatarContainer>
                   <ATitle>{name}</ATitle>
-                  <AvatarLabel>
-                    {time}
-                  </AvatarLabel>
                   <ADescription>
                     {desc}
                   </ADescription>
-                  <AvatarLabel2>
-                    {title}
-                  </AvatarLabel2>
                 </AvatarContainer>
               </Avatar>
-          ))}
-        </AvatarAlone>
+            ))}
+          </Avatars>
+        ) }
+      </>
+    ) : (
+      <AvatarAlone>
+        {avatars?.map(({
+          img, desc, name, owner,
+        }) => (
+          <Avatar full>
+            {owner && (<Owner>{owner}</Owner>)}
+            <AvatarImage src={img} />
+            <AvatarContainer>
+              <ATitle>{name}</ATitle>
+              <AvatarLabel>
+                {time}
+              </AvatarLabel>
+              <ADescription>
+                {desc}
+              </ADescription>
+              <AvatarLabel2>
+                {title}
+              </AvatarLabel2>
+            </AvatarContainer>
+          </Avatar>
+        ))}
+      </AvatarAlone>
     ) }
-
 
   </Container>
 );

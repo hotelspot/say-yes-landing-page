@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import moment from 'moment';
+import { ArrowDown } from 'feather-icons-react';
 import {
   Count,
-  HeaderStyled, Hero, LogoFloat, SayYes, Subtitle, Time, TimeContainer, TimeLabel, Title, Arrow
+  HeaderStyled, Hero, LogoFloat, SayYes, Subtitle, Time, TimeContainer, TimeLabel, Title, Arrow,
 } from './Header.styled';
 import { HeroImg, Logo } from '../../assets';
 import { Navbar } from '../Navbar/Navbar';
-import {ArrowDown} from 'feather-icons-react'
 
 export const Header = () => {
   const [count, setCount] = useState<{
@@ -43,7 +43,7 @@ export const Header = () => {
         <div>
           <Title>Powiem TAK</Title>
           <Subtitle>Hilton Garden Inn Krakow Airport</Subtitle>
-          <Arrow to="#organizator"><ArrowDown size={24} color={'#00662B'}/></Arrow>
+          <Arrow to="#organizator"><ArrowDown size={24} color="#00662B" /></Arrow>
         </div>
       </Hero>
       <SayYes>POWIEM TAK!</SayYes>

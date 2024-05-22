@@ -1,6 +1,5 @@
-import { NextUIProvider } from "@nextui-org/react";
-import React from "react";
-import { ReactNode } from "react";
+import { NextUIProvider } from '@nextui-org/react';
+import React, { ReactNode } from 'react';
 
 type LayoutType = {
   children: ReactNode;
@@ -9,4 +8,3 @@ type LayoutType = {
 export const Layout = ({ children }: LayoutType) => (
   <NextUIProvider>{children}</NextUIProvider>
 );
-

@@ -33,15 +33,15 @@ export const Gallery = () => (
           </Typography>
         </SectionBox>
       </Section>
-      {/*<Section>*/}
-      {/*  <SectionBox>*/}
-      {/*    <Title>Sala konferencyjna</Title>*/}
-      {/*    <Typography>*/}
-      {/*      [ do uzupełneinia... ]*/}
-      {/*    </Typography>*/}
-      {/*  </SectionBox>*/}
-      {/*  <SectionBox img={Image3 as string} />*/}
-      {/*</Section>*/}
+      {/* <Section> */}
+      {/*  <SectionBox> */}
+      {/*    <Title>Sala konferencyjna</Title> */}
+      {/*    <Typography> */}
+      {/*      [ do uzupełneinia... ] */}
+      {/*    </Typography> */}
+      {/*  </SectionBox> */}
+      {/*  <SectionBox img={Image3 as string} /> */}
+      {/* </Section> */}
       <Section>
 
         <SectionBox>

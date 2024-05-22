@@ -1,13 +1,16 @@
-import BoCerbaLogoWEBP from './BoCerba.webp'
-import BusinessWomanJPEG from './BusinessWoman.jpeg'
-import CentrumUbezpieczenPolskichPNG from './CentrumUbezpieczenPolskich.png'
-import HiltonGardenSVG from './HiltonGarden.svg'
-import HotelspotPNG from './Hotelspot.png'
-import IntegracjaJPEG from './Integracja.jpeg'
-import KancelariaSVG from './Kancelaria.svg'
-import PrimeTimePNG from './PrimeTime.png'
-import SprawnyMarketngWEBP from './SprawnyMarketing.webp'
-import RmfPNG from './rmf.png'
+import BoCerbaLogoWEBP from './BoCerba.webp';
+import BusinessWomanJPEG from './BusinessWoman.jpeg';
+import CentrumUbezpieczenPolskichPNG from './CentrumUbezpieczenPolskich.png';
+import HiltonGardenSVG from './HiltonGarden.svg';
+import HotelspotPNG from './Hotelspot.png';
+import IntegracjaJPEG from './Integracja.jpeg';
+import KancelariaSVG from './Kancelaria.svg';
+import PrimeTimePNG from './PrimeTime.png';
+import SprawnyMarketngWEBP from './SprawnyMarketing.webp';
+import RmfPNG from './rmf.png';
+import DobryhasztagPNG from './image.png';
+
+import NgoPNG from './Ngo.png';
 
 export const BoCerba = BoCerbaLogoWEBP;
 export const BusinessWoman = BusinessWomanJPEG;
@@ -21,8 +24,7 @@ export const SprawnyMarketing = SprawnyMarketngWEBP;
 
 export const Kancelaria = KancelariaSVG;
 
-import NgoPNG from './Ngo.png'
-
 export const Ngo = NgoPNG;
 
 export const RMF = RmfPNG;
+export const Dobryhasztag = DobryhasztagPNG;

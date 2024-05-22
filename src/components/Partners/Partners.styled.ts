@@ -1,27 +1,27 @@
-import styled from "styled-components";
-import {H2t700} from "../../styles/typography";
-import {colors} from "../../styles/colors";
-import {rwd} from "../../styles/rwd";
+import styled from 'styled-components';
+import { H2t700 } from '../../styles/typography';
+import { colors } from '../../styles/colors';
+import { rwd } from '../../styles/rwd';
 
 export const Container = styled.section`
  
   display: flex;
   justify-content: center;
  
-`
+`;
 
 export const Wrapper = styled.section`
     padding-top: 300px;
   width: 1196px;
   margin:0 24px;
-`
+`;
 
 export const Strategy = styled.div`
   display: flex;
   flex-direction: column;
   gap:64px;
   margin-bottom: 64px;
-`
+`;
 export const StrategyTitle = styled.h1`
  font-size: 24px;
  font-style: normal;
@@ -37,18 +37,18 @@ export const StrategyTitle = styled.h1`
     font-size: 24px;
     line-height: 32px;
   }
-`
+`;
 
 export const StrategyImage = styled.img`
   height: 140px;
-`
+`;
 
 export const CommonPartners = styled.div`
   display: flex;
   flex-direction: column;
   gap:24px;
   margin-bottom: 48px;
-`
+`;
 
 export const PartnersTitle = styled.div`
   font-size: 24px;
@@ -66,7 +66,7 @@ export const PartnersTitle = styled.div`
     font-size: 20px;
     line-height: 28px;
   }
-`
+`;
 
 export const PartnersImages = styled.div`
   display: flex;
@@ -76,7 +76,7 @@ export const PartnersImages = styled.div`
   @media (${rwd.maxPhone}){
     flex-direction: column;
   }
-`
+`;
 
 export const Center = styled.a`
   display: flex;
@@ -96,4 +96,4 @@ export const Center = styled.a`
     align-self: center;
   };
   flex-basis: calc(25%);
-`
+`;
