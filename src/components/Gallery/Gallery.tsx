@@ -24,6 +24,7 @@ export const Gallery = () => (
         </SectionBox>
         <SectionBox img={Image1a as string} />
       </Section>
+
       <Section>
         <SectionBox img={Image2 as string} />
         <SectionBox>
@@ -33,17 +34,31 @@ export const Gallery = () => (
           </Typography>
         </SectionBox>
       </Section>
-      {/* <Section> */}
-      {/*  <SectionBox> */}
-      {/*    <Title>Sala konferencyjna</Title> */}
-      {/*    <Typography> */}
-      {/*      [ do uzupełneinia... ] */}
-      {/*    </Typography> */}
-      {/*  </SectionBox> */}
-      {/*  <SectionBox img={Image3 as string} /> */}
-      {/* </Section> */}
-      <Section>
 
+       <Section>
+        <SectionBox>
+          <Title>Krzysiek Grabara</Title>
+          <Typography>
+            Krzysiek Grabara urodził się w 1985 roku w Kościanie. Jest samoukiem. Malarstwem zajął się w lutym 2019
+            roku. Udziela także warsztatów i konsultacji z zakresu fotografii. W 2018 roku, na dwa lata przed emeryturą,
+            w związku z upokorzeniem i dehumanizacją rzucił pracę jako policjant by zająć się tworzeniem. Po roku
+            malowania został wyróżniony przez Polish Masters of Art w kategorii #youngmasters za obraz wykonany techniką
+            akrylu oraz dwukrotnie w roku następnym za prace wykonane w technice pasteli olejnej.
+            <br/><br/>
+            Największym sukcesem jest wystawa indywidualna w Ochorowiczówce – Muzeum Magicznego realizmu w Wiśle oraz
+            uczestnictwo obrazu “Tkanka” z cyklu Messenger w aukcji surrealizmu organizowanej przez Desa Unicum obok
+            Zdzisława Beksińskiego, Rafała Olbińskiego, Tomasza Sętowskiego, Maksymiliana Novaka-Zemplińskiego i innych.
+            <br/><br/>
+            Już prawie 700 prac artysty znajduje się w kolekcjach prywatnych i instytucjonalnych ( Muzeum Magicznego
+            Realizmu w Wiśle) w Polsce, Austrii, Finlandii, Irlandii, Wielkiej Brytanii, Szwajcarii, Francji, Hiszpanii,
+            Włoszech, Belgii, Holandii, Niemczech, Portugalii oraz Chinach i USA.
+          </Typography>
+        </SectionBox>
+        <SectionBox img={Image4 as string} />
+       </Section>
+
+      <Section>
+        <SectionBox img={Img1JPG as string} />
         <SectionBox>
           <Title>Zapisz się na Konferencję PowiemTAK</Title>
           <Typography>
@@ -57,7 +72,7 @@ export const Gallery = () => (
             type="default"
           />
         </SectionBox>
-        <SectionBox img={Img1JPG as string} />
+
       </Section>
     </Wrapper>
   </Container>

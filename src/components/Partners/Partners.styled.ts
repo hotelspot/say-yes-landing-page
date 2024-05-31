@@ -97,3 +97,23 @@ export const Center = styled.a`
   };
   flex-basis: calc(25%);
 `;
+
+export const CenterHilton = styled.a`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  img{
+    max-height: 150px;
+ 
+  }
+
+  @media (${rwd.maxPhone}){
+    img{
+      max-height: 40vw;
+ 
+    }
+    align-self: center;
+  };
+  flex-basis: calc(25%);
+`;

@@ -4,7 +4,7 @@ import AvatarPNG from './avatar.png';
 import Image1PNG from './1.png';
 import Image2PNG from './2.png';
 import Image3PNG from './3.png';
-import Image4PNG from './4.png';
+import Image4PNG from './kb.png';
 import Image1JPG from './1.jpg';
 import Image1AJPG from './a1.jpg';
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  Center,
+  Center, CenterHilton,
   CommonPartners,
   Container, PartnersImages,
   PartnersTitle,
@@ -18,23 +18,26 @@ import {
   PrimeTime, RMF, Dobryhasztag,
   WYBORCZA, GLOS24, SM, niewidzacprzeszkodPNG, goal, Chance, FOB, faktywizacja,
   FIRR_logo_m,
-  PRZEDSIEBIORCY,
+  PRZEDSIEBIORCY, R17, WISLA, CHARAKTERY,
 } from '../../assets/partners';
 
 const commonPartners = [
   { src: Hotelspot, link: 'https://www.hotelspot.pl/' },
-  { src: BoCerba, link: '#' },
-  { src: PrimeTime, link: '#' },
-  { src: CentrumUbezpieczenPolskich, link: '#' },
-  { src: Kancelaria, link: '#' },
+  { src: BoCerba, link: 'https://www.bocerba.com/' },
+  { src: PrimeTime, link: 'https://primetimepr.pl/' },
+  { src: CentrumUbezpieczenPolskich, link: 'https://pcupolska.org/' },
+  { src: Kancelaria, link: 'https://kancelariamj.pl/' },
 ];
 
 const commonMediaPartners = [
   { src: RMF, link: 'https://www.rmf24.pl' },
   { src: WYBORCZA, link: 'https://wyborcza.pl' },
+  { src: CHARAKTERY, link: ' https://charaktery.eu/ ' },
+  { src: WISLA, link: ' https://wislakrakow.com/  ' },
   { src: Ngo, link: 'https://www.ngo.pl' },
   { src: GLOS24, link: 'https://glos24.pl' },
   { src: SM, link: 'https://sprawnymarketing.pl' },
+  { src: R17, link: 'https://radio17.pl/' },
   { src: niewidzacprzeszkodPNG, link: 'https://www.niewidzacprzeszkod.pl' },
   { src: goal, link: 'https://www.goal.pl/' },
   { src: Integracja, link: 'https://integracja.org/' },
@@ -46,8 +49,6 @@ const commonMediaPartners = [
   { src: FIRR_logo_m, link: 'https://firr.org.pl/' },
   { src: faktywizacja, link: 'https://aktywizacja.org.pl/' },
 
-  // { src: RMF, link: ' https://sprawnymarketing.pl' }, //  https://sprawnymarketing.pl/
-  // { src: RMF, link: ' https://sprawnymarketing.pl' }, //  https://sprawnymarketing.pl/
 
 
 
@@ -59,7 +60,10 @@ export const Partners = () => (
     <Wrapper>
       <Strategy>
         <StrategyTitle>Partner Strategiczny</StrategyTitle>
-        <StrategyImage alt="strategy" src={HiltonGarden} />
+
+        <CenterHilton target="_blank" href='https://www.hilton.com/pl/hotels/krkapgi-hilton-garden-inn-krakow-airport/'  >
+          <StrategyImage alt="strategy" src={HiltonGarden} />
+        </CenterHilton>
       </Strategy>
       <CommonPartners>
         <PartnersTitle>Partnerzy & Sponsorzy</PartnersTitle>

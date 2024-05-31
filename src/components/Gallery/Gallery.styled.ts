@@ -30,7 +30,7 @@ export const Wrapper = styled.div`
 
 export const Section = styled.section`
   display: flex;
-  height: 440px;
+  height: 540px;
   
   @media(${rwd.maxSmallDesktop}){
     height: auto;
@@ -55,7 +55,7 @@ export const SectionBox = styled.div<{img?:string}>`
   
   @media(${rwd.maxSmallDesktop}){
     padding: ${(props) => (props.img ? '132px' : '32px')};
-    height: 264px;
+    height: 364px;
   }
   @media(${rwd.maxPhone}){
     padding: ${(props) => (props.img ? '132px' : '24px')};

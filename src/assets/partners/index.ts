@@ -20,6 +20,9 @@ import FOBPNG from './logo-fob-ua.png';
 import faktywizacjaNG from './faktywizacja.png';
 import FIRR_logo_mNG from './FIRR_logo_m.jpg';
 import PRZEDSIEBIORCY_PNG from './pp.png';
+import R17_PNG from './r17.jpg';
+import WISLA_PNG from './wisla.png';
+import CHARAKTERY_PNG from './charaktery.png'
 export const BoCerba = BoCerbaLogoWEBP;
 export const BusinessWoman = BusinessWomanJPEG;
 
@@ -38,6 +41,12 @@ export const RMF = RmfPNG;
 export const Dobryhasztag = DobryhasztagPNG;
 
 export const WYBORCZA = WYBORCZA_PNG;
+
+export const R17 = R17_PNG;
+
+export const WISLA = WISLA_PNG;
+
+export const CHARAKTERY = CHARAKTERY_PNG;
 export const GLOS24 = GLOS24_PNG;
 export const SM = SM_PNG;
 export const niewidzacprzeszkodPNG = niewidzacprzeszkod;
