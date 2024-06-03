@@ -22,7 +22,10 @@ import FIRR_logo_mNG from './FIRR_logo_m.jpg';
 import PRZEDSIEBIORCY_PNG from './pp.png';
 import R17_PNG from './r17.jpg';
 import WISLA_PNG from './wisla.png';
-import CHARAKTERY_PNG from './charaktery.png'
+import CHARAKTERY_PNG from './charaktery.png';
+import DOL_PNG from './tour.png';
+import PIE_PNG from './piekni.png';
+
 export const BoCerba = BoCerbaLogoWEBP;
 export const BusinessWoman = BusinessWomanJPEG;
 
@@ -56,3 +59,5 @@ export const FOB = FOBPNG;
 export const faktywizacja = faktywizacjaNG;
 export const FIRR_logo_m = FIRR_logo_mNG;
 export const PRZEDSIEBIORCY = PRZEDSIEBIORCY_PNG;
+export const Doltrans = DOL_PNG;
+export const Pieknizdrowi = PIE_PNG;

@@ -18,7 +18,7 @@ import {
   PrimeTime, RMF, Dobryhasztag,
   WYBORCZA, GLOS24, SM, niewidzacprzeszkodPNG, goal, Chance, FOB, faktywizacja,
   FIRR_logo_m,
-  PRZEDSIEBIORCY, R17, WISLA, CHARAKTERY,
+  PRZEDSIEBIORCY, R17, WISLA, CHARAKTERY, Doltrans, Pieknizdrowi,
 } from '../../assets/partners';
 
 const commonPartners = [
@@ -27,6 +27,8 @@ const commonPartners = [
   { src: PrimeTime, link: 'https://primetimepr.pl/' },
   { src: CentrumUbezpieczenPolskich, link: 'https://pcupolska.org/' },
   { src: Kancelaria, link: 'https://kancelariamj.pl/' },
+  { src: Doltrans, link: 'https://doltrans.pl/' },
+  { src: Pieknizdrowi, link: 'https://pieknizdrowi.life/' },
 ];
 
 const commonMediaPartners = [
@@ -48,12 +50,7 @@ const commonMediaPartners = [
   { src: FOB, link: 'https://odpowiedzialnybiznes.pl/karta-roznorodnosci/' },
   { src: FIRR_logo_m, link: 'https://firr.org.pl/' },
   { src: faktywizacja, link: 'https://aktywizacja.org.pl/' },
-
-
-
-
-  // { src: Dobryhasztag, link: '#' },
-
+  { src: faktywizacja, link: 'https://aktywizacja.org.pl/' },
 ];
 export const Partners = () => (
   <Container id="partners">
