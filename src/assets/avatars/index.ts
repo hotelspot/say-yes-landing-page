@@ -18,7 +18,7 @@ import personWieslaw from './person-Wiesław-Nowiński.png';
 import personZuzanna from './person-Zuzanna-Janaszek.png';
 import personNatalia from './natalia-prokaziuk.png';
 import personMichaelis from './personMichaelis.png';
-
+import mjach from './mjach.png';
 export const AnnaJ = personAnnaJung;
 export const ArrekW = personArekWarchał;
 export const BartoszM = personBartoszMrozek;
@@ -42,3 +42,5 @@ export const Weronika = personWeronika;
 export const Wieslaw = personWieslaw;
 export const Zuzanna = personZuzanna;
 export const KatarzynaMichaelis = personMichaelis;
+
+export const MMjach = mjach;

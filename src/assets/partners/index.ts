@@ -25,6 +25,7 @@ import WISLA_PNG from './wisla.png';
 import CHARAKTERY_PNG from './charaktery.png';
 import DOL_PNG from './tour.png';
 import PIE_PNG from './piekni.png';
+import UJ_fm_PNG from './ujfm.png'
 
 export const BoCerba = BoCerbaLogoWEBP;
 export const BusinessWoman = BusinessWomanJPEG;
@@ -61,3 +62,4 @@ export const FIRR_logo_m = FIRR_logo_mNG;
 export const PRZEDSIEBIORCY = PRZEDSIEBIORCY_PNG;
 export const Doltrans = DOL_PNG;
 export const Pieknizdrowi = PIE_PNG;
+export const UJ_fm = UJ_fm_PNG;

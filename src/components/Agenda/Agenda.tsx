@@ -20,7 +20,7 @@ import {
   Wieslaw,
   Zuzanna,
   NataliaP,
-  KatarzynaMichaelis,
+  KatarzynaMichaelis, MMjach,
 } from '../../assets/avatars';
 
 export const _agenda_list: AgendaItemProps[] = [
@@ -127,9 +127,15 @@ export const _agenda_list: AgendaItemProps[] = [
     ],
   },
   {
-    title: 'Wystąpienie artystyczne',
-    time: '12:15 - 12:35',
-    isSmall: true,
+    title: 'Gość specjalny - Maciej Kawecki',
+    time: '17:20 - 17:35',
+    isDiscus: true,
+    avatars: [
+      {
+        name: 'Maciej Kawecki',
+        img: MaciejK,
+      },
+    ],
   },
   {
     title: 'Przerwa kawowa',
@@ -233,9 +239,15 @@ export const _agenda_list: AgendaItemProps[] = [
     isSmall: true,
   },
   {
-    title: 'Występ artystyczny',
-    time: '14:45 - 15:05',
-    isSmall: true,
+    title: 'Gość specjalny - Bartosz Ostałowski',
+    time: '17:20 - 17:35',
+    isDiscus: true,
+    avatars: [
+      {
+        name: 'Bartosz Ostałowski',
+        img: EmptyImagePNG,
+      },
+    ],
   },
 
   {
@@ -302,10 +314,9 @@ export const _agenda_list: AgendaItemProps[] = [
         img: Milosz,
         desc: '16:05 - 16:20',
       },
-
       {
-        name: 'Maciej Kawecki',
-        img: MaciejK,
+        name: 'Bartosz Ostałowski',
+        img: EmptyImagePNG,
         desc: '16:20 - 16:35',
       },
     ],
@@ -375,7 +386,7 @@ export const _agenda_list: AgendaItemProps[] = [
       },
       {
         name: 'Karolina i Michał Jach',
-        img: EmptyImagePNG,
+        img: MMjach,
       },
       {
         name: 'Grażyna Zgliński-Brzózy',
@@ -392,13 +403,25 @@ export const _agenda_list: AgendaItemProps[] = [
     ],
   },
   {
+    title: 'Goście specjalni - Michał i Karolina Jach',
+    time: '17:20 - 17:35',
+    isDiscus: true,
+    avatars: [
+      {
+        name: 'Karolina i Michał Jach',
+        img: MMjach,
+      },
+    ],
+  },
+
+  {
     title: 'Przyznanie nagrody',
-    time: '17:05 - 17:15',
+    time: '17:35 - 17:45',
     isSmall: true,
   },
   {
     title: 'Przemowa końcowa',
-    time: '17:15 - 17:25',
+    time: '17:45 - 17:55',
     alone: true,
     avatars: [
       {
@@ -409,12 +432,12 @@ export const _agenda_list: AgendaItemProps[] = [
   },
   {
     title: 'Przyznanie dyplomów',
-    time: '17:25 - 17:35',
+    time: '17:55 - 18:00',
     isSmall: true,
   },
   {
     title: 'Zakończenie konferencji',
-    time: '17:35',
+    time: '18:00',
     isSmall: true,
   },
 ];
