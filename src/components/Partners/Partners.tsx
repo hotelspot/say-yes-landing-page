@@ -58,7 +58,7 @@ export const Partners = () => (
       <Strategy>
         <StrategyTitle>Partner Strategiczny</StrategyTitle>
 
-        <CenterHilton target="_blank" href='https://www.hilton.com/pl/hotels/krkapgi-hilton-garden-inn-krakow-airport/'  >
+        <CenterHilton target="_blank" href="https://www.hilton.com/pl/hotels/krkapgi-hilton-garden-inn-krakow-airport/">
           <StrategyImage alt="strategy" src={HiltonGarden} />
         </CenterHilton>
       </Strategy>

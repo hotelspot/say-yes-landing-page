@@ -25,7 +25,7 @@ import WISLA_PNG from './wisla.png';
 import CHARAKTERY_PNG from './charaktery.png';
 import DOL_PNG from './tour.png';
 import PIE_PNG from './piekni.png';
-import UJ_fm_PNG from './ujfm.png'
+import UJ_fm_PNG from './ujfm.png';
 
 export const BoCerba = BoCerbaLogoWEBP;
 export const BusinessWoman = BusinessWomanJPEG;

@@ -35,7 +35,7 @@ export const Gallery = () => (
         </SectionBox>
       </Section>
 
-       <Section>
+      <Section>
         <SectionBox>
           <Title>Krzysiek Grabara</Title>
           <Typography>
@@ -44,18 +44,20 @@ export const Gallery = () => (
             w związku z upokorzeniem i dehumanizacją rzucił pracę jako policjant by zająć się tworzeniem. Po roku
             malowania został wyróżniony przez Polish Masters of Art w kategorii #youngmasters za obraz wykonany techniką
             akrylu oraz dwukrotnie w roku następnym za prace wykonane w technice pasteli olejnej.
-            <br/><br/>
+            <br />
+            <br />
             Największym sukcesem jest wystawa indywidualna w Ochorowiczówce – Muzeum Magicznego realizmu w Wiśle oraz
             uczestnictwo obrazu “Tkanka” z cyklu Messenger w aukcji surrealizmu organizowanej przez Desa Unicum obok
             Zdzisława Beksińskiego, Rafała Olbińskiego, Tomasza Sętowskiego, Maksymiliana Novaka-Zemplińskiego i innych.
-            <br/><br/>
+            <br />
+            <br />
             Już prawie 700 prac artysty znajduje się w kolekcjach prywatnych i instytucjonalnych ( Muzeum Magicznego
             Realizmu w Wiśle) w Polsce, Austrii, Finlandii, Irlandii, Wielkiej Brytanii, Szwajcarii, Francji, Hiszpanii,
             Włoszech, Belgii, Holandii, Niemczech, Portugalii oraz Chinach i USA.
           </Typography>
         </SectionBox>
         <SectionBox img={Image4 as string} />
-       </Section>
+      </Section>
 
       <Section>
         <SectionBox img={Img1JPG as string} />

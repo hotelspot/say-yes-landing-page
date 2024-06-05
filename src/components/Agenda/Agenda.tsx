@@ -137,10 +137,10 @@ export const _agenda_list: AgendaItemProps[] = [
       },
     ],
     description: <>
-      <br/>
+      <br />
       Dr Maciej Kawecki - Maciek jest jednym z tych ludzi, których nikomu chyba nie trzeba przedstawiać 😉Jest on
       prorektorem ds. innowacji WSB Warszawa, popularyzatorem i pasjonatem technologii 🌍
-      <br/>
+      <br />
       <br />
       Już po raz drugi wystąpi jako Prelegent na mojej konferencji ,,Powiem Tak" 🙃
       {' '}
@@ -154,7 +154,7 @@ export const _agenda_list: AgendaItemProps[] = [
       Maciek od wielu lat wspiera mnie również w moich działaniach, na rzecz ludzi z niepełnosprawnością ♿Nie bez powodu
       powiedziałem mu kiedyś, że nie tylko jest moim przyjacielem, ale poniekąd również moim mentorem 🤝😃
       I tak uważam po dziś dzień ❗
-    </>
+    </>,
   },
   {
     title: 'Przerwa kawowa',
@@ -373,7 +373,6 @@ export const _agenda_list: AgendaItemProps[] = [
       rewolucji, która zniszczy to, co nie funkcjonuje w należyty sposób. Wszystko po to, by pozbyć się niszczących
       przekonań i osiągnąć wyższy poziom rozwoju".
       <br />
-
 
     </>,
   },
