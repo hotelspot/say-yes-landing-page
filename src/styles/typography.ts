@@ -88,7 +88,7 @@ export const H5t500 = css`
 
 export const Display01 = css`
   font-weight: 700;
-  font-size: 160px;
+  font-size: 150px;
   line-height: 180px;
 `;
 

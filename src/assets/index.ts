@@ -7,6 +7,7 @@ import Image3PNG from './3.png';
 import Image4PNG from './kb.png';
 import Image1JPG from './1.jpg';
 import Image1AJPG from './a1.jpg';
+import MapPNG from './WUK.jpg'
 
 import ContactFormBannerPNG from './contact-form-img.png';
 
@@ -23,5 +24,5 @@ export const Img1JPG = Image1JPG;
 export const AvatarJuliuszZglinski = AvatarPNG;
 export const HeroImg = HeroImgPNG;
 export const Logo = LogoPNG;
-
+export const Map = MapPNG;
 export const EmptyImagePNG = EmptyImage;

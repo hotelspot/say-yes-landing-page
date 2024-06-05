@@ -18,6 +18,7 @@ export const Wrapper = styled.div`
 `;
 
 export const Header = styled.h1`
+  text-transform: uppercase;
   ${Display01};
   opacity: .25;
   text-align: center;

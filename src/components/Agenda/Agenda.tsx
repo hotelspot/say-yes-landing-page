@@ -128,14 +128,33 @@ export const _agenda_list: AgendaItemProps[] = [
   },
   {
     title: 'Gość specjalny - Maciej Kawecki',
-    time: '17:20 - 17:35',
-    isDiscus: true,
+    time: '12:15 - 12:35',
+    isDiscus: false,
     avatars: [
       {
         name: 'Maciej Kawecki',
         img: MaciejK,
       },
     ],
+    description: <>
+      <br/>
+      Dr Maciej Kawecki - Maciek jest jednym z tych ludzi, których nikomu chyba nie trzeba przedstawiać 😉Jest on
+      prorektorem ds. innowacji WSB Warszawa, popularyzatorem i pasjonatem technologii 🌍
+      <br/>
+      <br />
+      Już po raz drugi wystąpi jako Prelegent na mojej konferencji ,,Powiem Tak" 🙃
+      {' '}
+      <br />
+      Jak podkreśla stawia on na człowieka, który rozumie, że technologia to tylko i aż narzędzie w jego rękach, którym
+      powinien pozytywnie zmieniać świat 💪🏻Zresztą nie bez powodu jest on również Prezesem Instytutu Lema, który co roku
+      organizuje ogromne wydarzenie pt. ,,Bomba Megabitowa", na którym poruszana jest tematyka zmieniającej się
+      rzeczywistości.
+      {' '}
+      <br />
+      Maciek od wielu lat wspiera mnie również w moich działaniach, na rzecz ludzi z niepełnosprawnością ♿Nie bez powodu
+      powiedziałem mu kiedyś, że nie tylko jest moim przyjacielem, ale poniekąd również moim mentorem 🤝😃
+      I tak uważam po dziś dzień ❗
+    </>
   },
   {
     title: 'Przerwa kawowa',
@@ -148,12 +167,12 @@ export const _agenda_list: AgendaItemProps[] = [
     isDiscus: true,
     avatars: [
       {
-        name: 'Natalia Prokaziuk',
-        img: NataliaP,
+        name: 'Tomasz Bill',
+        img: TomaszB,
         owner: 'Prowadząca',
       },
       {
-        name: 'Małgorzata Niewodowska',
+        name: 'Jolanta Bień ',
         img: EmptyImagePNG,
       },
       {
@@ -240,7 +259,7 @@ export const _agenda_list: AgendaItemProps[] = [
   },
   {
     title: 'Gość specjalny - Bartosz Ostałowski',
-    time: '17:20 - 17:35',
+    time: '14:45 - 15:05',
     isDiscus: true,
     avatars: [
       {
@@ -287,8 +306,8 @@ export const _agenda_list: AgendaItemProps[] = [
         img: JuliuszZ,
       },
       {
-        name: 'Maciej Kawecki',
-        img: MaciejK,
+        name: 'Kacper Kupczak',
+        img: KacperK,
       },
       {
         name: 'Piotr Krukowski',
@@ -354,22 +373,7 @@ export const _agenda_list: AgendaItemProps[] = [
       rewolucji, która zniszczy to, co nie funkcjonuje w należyty sposób. Wszystko po to, by pozbyć się niszczących
       przekonań i osiągnąć wyższy poziom rozwoju".
       <br />
-      <br />
-      Dr Maciej Kawecki - Maciek jest jednym z tych ludzi, których nikomu chyba nie trzeba przedstawiać 😉Jest on
-      prorektorem ds. innowacji WSB Warszawa, popularyzatorem i pasjonatem technologii 🌍
-      <br />
-      Już po raz drugi wystąpi jako Prelegent na mojej konferencji ,,Powiem Tak" 🙃
-      {' '}
-      <br />
-      Jak podkreśla stawia on na człowieka, który rozumie, że technologia to tylko i aż narzędzie w jego rękach, którym
-      powinien pozytywnie zmieniać świat 💪🏻Zresztą nie bez powodu jest on również Prezesem Instytutu Lema, który co roku
-      organizuje ogromne wydarzenie pt. ,,Bomba Megabitowa", na którym poruszana jest tematyka zmieniającej się
-      rzeczywistości.
-      {' '}
-      <br />
-      Maciek od wielu lat wspiera mnie również w moich działaniach, na rzecz ludzi z niepełnosprawnością ♿Nie bez powodu
-      powiedziałem mu kiedyś, że nie tylko jest moim przyjacielem, ale poniekąd również moim mentorem 🤝😃
-      I tak uważam po dziś dzień ❗
+
 
     </>,
   },
@@ -380,13 +384,13 @@ export const _agenda_list: AgendaItemProps[] = [
     isDiscus: true,
     avatars: [
       {
-        name: 'Tomasz Bill',
+        name: 'Natalia Prokaziuk',
         owner: 'Prowadzący',
-        img: TomaszB,
+        img: NataliaP,
       },
       {
-        name: 'Karolina i Michał Jach',
-        img: MMjach,
+        name: 'Ewa Żak-Lisewska',
+        img: EmptyImagePNG,
       },
       {
         name: 'Grażyna Zgliński-Brzózy',
