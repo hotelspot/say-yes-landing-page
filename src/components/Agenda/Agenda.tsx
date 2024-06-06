@@ -321,7 +321,7 @@ export const _agenda_list: AgendaItemProps[] = [
   },
   {
     title: 'Panel |V: Innowacje wokół nas, cz. 2 ',
-    time: '15:50 - 16:35',
+    time: '15:50 - 16:20',
     avatars: [
       {
         name: 'Kacper Kupczak',
@@ -333,12 +333,8 @@ export const _agenda_list: AgendaItemProps[] = [
         img: Milosz,
         desc: '16:05 - 16:20',
       },
-      {
-        name: 'Bartosz Ostałowski',
-        img: EmptyImagePNG,
-        desc: '16:20 - 16:35',
-      },
     ],
+
     description: <>
       ,,Innowacje, które zmieniają rzeczywistości - Innowacje wokół nas"
       <br />
@@ -376,7 +372,17 @@ export const _agenda_list: AgendaItemProps[] = [
 
     </>,
   },
-
+  {
+    title: 'Gość specjalny - Bartosz Ostałowski',
+    time: '16:20 - 16:35',
+    isDiscus: true,
+    avatars: [
+      {
+        name: 'Bartosz Ostałowski',
+        img: EmptyImagePNG,
+      },
+    ],
+  },
   {
     title: 'Dyskusja III  Rodzicielstwo, a niepełnosprawność',
     time: '16:35 - 17:05',
