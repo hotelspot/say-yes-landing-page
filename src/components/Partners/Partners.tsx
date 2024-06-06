@@ -25,7 +25,7 @@ const commonPartners = [
   { src: Hotelspot, link: 'https://www.hotelspot.pl/' },
   { src: BoCerba, link: 'https://www.bocerba.com/' },
   { src: PrimeTime, link: 'https://primetimepr.pl/' },
-  { src: CentrumUbezpieczenPolskich, link: 'https://pcupolska.org/' },
+  { src: CentrumUbezpieczenPolskich, link: 'https://ctu.pl' },
   { src: Kancelaria, link: 'https://kancelariamj.pl/' },
   { src: Doltrans, link: 'https://doltrans.pl/' },
   { src: Pieknizdrowi, link: 'https://pieknizdrowi.life/' },
