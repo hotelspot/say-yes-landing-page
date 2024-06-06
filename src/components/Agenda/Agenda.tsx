@@ -258,12 +258,12 @@ export const _agenda_list: AgendaItemProps[] = [
     isSmall: true,
   },
   {
-    title: 'Gość specjalny - Bartosz Ostałowski',
+    title: 'Gość specjalny - Marcin Ryszka',
     time: '14:45 - 15:05',
     isDiscus: true,
     avatars: [
       {
-        name: 'Bartosz Ostałowski',
+        name: 'Marcin Ryszka',
         img: EmptyImagePNG,
       },
     ],

@@ -3,6 +3,7 @@ import BusinessWomanJPEG from './BusinessWoman.jpeg';
 import CentrumUbezpieczenPolskichPNG from './CentrumUbezpieczenPolskich.png';
 import HiltonGardenSVG from './HiltonGarden.svg';
 import HotelspotPNG from './Hotelspot.png';
+import NoqaSquadPNG from './nowaSquad.png'
 import IntegracjaJPEG from './Integracja.jpeg';
 import KancelariaSVG from './Kancelaria.svg';
 import PrimeTimePNG from './PrimeTime.png';
@@ -26,10 +27,12 @@ import CHARAKTERY_PNG from './charaktery.png';
 import DOL_PNG from './tour.png';
 import PIE_PNG from './piekni.png';
 import UJ_fm_PNG from './ujfm.png';
+import SymposiumCracoviencePNG from './symposiumCracovience.png'
 
+export const SymposiumCracovience = SymposiumCracoviencePNG;
 export const BoCerba = BoCerbaLogoWEBP;
 export const BusinessWoman = BusinessWomanJPEG;
-
+export const NowaSquad = NoqaSquadPNG;
 export const CentrumUbezpieczenPolskich = CentrumUbezpieczenPolskichPNG;
 export const HiltonGarden = HiltonGardenSVG;
 export const Hotelspot = HotelspotPNG;
