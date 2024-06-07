@@ -20,7 +20,7 @@ import {
   Wieslaw,
   Zuzanna,
   NataliaP,
-  KatarzynaMichaelis, MMjach,
+  KatarzynaMichaelis, MMjach, JolantaBielan, MarcinRyszka, BartoszOstalowski,
 } from '../../assets/avatars';
 
 export const _agenda_list: AgendaItemProps[] = [
@@ -173,7 +173,7 @@ export const _agenda_list: AgendaItemProps[] = [
       },
       {
         name: 'Jolanta Bień ',
-        img: EmptyImagePNG,
+        img: JolantaBielan,
       },
       {
         name: 'Anna Jung',
@@ -264,7 +264,7 @@ export const _agenda_list: AgendaItemProps[] = [
     avatars: [
       {
         name: 'Marcin Ryszka',
-        img: EmptyImagePNG,
+        img: MarcinRyszka,
       },
     ],
   },
@@ -379,13 +379,18 @@ export const _agenda_list: AgendaItemProps[] = [
     avatars: [
       {
         name: 'Bartosz Ostałowski',
-        img: EmptyImagePNG,
+        img: BartoszOstalowski,
       },
     ],
   },
   {
+    title: 'Przerwa kawowa',
+    time: '16:35 - 16:45',
+    isSmall: true,
+  },
+  {
     title: 'Dyskusja III  Rodzicielstwo, a niepełnosprawność',
-    time: '16:35 - 17:05',
+    time: '16:45 - 17:30',
     isDiscus: true,
     avatars: [
       {
@@ -413,7 +418,7 @@ export const _agenda_list: AgendaItemProps[] = [
   },
   {
     title: 'Goście specjalni - Michał i Karolina Jach',
-    time: '17:20 - 17:35',
+    time: '17:30 - 17:45',
     isDiscus: true,
     avatars: [
       {
@@ -425,12 +430,12 @@ export const _agenda_list: AgendaItemProps[] = [
 
   {
     title: 'Przyznanie nagrody',
-    time: '17:35 - 17:45',
+    time: '17:45 - 17:55',
     isSmall: true,
   },
   {
     title: 'Przemowa końcowa',
-    time: '17:45 - 17:55',
+    time: '17:55 - 18:05',
     alone: true,
     avatars: [
       {
@@ -441,12 +446,12 @@ export const _agenda_list: AgendaItemProps[] = [
   },
   {
     title: 'Przyznanie dyplomów',
-    time: '17:55 - 18:00',
+    time: '18:05 - 18:15',
     isSmall: true,
   },
   {
     title: 'Zakończenie konferencji',
-    time: '18:00',
+    time: '18:15',
     isSmall: true,
   },
 ];

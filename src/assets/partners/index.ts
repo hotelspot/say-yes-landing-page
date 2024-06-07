@@ -28,7 +28,9 @@ import DOL_PNG from './tour.png';
 import PIE_PNG from './piekni.png';
 import UJ_fm_PNG from './ujfm.png';
 import SymposiumCracoviencePNG from './symposiumCracovience.png'
+import ArtimPNG from './Artim.png'
 
+export const Artim = ArtimPNG;
 export const SymposiumCracovience = SymposiumCracoviencePNG;
 export const BoCerba = BoCerbaLogoWEBP;
 export const BusinessWoman = BusinessWomanJPEG;

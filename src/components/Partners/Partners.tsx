@@ -18,7 +18,7 @@ import {
   PrimeTime, RMF, Dobryhasztag,
   WYBORCZA, GLOS24, SM, niewidzacprzeszkodPNG, goal, Chance, FOB, faktywizacja,
   FIRR_logo_m,
-  PRZEDSIEBIORCY, R17, WISLA, CHARAKTERY, Doltrans, Pieknizdrowi, UJ_fm, NowaSquad, SymposiumCracovience,
+  PRZEDSIEBIORCY, R17, WISLA, CHARAKTERY, Doltrans, Pieknizdrowi, UJ_fm, NowaSquad, SymposiumCracovience, Artim,
 } from '../../assets/partners';
 
 const commonPartners = [
@@ -30,7 +30,8 @@ const commonPartners = [
   { src: Doltrans, link: 'https://doltrans.pl/' },
   { src: Pieknizdrowi, link: 'https://pieknizdrowi.life/' },
   { src: NowaSquad, link:'https://novasquad.pl' },
-  { src: SymposiumCracovience, link:'https://www.symposium.pl' }
+  { src: SymposiumCracovience, link:'https://www.symposium.pl' },
+  {src:Artim,link:'https://artim.com.pl/'}
 ];
 
 const commonMediaPartners = [

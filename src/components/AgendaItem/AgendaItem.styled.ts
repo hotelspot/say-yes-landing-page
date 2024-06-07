@@ -50,6 +50,7 @@ export const Avatars = styled.div<{isDiscus:boolean }>`
 export const AvatarImage = styled.img`
   width: 130px;
   height: 130px;
+  object-fit: cover;
   border-radius: 50%;
     z-index: 1;
   @media(max-width: 992px){

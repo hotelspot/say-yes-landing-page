@@ -19,7 +19,14 @@ import personZuzanna from './person-Zuzanna-Janaszek.png';
 import personNatalia from './natalia-prokaziuk.png';
 import personMichaelis from './personMichaelis.png';
 import mjach from './mjach.png';
+import personBartoszOstalowski from './person-Bartosz-Ostalowski.jpg'
+import personJolantaBielan from './person-Jolanta-Bielan.jpg'
+import personMarcinRyszka from './person-Marcin-Ryszka.jpg'
 
+
+export const BartoszOstalowski = personBartoszOstalowski;
+export const JolantaBielan = personJolantaBielan;
+export const MarcinRyszka = personMarcinRyszka;
 export const AnnaJ = personAnnaJung;
 export const ArrekW = personArekWarchał;
 export const BartoszM = personBartoszMrozek;
