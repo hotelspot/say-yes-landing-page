@@ -20,7 +20,7 @@ import {
   Wieslaw,
   Zuzanna,
   NataliaP,
-  KatarzynaMichaelis, MMjach, JolantaBielan, MarcinRyszka, BartoszOstalowski,
+  KatarzynaMichaelis, MMjach, JolantaBielan, MarcinRyszka, BartoszOstalowski, EwaZakLisewska,
 } from '../../assets/avatars';
 
 export const _agenda_list: AgendaItemProps[] = [
@@ -169,7 +169,7 @@ export const _agenda_list: AgendaItemProps[] = [
       {
         name: 'Tomasz Bill',
         img: TomaszB,
-        owner: 'Prowadząca',
+        owner: 'Prowadzący',
       },
       {
         name: 'Jolanta Bień ',
@@ -324,13 +324,13 @@ export const _agenda_list: AgendaItemProps[] = [
     time: '15:50 - 16:20',
     avatars: [
       {
-        name: 'Kacper Kupczak',
-        img: KacperK,
+        name: 'Miłosz Stanisławski',
+        img: Milosz,
         desc: '15:50 - 16:05',
       },
       {
-        name: 'Miłosz Stanisławski',
-        img: Milosz,
+        name: 'Kacper Kupczak',
+        img: KacperK,
         desc: '16:05 - 16:20',
       },
     ],
@@ -395,12 +395,12 @@ export const _agenda_list: AgendaItemProps[] = [
     avatars: [
       {
         name: 'Natalia Prokaziuk',
-        owner: 'Prowadzący',
+        owner: 'Prowadząca',
         img: NataliaP,
       },
       {
         name: 'Ewa Żak-Lisewska',
-        img: EmptyImagePNG,
+        img: EwaZakLisewska,
       },
       {
         name: 'Grażyna Zgliński-Brzózy',

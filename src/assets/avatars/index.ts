@@ -22,8 +22,9 @@ import mjach from './mjach.png';
 import personBartoszOstalowski from './person-Bartosz-Ostalowski.jpg'
 import personJolantaBielan from './person-Jolanta-Bielan.jpg'
 import personMarcinRyszka from './person-Marcin-Ryszka.jpg'
+import personEwyZakLisewska from './personEwaZakLisewska.png'
 
-
+export const EwaZakLisewska = personEwyZakLisewska
 export const BartoszOstalowski = personBartoszOstalowski;
 export const JolantaBielan = personJolantaBielan;
 export const MarcinRyszka = personMarcinRyszka;
